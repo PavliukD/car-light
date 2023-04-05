@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    outline: 1px solid tomato;
 }
 
 html {
@@ -9,6 +10,7 @@ html {
 
 body {
     margin: 0;
+    background-color: black;
 }
 
 button {
@@ -51,5 +53,8 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
-
 }
+
+
+@import './sass/container';
+@import './sass/footer'
