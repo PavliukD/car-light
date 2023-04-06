@@ -73,11 +73,12 @@ footer .container {
 
 .footer--wrap {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, fit-content);
   grid-auto-rows: auto;
   background-color: #151617;
   border-radius: 20px;
   padding: 86px;
+  justify-content: space-between;
 }
 
 .footer--logo-wrap {
@@ -160,32 +161,49 @@ footer .container {
   margin-top: 10px;
 }
 
-.box-1 {
+.footer--box-1 {
   grid-column-start: 1;
 }
 
-.box-2 {
+.footer--box-2 {
   grid-column-start: 1;
+  max-width: 180px;
 }
 
-.box-3 {
+.footer--box-3 {
   grid-column-start: 2;
   grid-row-start: 1;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.box-4 {
+.footer--box-4 {
   grid-column-start: 2;
   grid-row-start: 2;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.box-5 {
+.footer--box-5 {
   grid-column-start: 3;
   grid-row-start: 1;
   grid-row-end: 3;
   width: -moz-fit-content;
   width: fit-content;
+  margin-left: auto;
+}
+
+.footer--box-6 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.footer--top-button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
 }/*# sourceMappingURL=styles.css.map */
