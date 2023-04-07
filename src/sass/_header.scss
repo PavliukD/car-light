@@ -1,0 +1,47 @@
+.header--notification {
+    background-color: #DB4141;
+}
+
+.header--notification .container{
+    width: 100%;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & p{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+
+        & a{
+            color: Yellow;
+            text-decoration: underline;
+        }
+    }
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+}
+
+.header--logo{
+    width: 84px;
+    height: 56px;
+}
+
+.header--nav-list{
+    display: flex;
+
+    & li{
+        &:not(:first-child){
+            margin-left: 32px;
+        }
+    }
+}
+
+
