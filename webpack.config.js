@@ -2,6 +2,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 
+let htmlPageNames = ['test'];
+let multipleHtmlPlugins = htmlPageNames.map(name => {
+  return new HtmlWebpackPlugin({
+    template: `./src/${name}.html`, // relative path to the HTML files
+    filename: `${name}.html`, // output HTML files
+    chunks: [`${name}`] // respective JS files
+  })
+});
+
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -11,12 +20,12 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                // use: ['babel-loader'],
-                // type: 'javascript/auto',
-            },
+            // {
+            //     test: /\.js$/,
+            //     exclude: /node_modules/,
+            //     // use: ['babel-loader'],
+            //     // type: 'javascript/auto',
+            // },
             {
                 test: /\.s[ac]ss$/i,
                 use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
@@ -62,7 +71,7 @@ module.exports = {
                 "data-target": "example",
             },
         })
-    ],
+    ].concat(multipleHtmlPlugins),
     devServer: {
         port: 8080,
         open: true,
