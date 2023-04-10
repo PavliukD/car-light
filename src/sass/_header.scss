@@ -1,5 +1,14 @@
 .header--notification {
     background-color: #DB4141;
+    height: 52px;
+    transition-property: height;
+    transition-duration: 500ms;
+    transition-delay: 0;
+
+    &.hidden{
+        height: 0px;
+        overflow: hidden;
+    }
 }
 
 .header--notification .container{
@@ -27,6 +36,11 @@
 header .container{
     display: flex;
     align-items: center;
+}
+
+.header--main{
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .header--logo{
@@ -115,7 +129,7 @@ header .container{
 
     & svg{
         width: 24px;
-        height: 26px;
+        height: 24px;
         fill: #FFFFFF;
     }
 }
@@ -142,6 +156,85 @@ header .container{
 .header--info{
     padding-top: 15px;
     padding-bottom: 15px;
+    border-bottom: 1px solid #333333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & p{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+    }
 }
 
+.header--info-icon{
+    width: 13px;
+    height: 13px;
+}
+
+.header--graphic-icon{
+    width: 11px;
+    height: 12px;
+}
+
+.header--phone-icon{
+    width: 16px;
+    height: 16px;
+}
+
+.header--info-icon,
+.header--graphic-icon,
+.header--phone-icon{
+    margin-right: 10px;
+}
+
+.header--blog-icon{
+    width: 8px;
+    height: 8px;
+    margin-right: 4px;
+
+}
+
+.header--blog-list{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: block;
+    height: 0px;
+    overflow: hidden;
+    transition-property: height, padding;
+    transition-duration: 500ms;
+    transition-delay: 0;
+    
+
+    & li{
+        &:not(:first-child){
+            margin: 0;
+            margin-top: 15px;
+        }
+    }
+}
+
+.header--blog-links {
+    position: relative;
+
+    &:hover .header--blog-list,
+    :focus .header--blog-list{
+        padding: 32px;
+        height: 194px;
+    }
+}
+
+.header--blog-link{
+    display: flex;
+    align-items: center;
+}
 
