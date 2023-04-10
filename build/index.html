@@ -42,7 +42,9 @@
             <svg class="header--phone-icon">
                 <use href="images/icons.svg#phone"></use>
             </svg>
-            +38 (067) 274-70-70 / +38 (063) 274-70-70
+            <a href="tel: +380672747070">+38 (067) 274-70-70</a>
+            <span> / </span>
+            <a href="tel: +380632747070">+38 (063) 274-70-70</a>
         </p>
     </div>
     <div class="container header--main">
@@ -54,16 +56,16 @@
         <nav>
             <ul class="header--nav-list">
                 <li>
-                    <a href="">Головна</a>
+                    <a href="" class="header--link active">Головна</a>
                 </li>
                 <li>
-                    <a href="">Послуги</a>
+                    <a href="" class="header--link">Послуги</a>
                 </li>
                 <li>
-                    <a href="">Наші роботи</a>
+                    <a href="" class="header--link">Наші роботи</a>
                 </li>
                 <li class="header--blog-links">
-                    <a href="" class="header--blog-link">
+                    <a href="" class="header--blog-link header--link">
                         <svg class="header--blog-icon">
                             <use href="images/icons.svg#plus-one"></use>
                         </svg>
@@ -85,16 +87,23 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="">Контакти</a>
+                    <a href="" class="header--link">Контакти</a>
                 </li>
             </ul>
         </nav>
-        <button class="header--language">
-            <svg>
-                <use href="images/icons.svg#down"></use>
-            </svg>
-            UA
-        </button>
+        <div class="header--language">
+            <div>
+                <svg>
+                    <use href="images/icons.svg#down"></use>
+                </svg>
+                <span>UA</span>
+            </div>
+            <ul class="hidden">
+                <li class="header--language-variant active">UA</li>
+                <li class="header--language-variant">ENG</li>
+                <li class="header--language-variant">RU</li>
+            </ul>
+        </div>
         <button class="header--login">
             <svg>
                 <use href="images/icons.svg#user"></use>
@@ -338,6 +347,23 @@
         </div>
     </div>
 </footer>
+    <div class="backdrop hidden">
+    <div class="drop-call">
+        <div>
+            <h3>Замовити дзвінок</h3>
+            <p>Наш менеджер зв'яжеться з вами найближчим часом</p>
+            <form action="">
+                <input type="text" placeholder="Ім'я">
+                <input type="text" placeholder="Номер телефону">
+            </form>
+            <div class="drop-call--buttons">
+                <button class="drop-call--order">Замовити дзвінок</button>
+                <button class="drop-call--close">Закрити</button>
+            </div>
+        </div>
+        <img src="images/phone.png" alt="">
+    </div>
+</div>
     <script src="main.js"></script>
 </body>
 </html>
