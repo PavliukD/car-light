@@ -2,14 +2,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 
-let htmlPageNames = ['test'];
-let multipleHtmlPlugins = htmlPageNames.map(name => {
-  return new HtmlWebpackPlugin({
-    template: `./src/${name}.html`, // relative path to the HTML files
-    filename: `${name}.html`, // output HTML files
-    chunks: [`${name}`] // respective JS files
-  })
-});
+// let htmlPageNames = ['test'];
+// let multipleHtmlPlugins = htmlPageNames.map(name => {
+//   return new HtmlWebpackPlugin({
+//     template: `./src/${name}.html`, // relative path to the HTML files
+//     filename: `${name}.html`, // output HTML files
+//     chunks: [`${name}`] // respective JS files
+//   })
+// });
 
 module.exports = {
     entry: './src/index.js',
@@ -71,7 +71,9 @@ module.exports = {
                 "data-target": "example",
             },
         })
-    ].concat(multipleHtmlPlugins),
+    ]
+        // .concat(multipleHtmlPlugins)
+    ,
     devServer: {
         port: 8080,
         open: true,

@@ -36,12 +36,112 @@ header .container{
 
 .header--nav-list{
     display: flex;
+    margin-left: 215px;
 
     & li{
         &:not(:first-child){
             margin-left: 32px;
         }
     }
+
+    & a{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #8A8A9C;
+    }
+}
+
+.header--notification-button{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & svg{
+        width: 20px;
+        height: 20px;
+        stroke: #FFFFFF;
+    }
+}
+
+.header--language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #8A8A9C;
+
+    &::after{
+        content: "";
+        width: 1px;
+        height: 24px;
+        margin-left: 25px;
+        margin-right: 25px;
+        background-color: #8A8A9C;
+    }
+
+    & svg{
+        width: 15px;
+        height: 10px;
+        fill: #FFFFFF;
+        margin-right: 8px;
+    }
+}
+
+.header--login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+
+    & svg{
+        width: 24px;
+        height: 26px;
+        fill: #FFFFFF;
+    }
+}
+
+.header--termine{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 48px;
+    background-color: #F1DD23;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #0A0A0A;
+}
+
+.header--info{
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 
