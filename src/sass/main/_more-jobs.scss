@@ -1,0 +1,146 @@
+.section-more-jobs{
+    & h2{
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 56px;
+        color: #F1DD23;
+        display: block;
+
+        & span{
+            color: #FFFFFF;
+            display: block;
+        }
+    }
+
+    & ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        margin-top: 55px;
+    }
+}
+
+.section-more-jobs--item{
+    padding: 24px;
+    background-color: #151617;
+    border-radius: 20px;
+
+    & h3{
+        height: 56px;
+        margin-top: 25px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+    }
+
+    & p{
+        height: 66px;
+        margin-top: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        display: -webkit-box;
+        line-clamp: 3;
+        box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #8A8A9C;
+    }
+}
+
+.section-more-jobs--image-wrap{
+    position: relative;
+
+    & div{
+        width: 32px;
+        height: 32px;
+        background-color: #F1DD23;
+        border-radius: 5px;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & svg{
+            width: 13px;
+            height: 13px;
+        }
+
+        &.hidden{
+            display: none;
+        }
+    }
+}
+
+.section-more-jobs--item .section--services-more{
+    margin-top: 25px;
+}
+
+.section-more-jobs--job-link{
+    display: flex;
+    align-items: center;
+    
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #8A8A9C;
+
+    border-top: 1px solid #333333;
+    margin-top: 25px;
+    padding-top: 15px;
+
+    & svg{
+        width: 3px;
+        height: 6px;
+        margin-right: 7px;
+    }
+
+    & span{
+        overflow: hidden;
+        text-overflow: clip;
+        display: -moz-box;
+        display: -webkit-box;
+        line-clamp: 1;
+        box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+}
+
+.section-more-jobs--all-jobs-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+
+    & svg{
+        width: 27px;
+        height: 27px;
+        margin-right: 11px;
+    }
+}
