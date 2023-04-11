@@ -1,0 +1,88 @@
+.hero{
+
+    & h2{
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 56px;
+        color: #F1DD23;
+        max-width: 524px;
+        text-transform: uppercase;
+
+        & span{
+            color: #FFFFFF;
+        }
+    }
+
+    & p{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        max-width: 519px;
+        margin-top: 40px;
+    }
+}
+
+.hero--wrap{
+        background-image: url('./images/hero.png');
+        background-size: auto auto;
+        background-repeat: no-repeat;
+        background-position: right;
+        padding-left: 60px;
+        padding-top: 168px;
+        padding-bottom: 168px;
+        
+}
+
+.hero--termine,
+.hero--works{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 193px;
+    height: 48px;
+    border-radius: 10px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+
+    transition-property: background-color, color;
+    transition-duration: 500ms;
+    transition-delay: 0;
+}
+
+.hero--termine{
+    background-color: #F1DD23;
+    border: 1.5px solid #F1DD23;
+    color: #0A0A0A;
+
+    &:hover,
+    :focus {
+        background-color: transparent;
+        color: #F1DD23;
+    }
+}
+
+.hero--works {
+    background-color: transparent;
+    border: 1.5px solid #FFFFFF;
+    color: #FFFFFF;
+    margin-left: 25px;
+
+    &:hover,
+    :focus {
+        background-color: #FFFFFF;
+        color: #0A0A0A;
+    }
+}
+
+.hero--links{
+    display: flex;
+    margin-top: 80px;
+}
