@@ -255,8 +255,6 @@
 <symbol id="minus" viewBox="0 0 256 32">
 <path
         fill="none"
-        stroke="#fff"
-        style="stroke: var(--color1, #fff)"
         stroke-linejoin="miter"
         stroke-linecap="round"
         stroke-miterlimit="4"
@@ -332,8 +330,6 @@
 <symbol id="plus-two" viewBox="0 0 32 32">
 <path
         fill="none"
-        stroke="#fff"
-        style="stroke: var(--color1, #fff)"
         stroke-linejoin="miter"
         stroke-linecap="round"
         stroke-miterlimit="4"
@@ -342,8 +338,6 @@
       />
 <path
         fill="none"
-        stroke="#fff"
-        style="stroke: var(--color1, #fff)"
         stroke-linejoin="miter"
         stroke-linecap="round"
         stroke-miterlimit="4"

@@ -6,9 +6,11 @@ import { ChaneLanguage } from './js/language'
 import { DropCall } from './js/drop-call'
 import { Cookies } from './js/cookies'
 import { Hero } from './js/hero'
+import { SectionQuestions } from './js/sectionQuestions'
 
 CloseNotificaton()
 ChaneLanguage()
 DropCall()
 Cookies()
 Hero()
+SectionQuestions()
