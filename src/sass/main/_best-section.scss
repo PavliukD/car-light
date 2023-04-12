@@ -1,0 +1,52 @@
+.section-best{
+    margin-top: 190px;
+    border-radius: 20px;
+
+    & h2{
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 56px;
+        text-transform: uppercase;
+        color: #F1DD23;
+
+        & span{
+            color: #FFFFFF;
+        }
+    }
+
+    &.section--services-more{
+        margin-top: 65px;
+        width: 137px;
+    }
+}
+
+.section-best .container{
+    padding-top: 96px;
+    padding-bottom: 96px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    & ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 00px;
+    }
+}
+
+.section-best--item{
+
+    & img{
+        width: 64px;
+        height: 64px;
+    }
+
+    & p{
+        font-style: medium;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        max-width: 180px;
+        margin-top: 25px;
+    }
+}

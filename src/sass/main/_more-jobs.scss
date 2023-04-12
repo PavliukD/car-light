@@ -26,6 +26,12 @@
     padding: 24px;
     background-color: #151617;
     border-radius: 20px;
+    border: 2px solid transparent;
+    border-end-end-radius: 20px;
+
+    transition-property: background-color, border;
+    transition-duration: 500ms;
+    transition-delay: 0;
 
     & h3{
         height: 56px;
@@ -58,10 +64,31 @@
         letter-spacing: 0.05em;
         color: #8A8A9C;
     }
+
+    & img{
+        transition-property: transform;
+        transition-duration: 500ms;
+        transition-delay: 0;
+    }
+
+    &:hover,
+    :focus {
+        border: 2px solid #FFFFFF1A;
+        border-radius: 20px;
+        background-color: #212223;
+
+        & img{
+            transform: scale(1.05);
+        }
+
+        
+    }
 }
 
 .section-more-jobs--image-wrap{
     position: relative;
+    border-radius: 10px;
+    overflow: hidden;
 
     & div{
         width: 32px;
@@ -74,6 +101,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 999;
 
         & svg{
             width: 13px;
@@ -84,6 +112,7 @@
             display: none;
         }
     }
+
 }
 
 .section-more-jobs--item .section--services-more{
@@ -143,5 +172,21 @@
         width: 27px;
         height: 27px;
         margin-right: 11px;
+        fill: none;
+        stroke: #FFFFFF;
+
+        transition-property: fill, stroke;
+        transition-duration: 500ms;
+        transition-delay: 0;
+
     }
+
+    .section-more-jobs--item:hover &{
+        & svg {
+                fill: #FFFFFF;
+                stroke: #212223;
+                ;
+            }
+    }
+                
 }

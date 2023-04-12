@@ -79,7 +79,6 @@
 </symbol>
 <symbol id="right" viewBox="0 0 32 32">
 <path
-        fill="none"
         stroke="#fff"
         style="stroke: var(--color1, #fff)"
         stroke-linejoin="miter"
@@ -89,9 +88,6 @@
         d="M28.929 16c0 6.095 0 9.142-1.893 11.036s-4.941 1.893-11.036 1.893c-6.095 0-9.142 0-11.036-1.893s-1.893-4.941-1.893-11.036c0-6.095 0-9.142 1.893-11.036s4.941-1.893 11.036-1.893c6.095 0 9.142 0 11.036 1.893s1.893 4.941 1.893 11.036z"
       />
 <path
-        fill="none"
-        stroke="#fff"
-        style="stroke: var(--color1, #fff)"
         stroke-linejoin="round"
         stroke-linecap="round"
         stroke-miterlimit="4"

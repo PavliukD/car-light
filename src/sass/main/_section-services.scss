@@ -55,9 +55,21 @@
         background-color: #151617;
         border-radius: 20px;
         max-height: 600px;
+        background-repeat: no-repeat;
 
         &:not(:first-child){
             margin-top: 40px;
+        }
+
+        &:nth-child(1){
+            background-image: url('./images/bg-light-1.png');
+        }
+        &:nth-child(2) {
+            background-image: url('./images/bg-light-2.png');
+        }
+        &:nth-child(3) {
+            background-position: right;
+            background-image: url('./images/bg-light-3.png');
         }
     }
 
