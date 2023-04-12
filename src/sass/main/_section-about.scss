@@ -1,0 +1,151 @@
+.section-about-light{
+    margin-top: 190px;
+
+    & h2{
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 56px;
+        color: #F1DD23;
+        text-transform: uppercase;
+        display: block;
+
+        & span{
+            color: #FFFFFF;
+            display: block;
+        }
+    }
+}
+
+.section-about-light--list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 55px;
+}
+
+.section-about-light--list-item{
+    background-color: #151617;
+    border-radius: 20px;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: max(248px) max(300px);
+    gap: 25px;
+    border: 2px solid transparent;
+
+    transition-property: background-color, border;
+    transition-duration: 500ms;
+    transition-delay: 0;
+
+    & h3{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        height: 84px;
+        margin-top: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        display: -webkit-box;
+        line-clamp: 3;
+        box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    & p{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        color: #8A8A9C;
+        margin-top: 15px;
+        height: 96px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        display: -webkit-box;
+        line-clamp: 4;
+        box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+
+    & img {
+        transition-property: transform;
+        transition-duration: 500ms;
+        transition-delay: 0;
+    }
+
+    &:hover,
+    :focus {
+        border: 2px solid #FFFFFF1A;
+        border-radius: 20px;
+        background-color: #212223;
+
+        & img {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.section-about-light--list-item .section--services-more{
+    margin-top: 35px;
+}
+
+.section-about-light--tag-list{
+    display: flex;
+
+    & li{
+        font-style: normal;
+        padding: 7px 8px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+
+        &:not(:first-child){
+            margin-left: 5px;
+        }
+
+        & span{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.section-about-light--image-wrap{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0;
+
+    & img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.section-about-light--star-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1DD23;
+
+
+
+    & svg{
+        width: 13px;
+        height: 13px;
+    }
+}
+
