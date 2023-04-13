@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 
-// let htmlPageNames = ['test'];
+// let htmlPageNames = ['offer'];
 // let multipleHtmlPlugins = htmlPageNames.map(name => {
 //   return new HtmlWebpackPlugin({
 //     template: `./src/${name}.html`, // relative path to the HTML files
@@ -14,7 +14,7 @@ const path = require('path');
 module.exports = {
     entry: './src/index.js',
     output: {
-        filename: 'main.js',
+        filename: "main.js",
         path: path.resolve(__dirname, 'build'),
         // assetModuleFilename: 'images/[name][ext][query]',
     },
@@ -62,7 +62,13 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            filename: 'index.html',
             template: 'src/index.html',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'offer.html',
+            template: 'src/offer.html',
             minify: false
         }),
         new MiniCssExtractPlugin({

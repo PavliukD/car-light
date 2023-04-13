@@ -1,0 +1,93 @@
+.page-title{
+    margin-top: 25px;
+    margin-bottom: 55px;
+
+    & h2{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        color: #FFFFFF;
+        margin-top: 25px;
+    }
+}
+
+.bread-crumbs{
+    display: flex;
+    align-items: center;
+
+    & svg{
+        width: 18px;
+        height: 18px;
+    }
+
+    & li{
+        display: flex;
+        align-items: center;
+
+        &:not(:first-child){
+            &::before{
+                content: '';
+                background-image: url('./images/_.png');
+                display: block;
+                width: 8px;
+                height: 8px;
+                color: #333333;
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    & a{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #8A8A9C;
+        display: flex;
+        align-items: center;
+
+        transition-property: color;
+        transition-duration: 500ms;
+        transition-delay: 0;
+
+        &:hover,
+        :focus{
+            color: #FFFFFF;
+        }
+    }
+}
+
+.page-title--navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-title--back{
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #8A8A9C;
+
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-delay: 0;
+
+    &:hover,
+    :focus{
+        color: #FFFFFF;
+    }
+
+    & svg{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,37 @@
+.offer-page .container{
+    
+}
+
+.offer-page--content{
+    & li{
+        display: grid;
+        grid-template-columns: max(306px) max(856px);
+        justify-content: space-between;
+
+        &:not(:first-child){
+            margin-top: 80px;
+        }
+    
+        & h3 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+        }
+
+        & p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+
+            &:not(:first-child){
+                margin-top: 40px;
+            }
+        }
+    }
+}
