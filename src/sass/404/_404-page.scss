@@ -1,5 +1,8 @@
+@import '../main/hero';
+
 .page-not-found{
     margin-top: 20px;
+    margin-bottom: 25px;
 
     & h2{
         font-style: normal;
@@ -20,4 +23,30 @@
         color: #8A8A9C;
         margin-top: 8px;
     }
+}
+
+.page-not-found .container{
+    padding-top: 208px;
+    padding-bottom: 208px;
+    background-color: #0A0A0A;
+    border-radius: 20px;
+    background-image: url('./images/giphy-4\ 1.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.page-not-found--buttons{
+    display: flex;
+    margin-top: 25px;
+}
+
+.page-not-found--back{
+    @extend .hero--works;
+    margin-left: 0;
+}
+
+.page-not-found--to-main{
+    @extend .hero--termine;
+    margin-left: 15px;
 }
