@@ -71,6 +71,11 @@ module.exports = {
             template: 'src/offer.html',
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            filename: 'security.html',
+            template: 'src/security.html',
+            minify: false
+        }),
         new MiniCssExtractPlugin({
             attributes: {
                 id: "target",
