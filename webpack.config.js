@@ -81,6 +81,11 @@ module.exports = {
             template: 'src/404.html',
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            filename: 'contacts.html',
+            template: 'src/contacts.html',
+            minify: false
+        }),
         new MiniCssExtractPlugin({
             attributes: {
                 id: "target",
