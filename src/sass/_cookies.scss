@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: minmax(100px , 728px) 1fr;
     align-items: center;
+    z-index: 999;
 
     &.hidden{
         display: none;

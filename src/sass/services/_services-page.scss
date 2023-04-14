@@ -1,0 +1,106 @@
+.services-page{
+    margin-top: 55px;
+    margin-bottom: 80px;
+}
+
+.services-page--bg-image{
+    display: block;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    filter: blur(20px);
+
+    transition-property: opacity;
+    transition-duration: 500ms;
+    transition-delay: 0;
+}
+
+.services-page--list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+}
+
+.services-page--item{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    background-color: #151617;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    transition-property: border;
+    transition-duration: 500ms;
+    transition-delay: 0;
+
+    &:hover,
+    :focus {
+        border: 2px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+.services-page--item:hover .services-page--bg-image,
+.services-page--item:focus .services-page--bg-image{
+    opacity: 1;
+}
+
+.services-page--service-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+
+    & div{
+        max-width: 266px;
+        height: 320px;
+        padding-left: 40px;
+        position: relative;
+
+        &>.section--services-more{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    & h3{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+    }
+
+    & p{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        color: #8A8A9C;
+        margin-top: 15px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        display: -webkit-box;
+        line-clamp: 4;
+        box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+
+    & img{
+        display: block;
+        height: 100%;
+        width: auto;
+        position: absolute;
+        right: 0;
+        z-index: 22;
+
+    }
+}
