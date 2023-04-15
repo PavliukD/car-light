@@ -1,0 +1,17 @@
+.sort-page .section-about-light--list-item{
+    background-color: #0A0A0A;
+
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-delay: 0;
+
+    &:hover,
+    :focus{
+        background-color: #FFFFFF1A;
+    }
+}
+
+.sort-page .section-about-light--list{
+    margin: 0;
+    margin-top: 25px;
+}

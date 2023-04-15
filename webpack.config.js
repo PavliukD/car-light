@@ -91,6 +91,11 @@ module.exports = {
             template: 'src/services.html',
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            filename: 'sort.html',
+            template: 'src/sort.html',
+            minify: false
+        }),
         new MiniCssExtractPlugin({
             attributes: {
                 id: "target",
