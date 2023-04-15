@@ -4,4 +4,30 @@
     margin: auto;
     padding-left: 72px;
     padding-right: 72px;
+    background-color: #151617;
+
+    &.header--info{
+        background-color: #0A0A0A;
+    }
 }
+
+.main .container{
+    background-color: #0A0A0A;
+}
+
+.header--notification .container{
+    background-color: #DB4141;
+}
+
+.page-title .container{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.services-page .container,
+.offer-page .container,
+.contacts-page .container{
+    padding-top: 55px;
+    padding-bottom: 80px;
+}
+

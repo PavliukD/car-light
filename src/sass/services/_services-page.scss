@@ -1,6 +1,5 @@
 .services-page{
-    margin-top: 55px;
-    margin-bottom: 80px;
+
 }
 
 .services-page--bg-image{
@@ -19,6 +18,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
+
+        &:not(:first-child){
+            margin-top: 80px;
+        }
 }
 
 .services-page--item{
@@ -26,17 +29,18 @@
     border-radius: 20px;
     overflow: hidden;
     border: 2px solid transparent;
-    background-color: #151617;
+    background-color: #0A0A0A;
     padding-top: 40px;
     padding-bottom: 40px;
 
-    transition-property: border;
+    transition-property: border, background-color;
     transition-duration: 500ms;
     transition-delay: 0;
 
     &:hover,
     :focus {
         border: 2px solid rgba(255, 255, 255, 0.1);
+        background-color: #151617;
     }
 }
 

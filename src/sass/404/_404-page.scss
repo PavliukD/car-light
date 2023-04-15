@@ -1,8 +1,11 @@
 @import '../main/hero';
 
 .page-not-found{
-    margin-top: 20px;
-    margin-bottom: 25px;
+
+    &.container{
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
 
     & h2{
         font-style: normal;
@@ -25,9 +28,10 @@
     }
 }
 
-.page-not-found .container{
+.page-not-found--content{
     padding-top: 208px;
     padding-bottom: 208px;
+    padding-left: 86px;
     background-color: #0A0A0A;
     border-radius: 20px;
     background-image: url('./images/giphy-4\ 1.gif');

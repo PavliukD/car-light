@@ -1,5 +1,6 @@
 footer .container{
     display: block;
+    border-radius: 0 0 20px 20px;
 
 }
 
@@ -7,10 +8,14 @@ footer .container{
     display: grid;
     grid-template-columns: repeat(3, fit-content);
     grid-auto-rows: fit-content;
-    background-color: #151617;
+    background-color: #0A0A0A;
     border-radius: 20px;
     padding: 86px;
     justify-content: space-between;
+}
+
+.main .footer--wrap{
+    background-color: #151617;
 }
 
 .footer--logo-wrap{
