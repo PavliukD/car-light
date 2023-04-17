@@ -1,7 +1,7 @@
 .sort-page .section-about-light--list-item{
     background-color: #0A0A0A;
 
-    transition-property: background-color;
+    transition-property: background-color, border;
     transition-duration: 500ms;
     transition-delay: 0;
 
@@ -14,4 +14,49 @@
 .sort-page .section-about-light--list{
     margin: 0;
     margin-top: 25px;
+}
+
+
+.sort-page--title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #8A8A9C;
+}
+
+.sort-page .section-services--more-services{
+    &.first{
+        margin-bottom: 80px;
+    }
+}
+
+.page-title--tag{
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 16px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & button{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #0A0A0A;
+        border-radius: 5px;
+        background-color: transparent;
+        margin-left: 6px;
+    }
+
+    & svg{
+        width: 5px;
+        height: 5px;
+        stroke: #0A0A0A;
+    }
 }

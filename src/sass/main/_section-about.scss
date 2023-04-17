@@ -101,12 +101,17 @@
 
 .section-about-light--tag-list{
     display: flex;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
 
     & li{
+        flex-shrink: 0;
         font-style: normal;
         padding: 7px 8px;
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 5px;
+        
 
         &:not(:first-child){
             margin-left: 5px;
@@ -119,6 +124,33 @@
             letter-spacing: 0.02em;
             color: #FFFFFF;
         }
+    }
+
+    &::before{
+        content: "";
+        display: block;
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+
+        transition-property: background-image;
+        transition-duration: 500ms;
+        transition-delay: 0;
+    }
+}
+
+.section-about-light--list-item:hover .section-about-light--tag-list,
+.section-about-light--list-item:focus .section-about-light--tag-list{
+    &::before{
+    background-image: linear-gradient(270deg, #212223 0%, rgba(0, 0, 0, 0) 100%);
+
+    transition-property: background-image;
+    transition-duration: 500ms;
+    transition-delay: 0;
     }
 }
 
@@ -140,6 +172,9 @@
     align-items: center;
     justify-content: center;
     background-color: #F1DD23;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
 
 
 
