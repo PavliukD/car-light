@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car-Light</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+
+<body>
+    <header>
+    <div class="header--notification">
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna
+                aliqua. Ut enim ad minim
+                <a href="">veniam</a>
+            </p>
+            <button class="header--notification-button">
+                <svg>
+                    <use href="images/icons.svg#cross"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="container header--info">
+        <p>
+            <svg class="header--info-icon">
+                <use href="images/icons.svg#information"></use>
+            </svg>
+            Приймаємо клієнтів за попереднім записом
+        </p>
+        <p>
+            <svg class="header--graphic-icon">
+                <use href="images/icons.svg#user"></use>
+            </svg>
+            Працюємо: Пн-Сб - 10:00-20:00 / Нд - вихідний
+        </p>
+        <p>
+            <svg class="header--phone-icon">
+                <use href="images/icons.svg#phone"></use>
+            </svg>
+            <a href="tel: +380672747070">+38 (067) 274-70-70</a>
+            <span> / </span>
+            <a href="tel: +380632747070">+38 (063) 274-70-70</a>
+        </p>
+    </div>
+    <div class="container header--main">
+        <a href="/">
+            <svg class="header--logo">
+                <use href="images/icons.svg#logo"></use>
+            </svg>
+        </a>
+        <nav>
+            <ul class="header--nav-list">
+                <li>
+                    <a href="" class="header--link active">Головна</a>
+                </li>
+                <li>
+                    <a href="./services.html" class="header--link">Послуги</a>
+                </li>
+                <li>
+                    <a href="" class="header--link">Наші роботи</a>
+                </li>
+                <li class="header--blog-links">
+                    <a href="" class="header--blog-link header--link">
+                        <svg class="header--blog-icon">
+                            <use href="images/icons.svg#plus-one"></use>
+                        </svg>
+                        Блог
+                    </a>
+                    <ul class="header--blog-list">
+                        <li>
+                            <a href="">Усі теми</a>
+                        </li>
+                        <li>
+                            <a href="">Світло</a>
+                        </li>
+                        <li>
+                            <a href="">Електрика</a>
+                        </li>
+                        <li>
+                            <a href="">Проводка</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./contacts.html" class="header--link">Контакти</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header--language">
+            <div>
+                <svg>
+                    <use href="images/icons.svg#down"></use>
+                </svg>
+                <span>UA</span>
+            </div>
+            <ul class="hidden">
+                <li class="header--language-variant active">UA</li>
+                <li class="header--language-variant">ENG</li>
+                <li class="header--language-variant">RU</li>
+            </ul>
+        </div>
+        <button class="header--login">
+            <svg>
+                <use href="images/icons.svg#user"></use>
+            </svg>
+        </button>
+        <button class="header--termine">
+            Записатися
+        </button>
+    </div>
+</header>
+    <div class="page-title">
+    <div class="container">
+        <div class="page-title--navigation">
+            <ul class="bread-crumbs">
+                <li>
+                    <a href="/">
+                        <svg>
+                            <use href="images/icons.svg#home"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">Наші роботи</a>
+                </li>
+            </ul>
+            <a href="" class="page-title--back">
+                <svg>
+                    <use href="images/icons.svg#left"></use>
+                </svg>
+                Назад
+            </a>
+        </div>
+        <h2>Наші роботи</h2>
+    </div>
+</div>
+<div class="catalog-page">
+    <div class="container">
+        <div class="catalog-page--filter">
+            <button class="catalog-page--fiter-theme">
+                <div>
+                    <span>Фільтр</span>
+                    <p>Сортувати за тематикою</p>
+                </div>
+                <div class="section-questions--icon-wrap">
+                    <svg class="section-questions--icon">
+                        <use href="images/icons.svg#plus-two" class="section-questions--icon-plus"></use>
+                        <use href="images/icons.svg#minus" class="section-questions--icon-minus"></use>
+                    </svg>
+                </div>
+            </button>
+            <button>
+                <div>
+                    <span>Фільтр</span>
+                    <p>За маркою</p>
+                </div>
+                <div class="section-questions--icon-wrap">
+                    <svg class="section-questions--icon">
+                        <use href="images/icons.svg#plus-two" class="section-questions--icon-plus"></use>
+                        <use href="images/icons.svg#minus" class="section-questions--icon-minus"></use>
+                    </svg>
+                </div>
+            </button>
+            <button class="catalog-page--clear-filter">
+                <svg class="">
+                    <use href="images/icons.svg#refresh" class="section-questions--icon-plus"></use>
+                </svg>
+                <p id="catalog-page--clear-filter-text">Очистити усі фільтри</p>
+            </button>
+            <ul class="catalog-page--themes-list">
+                <li>
+                    <button>
+                        <p>Встановлення біксенонових лінз
+                            у фари автомобіля</p>
+                        <img src="images/bg-img-01.png" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <p>Заміна скла автомобільних
+                            фар</p>
+                        <img src="images/bg-img-02.png" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <p>Регулювання фар на лазерно-оптичному обладнанні</p>
+                        <img src="images/bg-img-03.png" alt="" class="correct">
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <p>Послуги автоелектрика</p>
+                        <img src="images/bg-img-05.png" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <p>Ремонт тріщин фар автомобіля</p>
+                        <img src="images/bg-img-06.png" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <p>Led технології центрального стоп сигналу (CHMSL)</p>
+                        <img src="images/bg-img-04.png" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <p>Тюнінг фар автомобіля</p>
+                        <img src="images/bg-img-09.png" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <p>Заміна перегорілих
+                            лам автомобіля</p>
+                        <img src="images/bg-img-07.png" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <p>Ремонт
+                            Led оптики автомобіля</p>
+                        <img src="images/bg-img-08.png" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <p>Герметизація автомобільних фар</p>
+                        <img src="images/bg-img-10.png" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <p>Профілактика фар автомобіля</p>
+                        <img src="images/bg-img-11.png" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <p>Обклеювання захисною плівкою фар</p>
+                        <img src="images/bg-img-12.png" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <p>Полірування
+                            та шліфування автомобільних фар</p>
+                        <img src="images/bg-img-13.png" alt="">
+                    </button>
+                </li>
+                <li>
+                    <a href="">
+                        <p>Усі роботи
+                        <br>Car-light.design</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="catalog-page--marks-wrap">
+                <input type="text" placeholder="Марка автомобіля">
+                <span>Топ пошуку</span>
+                <ul class="catalog-page--auto-list">
+                    <li>
+                        <button>
+                            <p>BMW</p>
+                            <svg>
+                                <use href="images/icons.svg#bmw"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h3 class="sort-page--title">Усі роботи</h3>
+        <ul class="section-about-light--list">
+            <li class="section-about-light--list-item">
+                <div class="section-about-light--text-wrap">
+                    <ul class="section-about-light--tag-list">
+                        <li>
+                            <span>Шліфування та полірування автомобільних фар</span>
+                        </li>
+        
+                    </ul>
+                    <h3>Самостійне полірування фар, наслідки</h3>
+                    <p>Шановні автовласники, ми також хочемо заощадити ваші фінансові ресурси та час. Хочемо щоб у вас було все
+                        добре з
+                        автосвітлом,</p>
+                    <a href="" class="section--services-more">Детальніше</a>
+                </div>
+                <div class="section-about-light--image-wrap">
+                    <img src="images/bg-1.png" alt="">
+                </div>
+            </li>
+            <li class="section-about-light--list-item">
+                <div class="section-about-light--text-wrap">
+                    <ul class="section-about-light--tag-list">
+                        <li>
+                            <span>Заміна скла фар автомобіля</span>
+                        </li>
+                    </ul>
+                    <h3>Заміна автоламп</h3>
+                    <p>Перегоріла лампочка в автомобілі, і це дрібниця відповість більшість автовласників, навіщо відвідувати
+                        сервіс автосвітла
+                        або СТО, а також чекати планового ТО автомобіля, де з низкою робіт з обслуговування автомобіля,
+                        здійснять фахівці і
+                        заміну автолампи, що перегоріла.
+        
+                        Адже просто більшість автовласників під час виходу з ладу автолампи вирушать до спеціалізованого
+                        магазину, де
+                        представлені автомобільні лампи у найширшому виборі.</p>
+                    <a href="" class="section--services-more">Детальніше</a>
+                </div>
+                <div class="section-about-light--image-wrap">
+                    <img src="images/bg-2.png" alt="">
+                </div>
+            </li>
+            <li class="section-about-light--list-item">
+                <div class="section-about-light--text-wrap">
+                    <ul class="section-about-light--tag-list">
+                        <li>
+                            <span>Профілактика автомобільних фар</span>
+                        </li>
+                    </ul>
+                    <h3>Звуковий парктронік або парктронік із використанням камер</h3>
+                    <p>Сьогодні після чергової встановленої паркувальної системи допомоги водієві вирішили висловити свою думку
+                        щодо системи
+                        паркування.
+        
+                        Що краще звуковий парктронік чи камера заднього виду?
+        
+                        Ось одне із питань, яке доводиться постійно чути від водіїв, які вирішили встановити хоч щось, для
+                        надання допомоги при
+                        паркуванні, на автомобілі заднім ходом.</p>
+                    <a href="" class="section--services-more">Детальніше</a>
+                </div>
+                <div class="section-about-light--image-wrap">
+                    <img src="images/bg-3.png" alt="">
+                </div>
+            </li>
+            <li class="section-about-light--list-item">
+                <div class="section-about-light--text-wrap">
+                    <ul class="section-about-light--tag-list">
+                        <li>
+                            <span>Заміна скла фар автомобіля</span>
+                        </li>
+                    </ul>
+                    <h3>Класифікація всіх встановлюваних ламп у легкових, вантажних автомобілях та мотоциклах</h3>
+                    <p>При цьому є два шляхи вирішення цієї проблеми:
+                        • Перший шлях – при виявленні несправності зі світлом автомобіля вирушить у спеціалізоване СТО. Де
+                        фахівці витягнуть
+                        лампу, що перегоріла, визначать її маркування і встановлять аналогічну.
+        
+                        • Другий шлях – заміна лампочок власними силами. Виймаємо лампу, потім із нею вирушаємо купувати новою.
+                    </p>
+                    <a href="" class="section--services-more">Детальніше</a>
+                </div>
+                <div class="section-about-light--image-wrap">
+                    <img src="images/bg-4.png" alt="">
+                </div>
+            </li>
+            <li class="section-about-light--list-item">
+                <div class="section-about-light--text-wrap">
+                    <ul class="section-about-light--tag-list">
+                        <li>
+                            <span>Встановлення лінз у фари</span>
+                        </li>
+                    </ul>
+                    <h3>Регулировка фар на лазерно-оптическом оборудование</h3>
+                    <p>Точне налаштування роботи фар автомобіля за допомогою оптико-механічного приладу контролю та регулювання
+                        світла фар
+                        PH2066/D/L2W.T. Engineering S.r.l.</p>
+                    <a href="" class="section--services-more">Детальніше</a>
+                </div>
+                <div class="section-about-light--image-wrap">
+                    <img src="images/bg-5.png" alt="">
+                </div>
+            </li>
+            <li class="section-about-light--list-item">
+                <div class="section-about-light--text-wrap">
+                    <ul class="section-about-light--tag-list">
+                        <li class="section-about-light--star-icon">
+                            <svg>
+                                <use href="images/icons.svg#star"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <span>Заміна скла фар автомобіля</span>
+                        </li>
+                    </ul>
+                    <h3>Чи потрібно міняти біксенонові лінзи?</h3>
+                    <p>Установка фар – проста процедура, з якою може впоратися більшість автовласників, але ремонт фар потребує
+                        деяких знань
+                        деталей автомобільної оптики та нюансів ремонту. як вибрати температуру лампи і т.д.</p>
+                    <a href="" class="section--services-more">Детальніше</a>
+                </div>
+                <div class="section-about-light--image-wrap">
+                    <img src="images/bg-6.png" alt="">
+                </div>
+            </li>
+            <li class="section-about-light--list-item">
+                <div class="section-about-light--text-wrap">
+                    <ul class="section-about-light--tag-list">
+                        <li>
+                            <span>Шліфування та полірування автомобільних фар</span>
+                        </li>
+            
+                    </ul>
+                    <h3>Самостійне полірування фар, наслідки</h3>
+                    <p>Шановні автовласники, ми також хочемо заощадити ваші фінансові ресурси та час. Хочемо щоб у вас було все
+                        добре з
+                        автосвітлом,</p>
+                    <a href="" class="section--services-more">Детальніше</a>
+                </div>
+                <div class="section-about-light--image-wrap">
+                    <img src="images/bg-1.png" alt="">
+                </div>
+            </li>
+            <li class="section-about-light--list-item">
+                <div class="section-about-light--text-wrap">
+                    <ul class="section-about-light--tag-list">
+                        <li>
+                            <span>Заміна скла фар автомобіля</span>
+                        </li>
+                    </ul>
+                    <h3>Заміна автоламп</h3>
+                    <p>Перегоріла лампочка в автомобілі, і це дрібниця відповість більшість автовласників, навіщо відвідувати
+                        сервіс автосвітла
+                        або СТО, а також чекати планового ТО автомобіля, де з низкою робіт з обслуговування автомобіля,
+                        здійснять фахівці і
+                        заміну автолампи, що перегоріла.
+            
+                        Адже просто більшість автовласників під час виходу з ладу автолампи вирушать до спеціалізованого
+                        магазину, де
+                        представлені автомобільні лампи у найширшому виборі.</p>
+                    <a href="" class="section--services-more">Детальніше</a>
+                </div>
+                <div class="section-about-light--image-wrap">
+                    <img src="images/bg-2.png" alt="">
+                </div>
+            </li>
+            <li class="section-about-light--list-item">
+                <div class="section-about-light--text-wrap">
+                    <ul class="section-about-light--tag-list">
+                        <li>
+                            <span>Профілактика автомобільних фар</span>
+                        </li>
+                    </ul>
+                    <h3>Звуковий парктронік або парктронік із використанням камер</h3>
+                    <p>Сьогодні після чергової встановленої паркувальної системи допомоги водієві вирішили висловити свою думку
+                        щодо системи
+                        паркування.
+            
+                        Що краще звуковий парктронік чи камера заднього виду?
+            
+                        Ось одне із питань, яке доводиться постійно чути від водіїв, які вирішили встановити хоч щось, для
+                        надання допомоги при
+                        паркуванні, на автомобілі заднім ходом.</p>
+                    <a href="" class="section--services-more">Детальніше</a>
+                </div>
+                <div class="section-about-light--image-wrap">
+                    <img src="images/bg-3.png" alt="">
+                </div>
+            </li>
+            <li class="section-about-light--list-item">
+                <div class="section-about-light--text-wrap">
+                    <ul class="section-about-light--tag-list">
+                        <li>
+                            <span>Заміна скла фар автомобіля</span>
+                        </li>
+                    </ul>
+                    <h3>Класифікація всіх встановлюваних ламп у легкових, вантажних автомобілях та мотоциклах</h3>
+                    <p>При цьому є два шляхи вирішення цієї проблеми:
+                        • Перший шлях – при виявленні несправності зі світлом автомобіля вирушить у спеціалізоване СТО. Де
+                        фахівці витягнуть
+                        лампу, що перегоріла, визначать її маркування і встановлять аналогічну.
+            
+                        • Другий шлях – заміна лампочок власними силами. Виймаємо лампу, потім із нею вирушаємо купувати новою.
+                    </p>
+                    <a href="" class="section--services-more">Детальніше</a>
+                </div>
+                <div class="section-about-light--image-wrap">
+                    <img src="images/bg-4.png" alt="">
+                </div>
+            </li>
+            <li class="section-about-light--list-item">
+                <div class="section-about-light--text-wrap">
+                    <ul class="section-about-light--tag-list">
+                        <li>
+                            <span>Встановлення лінз у фари</span>
+                        </li>
+                    </ul>
+                    <h3>Регулировка фар на лазерно-оптическом оборудование</h3>
+                    <p>Точне налаштування роботи фар автомобіля за допомогою оптико-механічного приладу контролю та регулювання
+                        світла фар
+                        PH2066/D/L2W.T. Engineering S.r.l.</p>
+                    <a href="" class="section--services-more">Детальніше</a>
+                </div>
+                <div class="section-about-light--image-wrap">
+                    <img src="images/bg-5.png" alt="">
+                </div>
+            </li>
+            <li class="section-about-light--list-item">
+                <div class="section-about-light--text-wrap">
+                    <ul class="section-about-light--tag-list">
+                        <li class="section-about-light--star-icon">
+                            <svg>
+                                <use href="images/icons.svg#star"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <span>Заміна скла фар автомобіля</span>
+                        </li>
+                    </ul>
+                    <h3>Чи потрібно міняти біксенонові лінзи?</h3>
+                    <p>Установка фар – проста процедура, з якою може впоратися більшість автовласників, але ремонт фар потребує
+                        деяких знань
+                        деталей автомобільної оптики та нюансів ремонту. як вибрати температуру лампи і т.д.</p>
+                    <a href="" class="section--services-more">Детальніше</a>
+                </div>
+                <div class="section-about-light--image-wrap">
+                    <img src="images/bg-6.png" alt="">
+                </div>
+            </li>
+        </ul>
+        <ul class="catalog-page--pages-nav">
+            <li>
+                <button>
+                    <svg>
+                        <use href="images/icons.svg#preworius"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="active">
+                    1
+                </button>
+            </li>
+            <li>
+                <button>
+                    2
+                </button>
+            </li>
+            <li>
+                <button>
+                    3
+                </button>
+            </li>
+            <li>
+                <button>
+                    ...
+                </button>
+            </li>
+            <li>
+                <button>
+                    999
+                </button>
+            </li>
+            <li>
+                <button>
+                    <svg>
+                        <use href="images/icons.svg#next"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
+    <footer>
+    <div class="container">
+        <div class="footer--wrap">
+            <div class="footer--logo-wrap footer--box-1">
+                <svg class="footer--logo">
+                    <use href="images/icons.svg#logo"></use>
+                </svg>
+                <p class="footer--text">
+                    Модернізація, ремонтні роботи автомобільного світла та оптики. Весь спектр післягарантійного
+                    обслуговування та ремонту
+                    будь-якої складності
+                </p>
+            </div>
+            <div class="footer--box-2">
+                <p class="footer--text">Додаткова інформація
+                    за телефонами:</p>
+                <ul class="footer--contacts-list">
+                    <li>
+                        <a href="tel:+380672747070" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            +38 (067) 274-70-70
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+380632747070" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            +38 (063) 274-70-70
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer--box-3">
+                <div class="footer--group-title">
+                    <!-- <div class="footer--icon-wrap">
+                        <svg class="footer--icon-cross">
+                            <use href="./images/icons.svg#plus-one"></use>
+                        </svg>
+                        <img src="./images/+.svg" alt="" class="footer--icon-minus">
+                    </div> -->
+                    <h3>Сторінки</h3>
+                </div>
+                <ul class="footer--list">
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Головна
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Послуги
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Наші роботи
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Автосвітло
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Електрика
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./contacts.html" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Контакти
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer--box-4">
+                <div class="footer--group-title">
+                    <!-- <div class="footer--icon-wrap">
+                        <svg class="footer--icon-cross">
+                            <use href="./images/icons.svg#plus-one"></use>
+                        </svg>
+                        <img src="./images/+.svg" alt="" class="footer--icon-minus">
+                    </div> -->
+                    <h3>Ми у мережі</h3>
+                </div>
+                <ul class="footer--list">
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Tik-Tok
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer--box-5">
+                <div class="footer--group-title">
+                    <!-- <div class="footer--icon-wrap">
+                        <svg class="footer--icon-cross">
+                            <use href="./images/icons.svg#plus-one"></use>
+                        </svg>
+                        <img src="./images/+.svg" alt="" class="footer--icon-minus">
+                    </div> -->
+                    <h3>Послуги</h3>
+                </div>
+                <ul class="footer--list">
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Заміна скла авто фар
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Регулювання фар лазерно-оптичним обладнанням
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Led технології центального стоп сигналу (CHMSL)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Полірування та шліфування авто фар
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Послуги автоелектрика
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Ремонт тріщин фар
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Заміна перегорілих ламп
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Ремонт Led оптики
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Тюнінг авто фар
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Герметизація авто фар
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Обклеювання захисною плівкою фар
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Встановлення біксенонових лінз
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="footer--link">
+                            <div class="footer--icon-wrap">
+                                <svg class="footer--icon-cross">
+                                    <use href="images/icons.svg#plus-one"></use>
+                                </svg>
+                                <img src="images/+.svg" alt="" class="footer--icon-minus">
+                            </div>
+                            Профілактика авто фари
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer--box-6">
+                <p class="footer--copyright">© All rights reserved Car-lights design</p>
+                <a href="./offer.html" class="footer--link">
+                    <div class="footer--icon-wrap">
+                        <svg class="footer--icon-cross">
+                            <use href="images/icons.svg#plus-one"></use>
+                        </svg>
+                        <img src="images/+.svg" alt="" class="footer--icon-minus">
+                    </div>
+                    Публічна оферта
+                </a>
+                <a href="./security.html" class="footer--link">
+                    <div class="footer--icon-wrap">
+                        <svg class="footer--icon-cross">
+                            <use href="images/icons.svg#plus-one"></use>
+                        </svg>
+                        <img src="images/+.svg" alt="" class="footer--icon-minus">
+                    </div>
+                    Політика конфіденційності
+                </a>
+                <a href="" class="footer--top-button">
+                    <svg class="footer--icon-up">
+                        <use href="images/icons.svg#arrow-up"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <div class="cookies">
+    <div class="cookies--text-wrap">
+        <h3>
+            <img src="images/cookie.png" alt="">
+            Ми цінуємо вашу конфіденційність
+        </h3>
+        <p>
+            Щоб надати вам кращий сервіс, ми використовуємо файли cookie. Ці файли cookie використовуються для забезпечення
+            належної
+            роботи сайту (функціональні та файли cookie в строго необхідній категорії).
+        </p>
+        <p>Ви можете ознайомитись з нашою <a href="">Політика конфіденційності</a></p>
+    </div>
+    <div class="cookies--buttons">
+        <button class="cookies--accept">Прийняти</button>
+        <button class="cookies--reject">Відхилити</button>
+    </div>
+</div>
+    <div class="backdrop hidden">
+    <div class="drop-call">
+        <div>
+            <h3>Замовити дзвінок</h3>
+            <p>Наш менеджер зв'яжеться з вами найближчим часом</p>
+            <form action="">
+                <input type="text" placeholder="Ім'я">
+                <input type="text" placeholder="Номер телефону">
+            </form>
+            <div class="drop-call--buttons">
+                <button class="drop-call--order">Замовити дзвінок</button>
+                <button class="drop-call--close">Закрити</button>
+            </div>
+        </div>
+        <img src="images/phone.png" alt="">
+    </div>
+</div>
+    <script src="main.js"></script>
+</body>
+
+</html>

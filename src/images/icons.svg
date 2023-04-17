@@ -265,8 +265,6 @@
 <symbol id="next" viewBox="0 0 16 32">
 <path
         fill="none"
-        stroke="#8a8a9c"
-        style="stroke: var(--color4, #8a8a9c)"
         stroke-linejoin="round"
         stroke-linecap="round"
         stroke-miterlimit="4"
