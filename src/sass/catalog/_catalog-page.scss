@@ -227,12 +227,16 @@
 
     & input{
         width: 100%;
-        padding: 20px 32px 32px;
-        background-color: #212223;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
         outline: none;
+        border: none;
+        background-color: transparent;
         color: #FFFFFF;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        border-bottom: 1.5px solid #ACACAC;
 
         &::placeholder{
             font-style: normal;
@@ -265,6 +269,8 @@
     & li {
 
         border-radius: 10px;
+        overflow: hidden;
+        position: relative;
 
         & button {
             padding: 0;
@@ -308,6 +314,11 @@
             border: 2px solid rgba(255, 255, 255, 0.1);
             border-radius: 10px;
             text-align: center;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
 
             transition-property: background-color;
             transition-duration: 500ms;
@@ -317,5 +328,50 @@
                 background-color: transparent;
             }
         }
+
+        & svg{
+            width: 56px;
+            height: 56px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -5px;
+        }
+    }
+}
+
+.catalog-page--input-wrap{
+    padding: 20px 32px 32px;
+    background-color: #212223;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.catalog-page--filter-notification{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background-color: #212223;
+
+
+    & p{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        max-width: 480px;
+    }
+
+    & img{
+        width: 47px;
+        height: 42px;
     }
 }
