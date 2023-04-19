@@ -104,6 +104,7 @@
     flex-shrink: 0;
     overflow: hidden;
     position: relative;
+    align-items: center;
 
     & li{
         flex-shrink: 0;
@@ -113,8 +114,8 @@
         border-radius: 5px;
         
 
-        &:not(:first-child){
-            margin-left: 5px;
+        &:not(:last-child){
+            margin-right: 5px;
         }
 
         & span{
@@ -181,6 +182,10 @@
     & svg{
         width: 13px;
         height: 13px;
+    }
+
+    &.hidden{
+        display: none;
     }
 }
 

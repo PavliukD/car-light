@@ -1,0 +1,39 @@
+.blog-page-cathegories{
+    display: flex;
+    margin-top: 55px;
+
+    & li{
+        &:not(:last-child){
+            margin-right: 24px;
+        }
+    }
+
+    & button{
+        padding: 9px 14px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #333333;
+        background-color: transparent;
+        border: none;
+
+        &.active{
+            color: #FFFFFF;
+            border-bottom: 2px solid #F1DD23;
+        }
+    }
+}
+
+.blog-page .section-about-light--list{
+    margin-top: 25px;
+}
+
+.blog-page .sort-page--title{
+    margin-top: 80px;
+
+    &.first{
+        margin-top: 55px;
+    }
+}

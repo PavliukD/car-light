@@ -101,6 +101,11 @@ module.exports = {
             template: 'src/catalog.html',
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            filename: 'blog.html',
+            template: 'src/blog.html',
+            minify: false
+        }),
         new MiniCssExtractPlugin({
             attributes: {
                 id: "target",
