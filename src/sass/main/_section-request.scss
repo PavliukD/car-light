@@ -108,14 +108,19 @@
     letter-spacing: 0.02em;
     color: #8A8A9C;
 
-    & span{
-        color: #F1DD23;
-    }
+    // & span{
+       
+    // }
 
     & a{
         color: #F1DD23;
         text-decoration: underline;
     }
+}
+
+.section-request--legal #text-star{
+    color: #F1DD23;
+    display: inline;
 }
 
 .section-request--submit{
