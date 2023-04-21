@@ -3,13 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 
 // let htmlPageNames = ['offer'];
-// let multipleHtmlPlugins = htmlPageNames.map(name => {
-//   return new HtmlWebpackPlugin({
-//     template: `./src/${name}.html`, // relative path to the HTML files
-//     filename: `${name}.html`, // output HTML files
-//     chunks: [`${name}`] // respective JS files
-//   })
-// });
+
 
 module.exports = {
     entry: './src/index.js',
@@ -109,6 +103,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'blog-article.html',
             template: 'src/blog-article.html',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'service.html',
+            template: 'src/service.html',
             minify: false
         }),
         new MiniCssExtractPlugin({
