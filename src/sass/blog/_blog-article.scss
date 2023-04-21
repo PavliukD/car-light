@@ -8,6 +8,7 @@
         height: auto;
         max-height: 600px;
         object-fit: cover;
+        
     }
 }
 
@@ -262,4 +263,15 @@
     max-height: 300px;
     overflow: hidden;
     border-radius: 10px;
+    position: relative;
+
+}
+
+
+.blog-article--comleted-works-cart-image-wrap .section-about-light--star-icon{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    border-radius: 5px;
+    z-index: 55;
 }
