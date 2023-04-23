@@ -380,8 +380,9 @@
     padding: 24px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-
+    background-color: #0A0A0A;
+    border-radius: 20px;
+    margin-bottom: 80px;
 }
 
 .catalog-page--hero-text{

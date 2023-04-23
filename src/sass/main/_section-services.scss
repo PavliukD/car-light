@@ -63,9 +63,11 @@
 
         &:nth-child(1){
             background-image: url('./images/bg-light-1.png');
+            background-position: right;
         }
         &:nth-child(2) {
             background-image: url('./images/bg-light-2.png');
+            z-index: 0;
         }
         &:nth-child(3) {
             background-position: right;
@@ -106,10 +108,11 @@
     }
 
     & img{
-        max-width: 100%;
+        max-width: 637px;
         max-height: 600px;
         width: auto;
         height: fit-content;
+
     }
 }
 
