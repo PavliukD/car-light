@@ -1,4 +1,6 @@
-@import '../footer';
+.cabinet--page{
+    padding-bottom: 80px;
+}
 
 .cabinet--page-section-title{
     font-style: normal;
@@ -16,6 +18,10 @@
         grid-row-start: 3;
         grid-row-end: 4;
         margin-top: 56px;
+    }
+
+    &.section-margin{
+        margin-top: 80px;
     }
 }
 
@@ -139,6 +145,15 @@
     grid-column-start: 3;
     grid-column-end: 5;
     margin-top: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & svg{
+        width: 24px;
+        height: 24px;
+        fill: transparent;
+    }
 }
 
 .cabinet--page-button-add-car{
@@ -158,6 +173,29 @@
     background-color: #212223;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition-property: border;
+    transition-duration: 500ms;
+    transition-delay: 0;
+
+    &:hover{
+        border: 1px solid #FFFFFF;
+    }
+}
+
+.cabinet--page-button-add-car:hover p,
+.cabinet--page-user-add:hover p{
+    color: #FFFFFF
+}
+
+.cabinet--page-button-add-car:hover .cabinet--page-button-icon,
+.cabinet--page-user-add:hover .cabinet--page-button-icon{
+    fill: #8A8A9C;
+
+    
 }
 
 .cabinet--page-add-link{
@@ -174,4 +212,72 @@
         margin-left: 5px;
     }
     
+}
+
+.cabinet--page-add-text-wrap{
+    display: flex;
+    flex-direction: column;
+
+    & p{
+        display: inline-block;
+        width: fit-content;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: #8A8A9C;
+        margin-bottom: 5px;
+
+        transition-property: color;
+        transition-duration: 500ms;
+        transition-delay: 0;
+    }
+}
+
+.cabinet--page-button-icon{
+    width: 56px;
+    height: 56px;
+    margin-right: 24px;
+    fill: transparent;
+    stroke:#8A8A9C;
+
+    transition-property: fill;
+    transition-duration: 500ms;
+    transition-delay: 0;
+
+    &.cross {
+        width: 14px;
+        height: 14px;
+        margin: 0;
+    }
+}
+
+.cabinet--page-list-wrap{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    background-color: #212223;
+    margin-top: 24px;
+}
+
+.cabinet--page-icon-cross{
+    border: 2px solid #8A8A9C;
+    border-radius: 4px;
+    display: flex;
+    padding: 17px 14px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.cabinet-drop{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.43);
+    z-index: 99;
 }
