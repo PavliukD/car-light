@@ -115,6 +115,11 @@ module.exports = {
             template: 'src/job.html',
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            filename: 'cabinet.html',
+            template: 'src/cabinet.html',
+            minify: false
+        }),
         new MiniCssExtractPlugin({
             attributes: {
                 id: "target",
