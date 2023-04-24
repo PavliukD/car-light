@@ -1,3 +1,5 @@
+@import '../footer';
+
 .cabinet--page-section-title{
     font-style: normal;
     font-weight: 400;
@@ -9,6 +11,12 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+
+    &.list{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-top: 56px;
+    }
 }
 
 .cabinet--page-secondary-text{
@@ -36,19 +44,7 @@
     }
 }
 
-.cabinet--page-grid{
-    display: grid;
 
-    &.auto{
-        grid-template-columns: max(416px) 1fr;
-        gap: 24px;
-    }
-
-    &.info{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-}
 
 .cabinet--page-info{
     display: grid;
@@ -137,4 +133,45 @@
     text-align: right;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+}
+
+.cabinet--page-user-title-wrap{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    margin-top: 56px;
+}
+
+.cabinet--page-button-add-car{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+
+.cabinet--page-user-add{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.cabinet--page-button-add-car,
+.cabinet--page-user-add {
+    height: 300px;
+    background-color: #212223;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.cabinet--page-add-link{
+    @extend .footer--link;
+
+    & span{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #8A8A9C;
+        margin-left: 5px;
+    }
+    
 }
