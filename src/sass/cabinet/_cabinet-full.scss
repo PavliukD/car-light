@@ -150,6 +150,22 @@
     background-color: #0A0A0A;
     border-radius: 10px;
     position: relative;
+
+    & svg{
+        width: 108px;
+        height: 126px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        fill: #151617;
+    }
+
+    & img{
+        display: block;
+        z-index: 2;
+    }
 }
 
 .cabinet--page-user-country,
@@ -165,6 +181,7 @@
     color: #FFFFFF;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 3;
 }
 
 .cabinet--page-user-country{
@@ -181,4 +198,43 @@
     }
 }
 
+.cabinet--page-user-info-cathegory{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #8A8A9C;
+}
 
+.cabinet--page-user-info-value{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-top: 4px;
+}
+
+
+.cabinet--page-user-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: min-content;
+    gap: 16px 24px;
+    align-content: center;
+}
+
+.cabinet--page-user-info .mail{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.cabinet--page .section-about-light--list{
+    margin-top: 24px;
+}
+
+.cabinet--page .sort-page--title{
+    margin-top: 80px;
+}
