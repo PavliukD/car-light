@@ -152,7 +152,7 @@
     & svg{
         width: 24px;
         height: 24px;
-        fill: transparent;
+        stroke: #FFFFFF;
     }
 }
 
@@ -299,7 +299,6 @@
     background-color: #151617;
     border-radius: 20px;
     width: 464px;
-    outline: 1px solid tomato;
 
     &.hidden{
         display: none;
