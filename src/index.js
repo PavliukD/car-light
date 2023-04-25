@@ -9,6 +9,9 @@ import { Hero } from './js/hero'
 import { SectionQuestions } from './js/sectionQuestions'
 import { sectionExsamples } from './js/sectionExsamples'
 import { GridSlider } from './js/gridSlider'
+import { CabinetBackdropCar } from './js/cabinetBackdrop'
+import { CabinetBackdropAuto } from './js/cabinetBackdrop'
+import { CabinetBackdropUser } from './js/cabinetBackdrop'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -18,3 +21,6 @@ Hero()
 SectionQuestions()
 sectionExsamples()
 GridSlider()
+CabinetBackdropCar()
+CabinetBackdropAuto()
+CabinetBackdropUser()

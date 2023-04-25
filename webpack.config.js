@@ -120,6 +120,11 @@ module.exports = {
             template: 'src/cabinet.html',
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            filename: 'cabinet-full.html',
+            template: 'src/cabinet-full.html',
+            minify: false
+        }),
         new MiniCssExtractPlugin({
             attributes: {
                 id: "target",
