@@ -235,6 +235,22 @@
     margin-top: 24px;
 }
 
+.cabinet--page .section-about-light--list-item{
+    background-color: #0A0A0A;
+
+    &:hover{
+        background-color: #212223;
+    }
+}
+
 .cabinet--page .sort-page--title{
     margin-top: 80px;
+}
+
+.cabinet--page .section-questions--item{
+    padding: 32px;
+}
+
+.cabinet--page-jobs-car-info{
+    display: flex;
 }
