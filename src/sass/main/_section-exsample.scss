@@ -2,11 +2,19 @@
     position: relative;
     margin-top: 190px;
 
+    @media (max-width: 767px) {
+        margin: 0;
+        padding-top: 80px;
+    }
+
     & ul{
         display: flex;
         width: 100%;
         overflow: hidden;
 
+        @media (max-width: 767px) {
+                border-radius: 15px;
+            }
     }
 
     & li{
@@ -17,7 +25,22 @@
         transition-delay: 0;
 
         & img{
-            display: block;
+
+            &.big{
+                display: block;
+
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+
+            &.small {
+                display: none;
+
+                @media (max-width: 767px) {
+                    display: block;
+                }
+            }
         }
     }
 }
@@ -100,6 +123,11 @@
     transition-duration: 500ms;
     transition-delay: 0;
 
+    @media (max-width: 767px) {
+        width: 40px;
+        height: 40px;
+    }
+
     & svg{
         fill: #FFFFFF;
         width: 12px;
@@ -116,27 +144,56 @@
     &.first{
         top: 20%;
         left: 15%;
+
+        @media (max-width: 767px) {
+            top: 45%;
+        }
     }
 
     &.second{
         left: 60%;
-        top: 70%
+        top: 70%;
+        
+        @media (max-width: 767px) {
+            left: 67%;
+            top: 77%;
+        }
     }
     &.three{
         left: 60%;
         top: 20%;
+
+        @media (max-width: 767px) {
+            left: 17%;
+            top: 11%;
+        }
     }
     &.four{
         left: 35%;
         top: 67%;
+
+        @media (max-width: 767px) {
+            left: 69%;
+            top: 45%;
+        }
     }
     &.five {
         left: 60%;
         top: 18%;
+
+        @media (max-width: 767px) {
+            left: 70%;
+            top: 44%;
+        }
     }
     &.six {
         left: 60%;
         top: 68%;
+
+        @media (max-width: 767px) {
+            left: 70%;
+            top: 80%;
+        }
     }
 }
 
@@ -149,5 +206,45 @@
     opacity: 1;
     z-index: 99;
 }
+
+.section--exsample-numbers{
+    display: none;
+    @media (max-width: 767px) {
+        text-align: center;
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        z-index: 99;
+        color: #8A8A9C;
+        margin-top: 22px;
+    }
+}
+
+.section--exsample-numbers-page{
+    color: #FFFFFF;
+}
+
+.section--exsample .service--hero-button-wrap{
+    @media (max-width: 767px) {
+        bottom: 12px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.section--exsample .service--hero-button{
+    @media (max-width: 767px) {
+        width: 32px;
+        height: 32px;
+
+        & svg{
+            width: 8px;
+            height: 8px;
+        }
+    }
+}
+
+
 
 

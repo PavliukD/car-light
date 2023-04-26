@@ -1,11 +1,21 @@
 .section-description{
     margin-top: 190px;
+
+    @media (max-width: 767px) {
+        margin: 0;
+        padding-top: 80px;
+    }
 }
 
 .section-description .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0 25px;
+
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 .section-description--image-wrap{
@@ -15,6 +25,14 @@
     padding-top: 86px;
     background-color: #151617;
     border-radius: 20px;
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+        padding: 0;
+        min-height: 320px;
+        display: flex;
+        align-items: flex-end;
+    }
 
     & img{
         display: block;
@@ -22,6 +40,10 @@
         margin-left: auto;
         max-height: 494px;
         width: auto;
+
+        @media (max-width: 767px) {
+            width: 80%;
+        }
     }
 }
 
@@ -33,6 +55,12 @@
     letter-spacing: 0.05em;
     text-indent: 100px;
     color: #FFFFFF;
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 24px;
+        text-indent: 0;
+    }
 }
 
 .section-description--main-text{
@@ -45,8 +73,20 @@
     color: #FFFFFF;
 
     margin-top: 95px;
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 24px;
+        text-indent: 0;
+        margin-top: 24px;
+    }
 }
 
 .section-description--text-wrap{
     padding: 86px 98px;
+
+    @media (max-width: 767px) {
+        padding: 0;
+        margin-top: 56px;
+    }
 }
