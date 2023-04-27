@@ -8,6 +8,19 @@
 }
 
 .contacts-page{
+
+}
+
+.contacts-page--map{
+    display: block;
+    border-radius: 20px;
+    
+        @media (max-width: 767px) {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
 }
 
 .contacts--group{
@@ -17,6 +30,10 @@
 
     &:not(:first-child){
         margin-top: 80px;
+    }
+
+    @media (max-width: 767px) {
+        display: block;
     }
 }
 
@@ -29,6 +46,11 @@
     color: #ACACAC;
     margin-bottom: 10px;
     display: block;
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
 
 .contacts--text{
@@ -39,6 +61,11 @@
     letter-spacing: 0.05em;
     color: #FFFFFF;
     display: block;
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
 
 .footer--link{
@@ -47,13 +74,32 @@
         text-decoration: underline;
         font-size: 14px;
         line-height: 22px;
+
+        @media (max-width: 767px) {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
     }
 }
 
 .contacts--list{
+
+    @media (max-width: 767px) {
+        margin-top: 24px;
+    }
+    
     & li{
+        display: block;
+
         &:not(:first-child){
             margin-top: 25px;
+        }
+
+        @media (max-width: 767px) {
+            display: grid;
+            grid-template-columns: max(140px) max(186px);
+            gap: 16px 24px;
+            align-items: start;
         }
     }
 }
@@ -67,4 +113,32 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 0 24px;
     margin-top: 90px;
+
+    @media (max-width: 767px) {
+        display: block;
+    }
+
+}
+
+.contacts-page--form .section-request--submit{
+    width: 350px;
+    height: 48px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.contacts--notification{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #F1DD23;
+    margin-top: 8px;
+    display: block;
+
+    @media (max-width: 767px) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
 }

@@ -21,6 +21,14 @@
 
         &:not(:first-child){
             margin-top: 80px;
+
+            @media (max-width: 767px) {
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            display: block;
         }
 }
 
@@ -37,10 +45,22 @@
     transition-duration: 500ms;
     transition-delay: 0;
 
+
+
     &:hover,
     :focus {
         border: 2px solid rgba(255, 255, 255, 0.1);
         background-color: #151617;
+    }
+
+    @media (max-width: 767px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        // height: 200px;
+
+        &:not(:first-child){
+            margin-top: 8px;
+        }
     }
 }
 
@@ -63,9 +83,18 @@
         padding-left: 40px;
         position: relative;
 
+        @media (max-width: 767px) {
+            padding-left: 24px;
+            height: 140px;
+        }
+
         &>.section--services-more{
             position: absolute;
             bottom: 0;
+
+            @media (max-width: 767px) {
+                margin-top: 16px;
+            }
         }
     }
 
@@ -86,6 +115,7 @@
         letter-spacing: 0.04em;
         color: #8A8A9C;
         margin-top: 15px;
+        display: block;
 
         overflow: hidden;
         text-overflow: ellipsis;
@@ -96,6 +126,12 @@
         -moz-box-orient: vertical;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
+
+        @media (max-width: 767px) {
+            display: none;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+        }
     }
 
     & img{
@@ -106,5 +142,8 @@
         right: 0;
         z-index: 22;
 
+        @media (max-width: 767px) {
+            height: 100%;
+        }
     }
 }
