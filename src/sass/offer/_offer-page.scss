@@ -6,6 +6,10 @@
         grid-template-columns: max(306px) max(856px);
         justify-content: space-between;
 
+        @media (max-width: 767px) {
+            display: block;
+        }
+
         &:not(:first-child){
             margin-top: 80px;
         }
@@ -17,6 +21,13 @@
             line-height: 32px;
             letter-spacing: 0.05em;
             color: #FFFFFF;
+
+            @media (max-width: 767px) {
+                font-size: 18px;
+                line-height: 28px;
+                letter-spacing: 0.03em;
+                margin-bottom: 24px;
+            }
         }
 
         & p{
@@ -26,6 +37,11 @@
             line-height: 28px;
             letter-spacing: 0.05em;
             color: #FFFFFF;
+
+            @media (max-width: 767px) {
+                font-size: 14px;
+                line-height: 24px;
+            }
 
             &:not(:first-child){
                 margin-top: 40px;

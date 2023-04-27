@@ -1,6 +1,10 @@
 .section-about-light{
     margin-top: 190px;
 
+    @media (max-width: 767px) {
+        margin-top: 96px;
+    }
+
     & h2{
         font-style: normal;
         font-weight: 900;
@@ -9,6 +13,11 @@
         color: #F1DD23;
         text-transform: uppercase;
         display: block;
+
+        @media (max-width: 767px) {
+            font-size: 32px;
+            line-height: 40px;
+        }
 
         & span{
             color: #FFFFFF;
@@ -22,6 +31,19 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     margin-top: 55px;
+
+    @media (max-width: 767px){
+        display: flex;
+        
+        flex-wrap: nowrap;
+        overflow: hidden;
+        max-width: 350px;
+        outline: 1px solid tomato;
+        margin: auto;
+        margin-top: 56px;
+        gap: 0;
+        padding: 0;
+    }
 }
 
 .section-about-light--list-item{
@@ -36,6 +58,20 @@
     transition-property: background-color, border;
     transition-duration: 500ms;
     transition-delay: 0;
+
+    @media (max-width: 767px) {
+        display: flex;
+        flex-shrink: 0;
+        width: 350px;
+        gap: 0;
+        padding: 16px;
+        flex-direction: column-reverse;
+        position: relative;
+
+        & *{
+            outline: 1px solid tomato;
+        }
+    }
 
     & h3{
         font-style: normal;
@@ -55,6 +91,15 @@
         -moz-box-orient: vertical;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            height: 48px;
+            line-clamp: 2;
+            -webkit-line-clamp: 2;
+        }
     }
 
     & p{
@@ -75,6 +120,12 @@
         -moz-box-orient: vertical;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
+
+        @media (max-width: 767px) {
+            height: 72px;
+            line-clamp: 3;
+            -webkit-line-clamp: 3;
+        }
     }
 
     & img {
@@ -105,6 +156,12 @@
     overflow: hidden;
     position: relative;
     align-items: center;
+
+    @media (max-width: 767px) {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+    }
 
     & li{
         flex-shrink: 0;
@@ -141,6 +198,10 @@
         transition-property: background-image;
         transition-duration: 500ms;
         transition-delay: 0;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 }
 
@@ -187,5 +248,15 @@
     &.hidden{
         display: none;
     }
+}
+
+.section-about-light .section-services--more-services{
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.section-about-light .section-more-jobs--mobile-nav-buttons{
+    margin-top: 24px;
 }
 

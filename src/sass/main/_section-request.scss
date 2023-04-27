@@ -1,12 +1,23 @@
 .section-request{
     margin-top: 190px;
     margin-bottom: 190px;
+
+    @media (max-width: 767px) {
+        margin: auto;
+    }
 }
 
 .section-request .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+    }
 
     & h4{
         font-style: normal;
@@ -15,10 +26,20 @@
         line-height: 32px;
         letter-spacing: 0.05em;
         color: #FFFFFF;
+
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.03em;
+        }
     }
 
     & ul{
         margin-top: 40px;
+
+        @media (max-width: 767px) {
+            margin: auto;
+        }
 
         & li{
             &:not(:first-child){
@@ -41,6 +62,11 @@
     color: #FFFFFF;
     max-width: 420px;
 
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
     & span {
         color: #F1DD23;
     }
@@ -53,6 +79,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0 24px;
+
+    @media (max-width: 767px) {
+        padding: 0;
+        display: block;
+        margin: auto;
+        margin-top: 98px;
+    }
 }
 
 .section-request--user-data,
@@ -65,11 +98,15 @@
     outline: none;
 
     font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 22px;
-        letter-spacing: 0.01em;
-        color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
 
     &::placeholder{
         font-style: normal;
@@ -78,6 +115,19 @@
         line-height: 22px;
         letter-spacing: 0.05em;
         color: #ACACAC;
+
+        @media (max-width: 767px) {
+            line-height: 24px;
+            letter-spacing: 0.04em;
+        }
+    }
+}
+
+.section-request--user-data{
+    &:not(:first-child){
+        @media (max-width: 767px) {
+            margin-top: 24px;
+        }
     }
 }
 
@@ -108,9 +158,6 @@
     letter-spacing: 0.02em;
     color: #8A8A9C;
 
-    // & span{
-       
-    // }
 
     & a{
         color: #F1DD23;
@@ -144,6 +191,13 @@
     transition-property: background-color, color;
     transition-duration: 500ms;
     transition-delay: 0;
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+        line-height: 18px;
+        height: 40px;
+        padding: 0px 24px;
+    }
 
     &:hover,
     :focus{

@@ -15,6 +15,14 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: #FFFFFF;
+        position: relative;
+
+        @media (max-width: 767px) {
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+            z-index: 3;
+        }
     }
 
     & p{
@@ -25,6 +33,14 @@
         letter-spacing: 0.05em;
         color: #8A8A9C;
         margin-top: 8px;
+        position: relative;
+
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: 28px;
+            z-index: 3;
+            text-align: center;
+        }
     }
 }
 
@@ -38,6 +54,29 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 767px) {
+        padding-left: 0;
+        padding-top: 210px;
+        padding-bottom: 210px;
+        margin: auto;
+        background-position: bottom 0 right -120px;
+    
+
+        &::after{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), rgba(196, 196, 196, 0.1);
+        }
+    }
 }
 
 .page-not-found--buttons{
@@ -48,9 +87,23 @@
 .page-not-found--back{
     @extend .hero--works;
     margin-left: 0;
+
+    @media (max-width: 767px) {
+        width: 300px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 18px;
+        margin: auto;
+        position: relative;
+        z-index: 3;
+    }
 }
 
 .page-not-found--to-main{
     @extend .hero--termine;
     margin-left: 15px;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 }

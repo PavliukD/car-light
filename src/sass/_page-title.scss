@@ -7,6 +7,11 @@
         line-height: 40px;
         color: #FFFFFF;
 
+        @media (max-width: 767px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
     }
 }
 
@@ -17,6 +22,12 @@
     & svg{
         width: 18px;
         height: 18px;
+        display: block;
+
+        @media (max-width: 767px) {
+            width: 15px;
+            height: 15px;
+        }
     }
 
     & li{
@@ -51,6 +62,12 @@
         transition-duration: 500ms;
         transition-delay: 0;
 
+        @media (max-width: 767px) {
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.02em;
+        }
+
         &:hover,
         :focus{
             color: #FFFFFF;
@@ -63,6 +80,10 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 25px;
+
+    @media (max-width: 767px) {
+        margin-bottom: 18px;
+    }
 }
 
 .page-title--back{
@@ -79,6 +100,12 @@
     transition-duration: 500ms;
     transition-delay: 0;
 
+    @media (max-width: 767px) {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+    }
+
     &:hover,
     :focus{
         color: #FFFFFF;
@@ -88,6 +115,11 @@
         width: 20px;
         height: 20px;
         margin-right: 10px;
+
+        @media (max-width: 767px) {
+            width: 15px;
+            height: 15px;
+        }
     }
 }
 

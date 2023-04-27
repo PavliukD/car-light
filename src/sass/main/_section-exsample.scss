@@ -4,6 +4,7 @@
 
     @media (max-width: 767px) {
         margin: 0;
+        margin: auto;
         padding-top: 80px;
     }
 
@@ -13,7 +14,9 @@
         overflow: hidden;
 
         @media (max-width: 767px) {
+            margin: auto;
                 border-radius: 15px;
+                max-width: 350px;
             }
     }
 
@@ -23,6 +26,8 @@
         transition-property: transform;
         transition-duration: 500ms;
         transition-delay: 0;
+        display: block;
+
 
         & img{
 
