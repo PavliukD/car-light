@@ -2,7 +2,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 
-// let htmlPageNames = ['offer'];
+let htmlPageNames = ['404', 'blog-article', 'blog', 'cabinet-full', 'cabinet', 'catalog', 'contacts', 'job', 'offer', 'security', 'service', 'services', 'sort'];
+let multipleHtmlPlugins = htmlPageNames.map(name => {
+  return new HtmlWebpackPlugin({
+    template: `./src/${name}.html`, // relative path to the HTML files
+    filename: `${name}.html`, // output HTML files
+    minify: false,
+    // chunks: [`${name}`] // respective JS files
+  })
+});
 
 
 module.exports = {
@@ -60,71 +68,6 @@ module.exports = {
             template: 'src/index.html',
             minify: false
         }),
-        new HtmlWebpackPlugin({
-            filename: 'offer.html',
-            template: 'src/offer.html',
-            minify: false
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'security.html',
-            template: 'src/security.html',
-            minify: false
-        }),
-        new HtmlWebpackPlugin({
-            filename: '404.html',
-            template: 'src/404.html',
-            minify: false
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'contacts.html',
-            template: 'src/contacts.html',
-            minify: false
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'services.html',
-            template: 'src/services.html',
-            minify: false
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'sort.html',
-            template: 'src/sort.html',
-            minify: false
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'catalog.html',
-            template: 'src/catalog.html',
-            minify: false
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'blog.html',
-            template: 'src/blog.html',
-            minify: false
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'blog-article.html',
-            template: 'src/blog-article.html',
-            minify: false
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'service.html',
-            template: 'src/service.html',
-            minify: false
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'job.html',
-            template: 'src/job.html',
-            minify: false
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'cabinet.html',
-            template: 'src/cabinet.html',
-            minify: false
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'cabinet-full.html',
-            template: 'src/cabinet-full.html',
-            minify: false
-        }),
         new MiniCssExtractPlugin({
             attributes: {
                 id: "target",
@@ -132,7 +75,7 @@ module.exports = {
             },
         })
     ]
-        // .concat(multipleHtmlPlugins)
+        .concat(multipleHtmlPlugins)
     ,
     devServer: {
         port: 8080,

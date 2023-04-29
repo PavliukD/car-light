@@ -10,111 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
 <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
 <body class="main">
-    <header>
-    <div class="header--notification">
-        <div class="container">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna
-                aliqua. Ut enim ad minim
-                <a href="">veniam</a>
-            </p>
-            <button class="header--notification-button">
-                <svg>
-                    <use href="images/icons.svg#cross"></use>
-                </svg>
-            </button>
-        </div>
-    </div>
-    <div class="container header--info">
-        <p>
-            <svg class="header--info-icon">
-                <use href="images/icons.svg#information"></use>
-            </svg>
-            Приймаємо клієнтів за попереднім записом
-        </p>
-        <p>
-            <svg class="header--graphic-icon">
-                <use href="images/icons.svg#user"></use>
-            </svg>
-            Працюємо: Пн-Сб - 10:00-20:00 / Нд - вихідний
-        </p>
-        <p>
-            <svg class="header--phone-icon">
-                <use href="images/icons.svg#phone"></use>
-            </svg>
-            <a href="tel: +380672747070">+38 (067) 274-70-70</a>
-            <span> / </span>
-            <a href="tel: +380632747070">+38 (063) 274-70-70</a>
-        </p>
-    </div>
-    <div class="container header--main">
-        <a href="/">
-            <svg class="header--logo">
-                <use href="images/icons.svg#logo" class="header--logo-1"></use>
-                <use href="images/icons.svg#logo-2" class="header--logo-2"></use>
-            </svg>
-        </a>
-        <nav>
-            <ul class="header--nav-list">
-                <li>
-                    <a href="" class="header--link active">Головна</a>
-                </li>
-                <li>
-                    <a href="./services.html" class="header--link">Послуги</a>
-                </li>
-                <li>
-                    <a href="" class="header--link">Наші роботи</a>
-                </li>
-                <li class="header--blog-links">
-                    <a href="" class="header--blog-link header--link">
-                        <svg class="header--blog-icon">
-                            <use href="images/icons.svg#plus-one"></use>
-                        </svg>
-                        Блог
-                    </a>
-                    <ul class="header--blog-list">
-                        <li>
-                            <a href="">Усі теми</a>
-                        </li>
-                        <li>
-                            <a href="">Світло</a>
-                        </li>
-                        <li>
-                            <a href="">Електрика</a>
-                        </li>
-                        <li>
-                            <a href="">Проводка</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="./contacts.html" class="header--link">Контакти</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="header--language">
-            <div>
-                <svg>
-                    <use href="images/icons.svg#down"></use>
-                </svg>
-                <span>UA</span>
-            </div>
-            <ul class="hidden">
-                <li class="header--language-variant active">UA</li>
-                <li class="header--language-variant">ENG</li>
-                <li class="header--language-variant">RU</li>
-            </ul>
-        </div>
-        <button class="header--login">
-            <svg>
-                <use href="images/icons.svg#user"></use>
-            </svg>
-        </button>
-        <button class="header--termine">
-            Записатися
-        </button>
-    </div>
-</header>
+    <!-- <include src="./partials/header.html"></include> -->
     <section class="hero"> 
     <div class="container">
         <div class="hero--wrap">
@@ -137,6 +33,8 @@
             </div>
         </div>
     </div>
+    <div class="hero-blur"></div>
+    <div class="hero-blur second"></div>
 </section>
     <section class="section-services">
     <div class="container">
@@ -164,7 +62,8 @@
                     PH2066/D/L2W.T. Engineering S.r.l.</p>
                     <a href="" class="section--services-more">Детальніше</a>
                 </div>
-                <img src="images/adjustment.png" alt="">
+                <img src="images/adjustment.png" alt="" class="big">
+                <img src="images/bg-img (1).png" alt="" class="small">
             </li>
             <li>
                 <div class="section-services--text-wrap">
@@ -179,7 +78,8 @@
                     технологій.</p>
                     <a href="" class="section--services-more">Детальніше</a>
                 </div>
-                <img src="images/img-right (3).png" alt="">
+                <img src="images/img-right (3).png" alt="" class="big">
+                <img src="images/bg-img.png" alt="" class="small right">
             </li>
             <li>
                 <div class="section-services--text-wrap">
@@ -190,7 +90,8 @@
                     безпеки.</p>
                     <a href="" class="section--services-more">Детальніше</a>
                 </div>
-                <img src="images/img-right (4).png" alt="">
+                <img src="images/img-right (4).png" alt="" class="big">
+                <img src="images/bg-img (2).png" alt="" class="small right">
             </li>
         </ul>
         <a href="" class="section-services--more-services">
@@ -219,23 +120,10 @@
     </div>
 </section>
     <section class="section--exsample container">
-    <div class="service--hero-button-wrap left">
-        <button class="service--hero-button">
-            <svg>
-                <use href="images/icons.svg#arrow-left"></use>
-            </svg>
-        </button>
-    </div>
-    <div class="service--hero-button-wrap right">
-        <button class="service--hero-button">
-            <svg>
-                <use href="images/icons.svg#arrow-right"></use>
-            </svg>
-        </button>
-    </div>
     <ul>
         <li>
-            <img src="images/exsample-1.png" alt="">
+            <img src="images/exsample-1.png" alt="" class="big">
+            <img src="images/exsample-small-1.png" alt="" class="small">
             <div class="section--exsample-notification first">
                 <div class="section--exsample-notification-text">
                     <p>Проведено роботи з полірування скла автомобільнї фари</p>
@@ -282,7 +170,8 @@
             </div>
         </li>
         <li>
-            <img src="images/exsample-2.png" alt="">
+            <img src="images/exsample-2.png" alt="" class="big">
+            <img src="images/exsample-small-2.png" alt="" class="small">
             <div class="section--exsample-notification three">
                 <div class="section--exsample-notification-text">
                     <p>Проведено роботи з полірування скла автомобільнї фари</p>
@@ -329,7 +218,8 @@
             </div>
         </li>
         <li>
-            <img src="images/exsample-3.png" alt="">
+            <img src="images/exsample-3.png" alt="" class="big">
+            <img src="images/exsample-small-3.png" alt="" class="small">
             <div class="section--exsample-notification five">
                 <div class="section--exsample-notification-text">
                     <p>Проведено роботи з полірування скла автомобільнї фари</p>
@@ -354,7 +244,8 @@
             </div>
         </li>
         <li>
-            <img src="images/exsample-4.png" alt="">
+            <img src="images/exsample-4.png" alt="" class="big">
+            <img src="images/exsample-small-4.png" alt="" class="small">
             <div class="section--exsample-notification six">
                 <div class="section--exsample-notification-text">
                     <p>Проведено роботи з полірування скла автомобільнї фари</p>
@@ -379,6 +270,21 @@
             </div>
         </li>
     </ul>
+    <div class="service--hero-button-wrap left">
+        <button class="service--hero-button">
+            <svg>
+                <use href="images/icons.svg#arrow-left"></use>
+            </svg>
+        </button>
+    </div>
+    <span class="section--exsample-numbers"><span class="section--exsample-numbers-page">1</span>/4</span>
+    <div class="service--hero-button-wrap right">
+        <button class="service--hero-button">
+            <svg>
+                <use href="images/icons.svg#arrow-right"></use>
+            </svg>
+        </button>
+    </div>
 </section>
     <section class="section-more-jobs">
     <div class="container">
@@ -509,6 +415,26 @@
                 </a>
             </li>
         </ul>
+        <div class="section-more-jobs--mobile-nav-buttons">
+            <button class="more">
+                <svg>
+                    <use href="images/icons.svg#refresh"></use>
+                </svg>
+                Більше робіт
+            </button>
+            <div>
+                <button class="left">
+                    <svg>
+                        <use href="images/icons.svg#preworius"></use>
+                    </svg>
+                </button>
+                <button class="right">
+                    <svg>
+                        <use href="images/icons.svg#next"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </div>
 </section>
     <section class="section-best">
@@ -698,12 +624,32 @@
                 </div>
             </li>
         </ul>
-            <a href="" class="section-services--more-services">
+        <a href="" class="section-services--more-services">
+            <svg>
+                <use href="images/icons.svg#eye"></use>
+            </svg>
+            Більше статей
+        </a>
+        <div class="section-more-jobs--mobile-nav-buttons">
+            <button class="more">
                 <svg>
-                    <use href="images/icons.svg#eye"></use>
+                    <use href="images/icons.svg#refresh"></use>
                 </svg>
-                Більше статей
-            </a>
+                Більше робіт
+            </button>
+            <div>
+                <button class="left">
+                    <svg>
+                        <use href="images/icons.svg#preworius"></use>
+                    </svg>
+                </button>
+                <button class="right">
+                    <svg>
+                        <use href="images/icons.svg#next"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </div>
 </section>
     <section class="section-questions">
@@ -837,392 +783,9 @@
         </form>
     </div>
 </section>
-    <footer>
-    <div class="container">
-        <div class="footer--wrap">
-            <div class="footer--logo-wrap footer--box-1">
-                <svg class="footer--logo">
-                    <use href="images/icons.svg#logo"></use>
-                </svg>
-                <p class="footer--text">
-                    Модернізація, ремонтні роботи автомобільного світла та оптики. Весь спектр післягарантійного
-                    обслуговування та ремонту
-                    будь-якої складності
-                </p>
-            </div>
-            <div class="footer--box-2">
-                <p class="footer--text">Додаткова інформація
-                    за телефонами:</p>
-                <ul class="footer--contacts-list">
-                    <li>
-                        <a href="tel:+380672747070" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            +38 (067) 274-70-70
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tel:+380632747070" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            +38 (063) 274-70-70
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer--box-3">
-                <div class="footer--group-title">
-                    <!-- <div class="footer--icon-wrap">
-                        <svg class="footer--icon-cross">
-                            <use href="./images/icons.svg#plus-one"></use>
-                        </svg>
-                        <img src="./images/+.svg" alt="" class="footer--icon-minus">
-                    </div> -->
-                    <h3>Сторінки</h3>
-                </div>
-                <ul class="footer--list">
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Головна
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Послуги
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Наші роботи
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Автосвітло
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Електрика
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./contacts.html" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Контакти
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer--box-4">
-                <div class="footer--group-title">
-                    <!-- <div class="footer--icon-wrap">
-                        <svg class="footer--icon-cross">
-                            <use href="./images/icons.svg#plus-one"></use>
-                        </svg>
-                        <img src="./images/+.svg" alt="" class="footer--icon-minus">
-                    </div> -->
-                    <h3>Ми у мережі</h3>
-                </div>
-                <ul class="footer--list">
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Instagram
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Tik-Tok
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer--box-5">
-                <div class="footer--group-title">
-                    <!-- <div class="footer--icon-wrap">
-                        <svg class="footer--icon-cross">
-                            <use href="./images/icons.svg#plus-one"></use>
-                        </svg>
-                        <img src="./images/+.svg" alt="" class="footer--icon-minus">
-                    </div> -->
-                    <h3>Послуги</h3>
-                </div>
-                <ul class="footer--list">
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Заміна скла авто фар
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Регулювання фар лазерно-оптичним обладнанням
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Led технології центального стоп сигналу (CHMSL)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Полірування та шліфування авто фар
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Послуги автоелектрика
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Ремонт тріщин фар
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Заміна перегорілих ламп
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Ремонт Led оптики
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Тюнінг авто фар
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Герметизація авто фар
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Обклеювання захисною плівкою фар
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Встановлення біксенонових лінз
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/" class="footer--link">
-                            <div class="footer--icon-wrap">
-                                <svg class="footer--icon-cross">
-                                    <use href="images/icons.svg#plus-one"></use>
-                                </svg>
-                                <img src="images/+.svg" alt="" class="footer--icon-minus">
-                            </div>
-                            Профілактика авто фари
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer--box-6">
-                <p class="footer--copyright">© All rights reserved Car-lights design</p>
-                <a href="./offer.html" class="footer--link">
-                    <div class="footer--icon-wrap">
-                        <svg class="footer--icon-cross">
-                            <use href="images/icons.svg#plus-one"></use>
-                        </svg>
-                        <img src="images/+.svg" alt="" class="footer--icon-minus">
-                    </div>
-                    Публічна оферта
-                </a>
-                <a href="./security.html" class="footer--link">
-                    <div class="footer--icon-wrap">
-                        <svg class="footer--icon-cross">
-                            <use href="images/icons.svg#plus-one"></use>
-                        </svg>
-                        <img src="images/+.svg" alt="" class="footer--icon-minus">
-                    </div>
-                    Політика конфіденційності
-                </a>
-                <a href="" class="footer--top-button">
-                    <svg class="footer--icon-up">
-                        <use href="images/icons.svg#arrow-up"></use>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </div>
-</footer>
-    <div class="cookies">
-    <div class="cookies--text-wrap">
-        <h3>
-            <img src="images/cookie.png" alt="">
-            Ми цінуємо вашу конфіденційність
-        </h3>
-        <p>
-            Щоб надати вам кращий сервіс, ми використовуємо файли cookie. Ці файли cookie використовуються для забезпечення
-            належної
-            роботи сайту (функціональні та файли cookie в строго необхідній категорії).
-        </p>
-        <p>Ви можете ознайомитись з нашою <a href="">Політика конфіденційності</a></p>
-    </div>
-    <div class="cookies--buttons">
-        <button class="cookies--accept">Прийняти</button>
-        <button class="cookies--reject">Відхилити</button>
-    </div>
-</div>
-    <div class="backdrop hidden">
-    <div class="drop-call">
-        <div>
-            <h3>Замовити дзвінок</h3>
-            <p>Наш менеджер зв'яжеться з вами найближчим часом</p>
-            <form action="">
-                <input type="text" placeholder="Ім'я">
-                <input type="text" placeholder="Номер телефону">
-            </form>
-            <div class="drop-call--buttons">
-                <button class="drop-call--order">Замовити дзвінок</button>
-                <button class="drop-call--close">Закрити</button>
-            </div>
-        </div>
-        <img src="images/phone.png" alt="">
-    </div>
-</div>
-    <script src="main.js"></script>
+    <!-- <include src="./partials/footer.html"></include> -->
+    <!-- <include src="./partials/cookies.html"></include> -->
+    <!-- <include src="./partials/drop-call.html"></include> -->
+    <!-- <script src="./index.js"></script> -->
 </body>
 </html>
