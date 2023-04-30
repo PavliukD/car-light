@@ -721,5 +721,13 @@
         stroke-linejoin="round"
       />
 </symbol>
+<symbol id="search" viewBox="0 0 17 16">
+  <circle cx="8.16537" cy="7.66634" r="6.33333" stroke="#ACACAC" />
+  <path
+        d="M12.832 12.333L15.1654 14.6663"
+        stroke="#ACACAC"
+        stroke-linecap="round"
+      />
+</symbol>
 </defs>
 </svg>

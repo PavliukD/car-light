@@ -24,6 +24,7 @@
     line-height: 24px;
     letter-spacing: 0.05em;
     color: #8A8A9C;
+    
 }
 
 .sort-page .section-services--more-services{
@@ -42,6 +43,13 @@
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 767px) {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 7px 8px;
+        margin-top: 16px;
+    }
+
     & button{
         width: 20px;
         height: 20px;
@@ -52,11 +60,45 @@
         border-radius: 5px;
         background-color: transparent;
         margin-left: 6px;
+
+        @media (max-width: 767px) {
+            width: 13px;
+            height: 13px;
+            padding: 0;
+        }
     }
 
     & svg{
         width: 5px;
         height: 5px;
         stroke: #0A0A0A;
+    }
+}
+.sort-page .section-about-light--list {
+    margin-top: 24px;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.sort-page .section-nore-jobs--list {
+    display: none;
+
+    @media (max-width: 767px) {
+        display: block;
+        margin: auto;
+        margin-top: 24px;
+        width: 350px;
+
+        & li {
+            max-width: 350px;
+            background-color: #0A0A0A;
+            border-radius: 15px;
+
+            &:not(:first-child) {
+                margin-top: 32px;
+            }
+        }
     }
 }

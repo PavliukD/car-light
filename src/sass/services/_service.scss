@@ -10,6 +10,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media (max-width: 767px) {
+        display: block;
+        padding: 32px;
+    }
+
     & h2{
         font-style: normal;
         font-weight: 900;
@@ -18,6 +23,13 @@
         text-transform: uppercase;
         color: #FFFFFF;
         max-width: 460px;
+
+        @media (max-width: 767px) {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.05em;
+        }
     }
 
     &.one{
@@ -80,11 +92,19 @@
     align-items: center;
     justify-content: center;
     padding-left: 80px;
+
+    @media (max-width: 767px) {
+        padding: 0;
+    }
 }
 
 .service--hero-img{
     width: 100%;
     height: auto;
+
+    @media (max-width: 767px) {
+        width: calc(100% + 32px);
+    }
 }
 
 .service--hero-button{
@@ -99,6 +119,11 @@
     transition-property: border-color;
     transition-duration: 500ms;
     transition-duration: 0;
+
+    @media (max-width: 767px) {
+        width: 38px;
+        height: 38px;
+    }
 
     &:hover{
         border: 2px solid #FFFFFF;
@@ -124,16 +149,31 @@
     bottom: 50%;
     z-index: 99;
 
+    @media (max-width: 767px) {
+        width: 48px;
+        height: 48px;
+    }
+
     &.left{
         left: 0;
         transform: translate(25%, 50%);
+
+        @media (max-width: 767px) {
+            left: -15px;
+        }
 
     }
 
     &.right{
         right: 0;
         transform: translate(-25%, 50%);
+
+        @media (max-width: 767px) {
+            right: -15px;
+        }
     }
+
+    
 }
 
 .service--hero{
@@ -151,6 +191,10 @@
     gap: 24px;
     margin-top: 80px;
 
+    @media (max-width: 767px) {
+        display: block;
+    }
+
     & li{
         display: block;
         padding: 24px;
@@ -160,6 +204,10 @@
 
         &:not(:first-child) {
                 margin-top: 0;
+
+                @media (max-width: 767px) {
+                    margin-top: 16px;
+                }
             }
     }
 
@@ -172,12 +220,23 @@
         color: #F1DD23;
         display: inline-block;
         width: fit-content;
+
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: 28px;
+        }
     }
 
     & p{
         padding-top: 24px;
         margin-top: 40px;
         border-top: 2px solid #8A8A9C;
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 24px;
+            margin-top: 24px;
+        }
     }
 }
 
@@ -267,6 +326,12 @@
         line-height: 32px;
         letter-spacing: 0.05em;
         color: #FFFFFF;
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 0;
+        }
     }
 
     &:hover,
@@ -344,6 +409,13 @@
     transition-duration: 500ms;
     transition-delay: 0;
 
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 0;
+    }
+
     &:hover{
         background-color: #212223;
     }
@@ -378,6 +450,10 @@
     line-height: 22px;
     letter-spacing: 0.01em;
 
+    @media (max-width: 767px) {
+        text-align: center;
+        max-width: 300px;
+    }
 }
 
 #service--price{
@@ -403,6 +479,7 @@
     letter-spacing: 0.02em;
     margin-top: 15px;
     color: #8A8A9C;
+
 }
 
 .offer-page--content{
@@ -411,8 +488,38 @@
 
 .service--recomendations-wrap {
 
-    display: none;
+    display: grid;
     grid-template-columns: max(440px) max(306px);
     margin-top: 40px;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+        grid-template-columns: 100%;
+        gap: 24px;
+    }
+
+    & img{
+        display: block;
+        width: 100%;
+
+        @media (max-width: 767px) {
+            grid-row-start: 1;
+            grid-row-end: 2;
+
+        }
+    }
+
+    & div{
+        @media (max-width: 767px) {
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        &.service--price-wrap{
+            @media (max-width: 767px) {
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+        }
+    }
 }

@@ -2,6 +2,11 @@
     display: grid;
     grid-template-columns: max(416px) max(928px);
     gap: 24px;
+
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
     
 
     &.container{
@@ -26,6 +31,12 @@
     line-height: 28px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+    }
 }
 
 .job-page--hero-information-model{
@@ -35,11 +46,22 @@
     line-height: 24px;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
 
 .job-page--hero-information-car-icon{
     height: 53px;
     width: 53px;
+    display: block;
+
+    @media (max-width: 767px) {
+        height: 45px;
+        width: 45px;
+    }
 }
 
 .job-page--hero-information-car-inf{
@@ -59,12 +81,24 @@
     align-items: center;
     margin-top: 50px;
 
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        margin-top: 36px;
+    }
+
     & svg{
         width: 24px;
         height: 24px;
         margin-right: 10px;
         stroke: #FFFFFF;
+        display: block;
         
+        @media (max-width: 767px) {
+            width: 20px;
+            height: 20px;
+        }
     }
 }
 .job-page--hero-list-wrap{
@@ -72,6 +106,10 @@
     width: 100%;
     height: 240px;
     position: relative;
+
+    @media (max-width: 767px) {
+        height: 200px;
+    }
 
     &::before {
         content: '';
@@ -91,6 +129,10 @@
     height: 240px;
     margin-top: 24px;
     overflow: auto;
+
+    @media (max-width: 767px) {
+        height: 200px;
+    }
 
     &::-webkit-scrollbar {
             width: 8px;
@@ -138,6 +180,12 @@
         line-height: 24px;
         letter-spacing: 0.05em;
         color: #FFFFFF;
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.04em;
+        }
     }
 
     & span{
@@ -148,6 +196,12 @@
         letter-spacing: 0.05em;
         color: #FFFFFF;
         margin-top: 5px;
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+        }
     }
 }
 
@@ -166,9 +220,17 @@
     border-radius: 10px;
     margin-top: 50px;
 
+
     transition-property: background-color, color;
     transition-duration: 500ms;
     transition-delay: 0;
+
+    @media (max-width: 767px) {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        font-size: 12px;
+            line-height: 18px;
+    }
 
     &:hover{
         background-color: transparent;
@@ -184,8 +246,14 @@
     display: grid;
     grid-template-columns: max(306px) max(856px);
     padding-top: 80px;
-    // justify-content: space-between;
     gap: 0 134px;
+
+    @media (max-width: 767px) {
+        display: block;
+        padding-top: 56px;
+    }
+
+
     &.correct{
          &.container{
             padding-right: 0;
@@ -200,6 +268,13 @@
         line-height: 32px;
         letter-spacing: 0.05em;
         color: #FFFFFF;
+
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.03em;
+            margin-bottom: 24px;
+        }
     }
 }
 
@@ -211,6 +286,12 @@
     letter-spacing: 0.05em;
     color: #FFFFFF;
     max-width: 856px;
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+    }
 
     &.total{
         font-weight: 700;
@@ -234,6 +315,12 @@
             border-radius: 10px;
             margin-top: 96px;
             margin-bottom: 24px;
+
+            @media (max-width: 767px) {
+                margin-top: 80px;
+                margin-bottom: 16px;
+                width: 80px;
+            }
         }
     }
 }
@@ -242,9 +329,28 @@
     display: flex;
     margin-top: 40px;
 
+    @media (max-width: 767px) {
+        margin-top: 24px;
+    }
+
     & li{
+        width: 746px;
+
+        @media (max-width: 767px) {
+            width: 344px;
+        }
+
         &:not(:first-child){
             margin-left: 24px;
+        }
+
+        & img{
+            display: block;
+            width: 746px;
+
+            @media (max-width: 767px) {
+                width: 344px;
+            }
         }
     }
 
@@ -261,6 +367,12 @@
     letter-spacing: 0.05em;
     color: #8A8A9C;
 
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+    }
+
     &.margin{
         margin-top: 24px;
     }
@@ -271,13 +383,42 @@
     grid-template-columns: repeat(2, max(416px));
     gap: 24px;
 
+    @media (max-width: 767px) {
+        grid-template-columns: 100px 199px;
+        gap: 32px;
+    }
+
+    & li{
+        &.full-line{
+            @media (max-width: 767px) {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        }
+    }
+
     & img{
         background-color: #0A0A0A;
         border-radius: 20px;
+        display: block;
+
+        @media (max-width: 767px) {
+            width: 100%;
+
+            &.small{
+                // max-width: 100px;
+            }
+        }
     }
 
     &.margin{
         margin-top: 96px;
+    }
+
+    &.slider{
+        @media (max-width: 767px) {
+            display: block;
+        }
     }
 }
 
@@ -287,6 +428,13 @@
     border-radius: 20px;
     margin-top: 96px;
     margin-bottom: 96px;
+
+    @media (max-width: 767px) {
+        width: calc(100% + 16px);
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: -16px;
+    }
 }
 
 .job--page-content-second-column{
@@ -325,6 +473,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+        width: calc(100% + 16px);
+        margin-left: -16px;
+        height: 375px;
+    }
 }
 
 .job--page-content-slider-list{
@@ -332,10 +486,18 @@
     overflow: hidden;
     border-radius: 20px;
 
+    @media (max-width: 767px) {
+        width: calc(100% + 16px);
+        margin-left: -16px;
+        height: 375px;
+    }
+
     & li{
         transition-property: transform;
         transition-duration: 500ms;
         transition-delay: 0;
+        width: 100%;
+        flex-shrink: 0;
     }
 }
 
@@ -381,6 +543,13 @@
     transition-duration: 500ms;
     transition-delay: 0;
 
+    @media (max-width: 767px) {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
     &:hover{
         color: #0A0A0A;
         background-color: #FFFFFF;
@@ -396,18 +565,35 @@
     border-top: 2px solid #8A8A9C;
     border-bottom: 2px solid #8A8A9C;
 
+    @media (max-width: 767px) {
+        grid-template-columns: max(100px) max(180px);
+        justify-content: space-between;
+    }
+
     & li{
         display: grid;
         grid-template-columns: max(306px) max(194px);
         gap: 24px;
 
+        @media (max-width: 767px) {
+            display: block;
+        }
+
         &:not(:first-child){
             margin-top: 24px;
+
+            @media (max-width: 767px) {
+                margin-top: 16px;
+            }
         }
 
         &:last-child{
             border-top: 1px dashed #FFFFFF;
             padding-top: 24px;
+
+            @media (max-width: 767px) {
+                padding-top: 16px;
+            }
         }
     }
 }
@@ -420,6 +606,20 @@
     text-align: right;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+    }
+
+    &.table{
+        @media (max-width: 767px) {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            text-align: left;
+        }
+    }
 }
 
 .job--page-grid-table-title{
@@ -427,6 +627,13 @@
     grid-template-columns: max(306px) max(306px) max(194px);
     gap: 24px;
     margin-bottom: 24px;
+
+    @media (max-width: 767px) {
+        grid-template-columns: max(100px) max(180px);
+        justify-content: space-between;
+        gap: 0;
+        margin-top: 40px;
+    }
 }
 
 .job--page .blog-article--tags{

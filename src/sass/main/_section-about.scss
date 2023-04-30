@@ -38,7 +38,6 @@
         flex-wrap: nowrap;
         overflow: hidden;
         max-width: 350px;
-        outline: 1px solid tomato;
         margin: auto;
         margin-top: 56px;
         gap: 0;
@@ -67,10 +66,6 @@
         padding: 16px;
         flex-direction: column-reverse;
         position: relative;
-
-        & *{
-            outline: 1px solid tomato;
-        }
     }
 
     & h3{
@@ -169,6 +164,12 @@
         padding: 7px 8px;
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 5px;
+
+        @media (max-width: 767px) {
+            background-color: #151617;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
         
 
         &:not(:last-child){

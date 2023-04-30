@@ -3,11 +3,23 @@
     border-radius: 20px;
     margin-bottom: 80px;
 
+    @media (max-width: 767px) {
+        margin-bottom: 32px;
+    }
+
     & img{
         width: 100%;
         height: auto;
         max-height: 600px;
         object-fit: cover;
+        display: block;
+        border-radius: 20px;
+
+        @media (max-width: 767px) {
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
         
     }
 }
@@ -22,6 +34,10 @@
     gap: 24px;
     margin-top: 80px;
 
+    @media (max-width: 767px) {
+        display: block;
+    }
+
     & button{
         padding-left: 24px;
         padding-right: 24px;
@@ -32,6 +48,16 @@
         background-color: #212223;
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 20px;
+
+        @media (max-width: 767px) {
+            width: 100%;
+            height: 86px;
+            border-radius: 10px;
+
+            &:not(:first-child){
+               margin-top: 18px; 
+            }
+        }
 
         & svg{
             height: 40px;
@@ -48,6 +74,12 @@
             line-height: 28px;
             letter-spacing: 0.03em;
             color: #FFFFFF;
+
+            @media (max-width: 767px) {
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0.01em;
+            }
         }
     }
 }
@@ -64,14 +96,25 @@
         gap: 6px 4px;
         align-items: center;
 
+        @media (max-width: 767px) {
+                margin-top: -8px;
+        }
+
         & li{
             display: inline-block;
             width: fit-content;
             height: fit-content;
-            
 
             &:not(:first-child){
                 margin-top: 0;
+
+                @media (max-width: 767px) {
+                    margin-top: 8px;
+                }
+            }
+
+            @media (max-width: 767px) {
+                margin-top: 8px;
             }
             
             & a{
@@ -85,6 +128,14 @@
                 letter-spacing: 0.04em;
                 color: #FFFFFF;
                 width: fit-content;
+
+                @media (max-width: 767px) {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: 0.02em;
+                    padding: 7px 8px;
+                }
             }
 
             & button{
@@ -94,6 +145,12 @@
                 display: flex;
                 align-items: center;
 
+                @media (max-width: 767px) {
+                    padding: 7px 8px;
+                    border-radius: 5px;
+                    border: none;
+                }
+
                 & span{
                     font-style: normal;
                     font-weight: 400;
@@ -101,6 +158,13 @@
                     line-height: 24px;
                     letter-spacing: 0.04em;
                     color: #0A0A0A;
+
+                    @media (max-width: 767px) {
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 18px;
+                        letter-spacing: 0.02em;
+                    }
                 }
 
                 & svg{
@@ -109,6 +173,11 @@
                     margin-left: 5px;
                     transform: rotate(-90deg);
                     stroke: #0A0A0A;
+
+                    @media (max-width: 767px) {
+                        width: 13px;
+                        height: 13px;
+                    }
 
                 }
             }
@@ -243,6 +312,10 @@
     justify-content: space-between;
     overflow: hidden;
     border-top: 1px solid #FFFFFF;
+
+    @media (max-width: 767px) {
+        display: block;
+    }
     
     & h3 {
             font-style: normal;
@@ -251,6 +324,10 @@
             line-height: 32px;
             letter-spacing: 0.05em;
             color: #FFFFFF;
+
+            @media (max-width: 767px) {
+                margin-bottom: 24px;
+            }
         }
 
     &.container{
@@ -274,4 +351,11 @@
     left: 8px;
     border-radius: 5px;
     z-index: 55;
+}
+
+.blog-article .section--services-more{
+    @media (max-width: 767px) {
+        max-width: 126px;
+        margin-left: 0;
+    }
 }

@@ -7,6 +7,11 @@
     overflow: auto;
     border-radius: 20px;
 
+    @media (max-width: 767px) {
+        grid-row-start: 9;
+        grid-row-end: 10;
+    }
+
     &:hover{
         border: none;
     }
@@ -142,6 +147,17 @@
     display: grid;
     grid-template-columns: max(172px) 1fr;
     gap: 24px;
+
+    @media (max-width: 767px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        display: block;
+        position: relative;
+        height: fit-content;
+        overflow: hidden;
+    }
 }
 
 .cabinet--page-user-avatar{
@@ -152,6 +168,15 @@
     border-radius: 10px;
     position: relative;
 
+    @media (max-width: 767px) {
+        position: absolute;
+        width: 108px;
+        height: 128px;
+        background-color: transparent;
+        right: -80px;
+        bottom: -100px;
+    }
+
     & svg{
         width: 108px;
         height: 126px;
@@ -161,6 +186,13 @@
         transform: translate(-50%, -50%);
         z-index: 1;
         fill: #151617;
+
+        @media (max-width: 767px) {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
     }
 
     & img{
@@ -183,6 +215,10 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 }
 
 .cabinet--page-user-country{
@@ -193,6 +229,10 @@
     bottom: 20px;
     width: fit-content;
     display: flex;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 
     & span{
         margin-left: 4px;
@@ -225,6 +265,12 @@
     grid-auto-rows: min-content;
     gap: 16px 24px;
     align-content: center;
+
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
 }
 
 .cabinet--page-user-info .mail{
