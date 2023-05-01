@@ -12,6 +12,10 @@ import { GridSlider } from './js/gridSlider'
 import { CabinetBackdropCar } from './js/cabinetBackdrop'
 import { CabinetBackdropAuto } from './js/cabinetBackdrop'
 import { CabinetBackdropUser } from './js/cabinetBackdrop'
+import { HeaderMobilePopularList } from './js/HeaderMobilePopularList'
+import { HeaderMobileBlogList } from './js/HeaderMobileBlogList'
+import { HeaderMobileLanguage } from './js/HEaderMobileLanguage'
+import { HeaderMobileMenu } from './js/HeaderMobileMenu'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -24,3 +28,7 @@ GridSlider()
 CabinetBackdropCar()
 CabinetBackdropAuto()
 CabinetBackdropUser()
+HeaderMobilePopularList()
+HeaderMobileBlogList()
+HeaderMobileLanguage()
+HeaderMobileMenu()

@@ -1,3 +1,11 @@
+.header-desktop{
+    display: block;
+
+    @media (max-width: 1399px) {
+        display: none;
+    }
+}
+
 .header--notification {
     background-color: #DB4141;
     height: 52px;

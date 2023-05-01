@@ -729,5 +729,19 @@
         stroke-linecap="round"
       />
 </symbol>
+<symbol id="menu" viewBox="0 0 16 16">
+<path
+        d="M12.668 6.66699L3.33463 6.66699"
+        stroke="white"
+        stroke-linecap="round"
+      />
+<path
+        d="M12.668 9.33301L3.33463 9.33301"
+        stroke="white"
+        stroke-linecap="round"
+      />
+<path d="M12.668 4L3.33463 4" stroke="white" stroke-linecap="round" />
+<path d="M12.668 12L3.33463 12" stroke="white" stroke-linecap="round" />
+</symbol>
 </defs>
 </svg>
