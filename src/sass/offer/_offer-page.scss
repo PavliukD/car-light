@@ -3,8 +3,9 @@
 .offer-page--content{
     & li{
         display: grid;
-        grid-template-columns: max(306px) max(856px);
+        grid-template-columns: 2fr 4fr;
         justify-content: space-between;
+        gap: 12%;
 
         @media (max-width: 767px) {
             display: block;
@@ -22,11 +23,11 @@
             letter-spacing: 0.05em;
             color: #FFFFFF;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1399px) {
                 font-size: 18px;
                 line-height: 28px;
                 letter-spacing: 0.03em;
-                
+                margin-bottom: 24px;
             }
         }
 
@@ -38,7 +39,7 @@
             letter-spacing: 0.05em;
             color: #FFFFFF;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1399px) {
                 font-size: 14px;
                 line-height: 24px;
             }

@@ -1,5 +1,5 @@
-.services-page{
-
+.services-page .footer--icon-minus{
+    display: none;
 }
 
 .services-page--bg-image{
@@ -25,6 +25,12 @@
             @media (max-width: 767px) {
                 margin-top: 40px;
             }
+        }
+
+        @media (max-width: 1399px) {
+            grid-template-columns: 1fr;
+            max-width: 636px;
+            margin: auto;
         }
 
         @media (max-width: 767px) {

@@ -3,7 +3,7 @@
     grid-template-columns: max(416px) max(928px);
     gap: 24px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -244,11 +244,11 @@
 
 .job--page-content{
     display: grid;
-    grid-template-columns: max(306px) max(856px);
+    grid-template-columns: 306px 1fr;
     padding-top: 80px;
     gap: 0 134px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
         display: block;
         padding-top: 56px;
     }
@@ -380,7 +380,7 @@
 
 .job--page-content-elements-grid{
     display: grid;
-    grid-template-columns: repeat(2, max(416px));
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 
     @media (max-width: 767px) {
@@ -401,13 +401,19 @@
         background-color: #0A0A0A;
         border-radius: 20px;
         display: block;
+        width: 100%;
+
+        &.small{
+           width: 50%;
+
+           @media (max-width: 767px) {
+                width: 100%;
+           }
+
+        }
 
         @media (max-width: 767px) {
             width: 100%;
-
-            &.small{
-                // max-width: 100px;
-            }
         }
     }
 
@@ -422,12 +428,16 @@
     }
 }
 
+
+
 .job--page-content-image-big{
     grid-column-start: 1;
     grid-column-end: 3;
     border-radius: 20px;
     margin-top: 96px;
     margin-bottom: 96px;
+    width: 100%;
+    height: auto;
 
     @media (max-width: 767px) {
         width: calc(100% + 16px);
