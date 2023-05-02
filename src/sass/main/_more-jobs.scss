@@ -30,8 +30,12 @@
         gap: 25px;
         margin-top: 55px;
 
+        @media (max-width: 1399px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         @media (max-width: 767px) {
-            display: flex;
+            grid-template-columns: 1fr;
             margin: auto;
             margin-top: 56px;
             max-width: 350px;
@@ -39,6 +43,8 @@
             overflow: hidden;
             
         }
+
+        
     }
 }
 
@@ -48,6 +54,7 @@
     border-radius: 20px;
     border: 2px solid transparent;
     border-end-end-radius: 20px;
+    width: 100%;
 
     transition-property: background-color, border;
     transition-duration: 500ms;
@@ -68,10 +75,14 @@
         letter-spacing: 0.03em;
         color: #FFFFFF;
 
-        @media (max-width: 767px) {
-            height: 48px;
+        @media (max-width: 1399px) {
             font-size: 16px;
             line-height: 24px;
+        }
+
+        @media (max-width: 767px) {
+            height: 48px;
+            
             margin-top: 16px;
 
             overflow: hidden;
@@ -106,9 +117,13 @@
         letter-spacing: 0.05em;
         color: #8A8A9C;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1399px) {
             font-size: 14px;
             line-height: 24px;
+        }
+
+        @media (max-width: 767px) {
+            
             margin-top: 8px;
             height: 72px;
             letter-spacing: 0.04em;
@@ -119,6 +134,7 @@
         transition-property: transform;
         transition-duration: 500ms;
         transition-delay: 0;
+        width: 100%;
     }
 
     &:hover,

@@ -12,6 +12,7 @@
         display: flex;
         width: 100%;
         overflow: hidden;
+        border-radius: 20px;
 
         @media (max-width: 767px) {
             margin: auto;
@@ -22,6 +23,8 @@
 
     & li{
         position: relative;
+        width: 100%;
+            height: auto;
 
         transition-property: transform;
         transition-duration: 500ms;
@@ -30,6 +33,7 @@
 
 
         & img{
+            
 
             &.big{
                 display: block;

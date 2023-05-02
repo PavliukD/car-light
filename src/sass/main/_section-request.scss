@@ -11,12 +11,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    
 
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 16px;
+        max-width: 800px;
     }
 
     & h4{
@@ -27,7 +29,7 @@
         letter-spacing: 0.05em;
         color: #FFFFFF;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1399px) {
             font-size: 18px;
             line-height: 28px;
             letter-spacing: 0.03em;
@@ -62,7 +64,7 @@
     color: #FFFFFF;
     max-width: 420px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
         font-size: 14px;
         line-height: 22px;
     }
@@ -79,9 +81,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0 24px;
+    position: relative;
+    overflow: hidden;
 
     @media (max-width: 767px) {
-        padding: 0;
+        padding: 37px 48px;
         display: block;
         margin: auto;
         margin-top: 98px;
@@ -203,5 +207,28 @@
     :focus{
         background-color: transparent;
         color: #F1DD23;
+    }
+}
+
+.section-request--form .bg-animation{
+    position: absolute;
+
+    bottom: 200px;
+    right: -500px;
+
+    transition-property: right, bottom, transform;
+    transition-duration: 3500ms;
+    transition-delay: 0;
+
+    &.left{
+        right: 100px;
+        bottom: -100px;
+        transform: rotate(-40deg);
+    }
+
+    &.bottom{
+        right: -400px;
+        bottom: -600px;
+        transform: rotate(-80deg);
     }
 }

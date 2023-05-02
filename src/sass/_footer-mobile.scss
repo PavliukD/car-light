@@ -1,0 +1,171 @@
+.footer-mobile{
+    padding: 20px;
+    display: none;
+
+    @media (max-width: 999px) {
+        display: block;
+        max-width: 800px;
+    }
+}
+
+.footer-mobile .header-mobile--menu-punkt{
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer-mobile--logo{
+    width: 72px;
+    height: 48px;
+}
+
+.footer-mobile--text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #8A8A9C;
+    margin-top: 14px;
+}
+
+.footer-mobile--contacts{
+    display: flex;
+    gap: 37px;
+    margin-top: 24px;
+
+    @media (min-width: 768px) {
+        margin: auto;
+        width: fit-content;
+        margin-top: 24px;
+    }
+
+    & a{
+        display: block;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+
+    & li{
+        height: 68px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    }
+}
+
+.footer-mobile--icon-calendar{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.footer-mobile--icon-phone{
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.footer-mobile--dates{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.footer-mobile--nav{
+    margin-top: 24px;
+}
+
+.footer-mobile--pages-list{
+    padding-left: 15px;
+    margin-top: 16px;
+    height: 217px;
+    transition-property: margin-top, height;
+    transition-duration: 500ms;
+    transition-delay: 0;
+
+    &.hidden{
+        height: 0;
+        margin-top: 0;
+        overflow: hidden;
+    }
+    
+
+    & li{
+        &:not(:first-child){
+            margin-top: 14px;
+        }
+
+    }
+
+    & a{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        color: #8A8A9C;
+    }
+}
+
+.footer-mobile--services-list{
+    @extend .footer-mobile--pages-list;
+    height: 453px;
+}
+
+.footer-mobile--nav-item{
+    margin-top: 16px;
+
+    &:first-child{
+        padding-top: 24px;
+        padding-bottom: 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    &.socials{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+
+.footer-mobile--social-links{
+    display: flex;
+    gap: 26px;
+}
+
+.footer-mobile--icon-facebook{
+    display: block;
+    width: 12px;
+    height: 20px;
+}
+
+.footer-mobile--icon-tiktok{
+    display: block;
+    width: 18px;
+    height: 20px;
+}
+
+.footer-mobile--icon-instagram{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.footer-mobile--copyright{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-top: 39px;
+    text-align: center;
+}

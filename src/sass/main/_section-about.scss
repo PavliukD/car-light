@@ -14,7 +14,7 @@
         text-transform: uppercase;
         display: block;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1399px) {
             font-size: 32px;
             line-height: 40px;
         }
@@ -30,11 +30,17 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    margin-top: 55px;
+    
+    width: fit-content;
+
+    @media (max-width: 1399px) {
+        grid-template-columns: 1fr;
+        margin: auto;
+        margin-top: 55px;
+    }
 
     @media (max-width: 767px){
         display: flex;
-        
         flex-wrap: nowrap;
         overflow: hidden;
         max-width: 350px;
@@ -53,6 +59,7 @@
     grid-template-columns: max(248px) max(300px);
     gap: 25px;
     border: 2px solid transparent;
+    max-width: 636px;
 
     transition-property: background-color, border;
     transition-duration: 500ms;

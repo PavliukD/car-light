@@ -10,9 +10,14 @@
         max-width: 524px;
         text-transform: uppercase;
 
-        @media (max-width:767px) {
+        @media (max-width: 1399px) {
             font-size: 32px;
             line-height: 40px;
+            max-width: 375px;
+        }
+
+        @media (max-width:767px) {
+            
             margin: auto;
             text-align: center;
         }
@@ -32,10 +37,15 @@
         max-width: 519px;
         margin-top: 40px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1399px) {
             font-size: 14px;
             line-height: 24px;
             letter-spacing: 0.04em;
+            max-width: 375px;
+        }
+
+        @media (max-width: 767px) {
+            
             margin: auto;
             margin-top: 24px;
             
@@ -54,7 +64,7 @@
 
 .hero--wrap{
         background-image: url('./images/hero.png');
-        background-size: auto auto;
+        background-size: 100% auto;
         background-repeat: no-repeat;
         background-position: right;
         padding-left: 60px;

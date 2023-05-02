@@ -15,7 +15,7 @@
         color: #F1DD23;
         display: block;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1399px) {
             font-size: 32px;
             line-height: 40px;
         }
@@ -34,10 +34,14 @@
         letter-spacing: 0.05em;
         color: #FFFFFF;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1399px) {
             font-size: 14px;
             line-height: 24px;
             letter-spacing: 0.04em;
+        }
+
+        @media (max-width: 767px) {
+            
             margin-top: 24px;
         }
 
@@ -135,7 +139,7 @@
         max-width: 436px;
         margin-top: 15px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1399px) {
             font-size: 16px;
             line-height: 24px;
         }
@@ -149,9 +153,13 @@
         letter-spacing: 0.05em;
         color: #8A8A9C;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1399px) {
             font-size: 12px;
-            line-height: 18px;
+                line-height: 18px;
+        }
+
+        @media (max-width: 767px) {
+            
             margin: 0;
         }
 
@@ -190,8 +198,8 @@
     & img{
         max-width: 637px;
         max-height: 600px;
-        width: auto;
-        height: fit-content;
+        height: auto;
+        width: 50%;
 
         @media (max-width: 767px) {
             position: absolute;
@@ -216,6 +224,7 @@
 
             @media (max-width:767px) {
                 display: block;
+                width: 100%;
             }
         }
     }

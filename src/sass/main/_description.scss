@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0 25px;
+    align-items: center;
 
     @media (max-width: 767px) {
         display: flex;
@@ -20,7 +21,7 @@
 
 .section-description--image-wrap{
     width: 100%;
-    height: auto;
+    height: fit-content;
     padding-left: 86px;
     padding-top: 86px;
     background-color: #151617;
@@ -39,7 +40,8 @@
         margin: 0;
         margin-left: auto;
         max-height: 494px;
-        width: auto;
+        width: 100%;
+        height: auto;
 
         @media (max-width: 767px) {
             width: 80%;
@@ -56,7 +58,7 @@
     text-indent: 100px;
     color: #FFFFFF;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
         font-size: 14px;
         line-height: 24px;
         text-indent: 0;
@@ -74,7 +76,7 @@
 
     margin-top: 95px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
         font-size: 16px;
         line-height: 24px;
         text-indent: 0;
@@ -85,8 +87,12 @@
 .section-description--text-wrap{
     padding: 86px 98px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
         padding: 0;
+    }
+
+    @media (max-width: 767px) {
+        
         margin-top: 56px;
     }
 }

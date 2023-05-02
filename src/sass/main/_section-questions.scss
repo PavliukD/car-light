@@ -14,7 +14,7 @@
         text-transform: uppercase;
         max-width: 380px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1399px) {
             font-size: 32px;
             line-height: 40px;
         }
@@ -95,9 +95,13 @@
         letter-spacing: 0.05em;
         color: #FFFFFF;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1399px) {
             font-size: 16px;
             line-height: 24px;
+        }
+
+        @media (max-width: 767px) {
+            
             max-width: 240px;
         }
     }
@@ -111,7 +115,7 @@
         color: #FFFFFF;
         max-width: 1156px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1399px) {
             font-size: 14px;
             line-height: 24px;
         }

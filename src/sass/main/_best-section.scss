@@ -13,7 +13,8 @@
         text-transform: uppercase;
         color: #F1DD23;
 
-        @media (max-width: 767px) {
+
+        @media (max-width: 1399px) {
             font-size: 32px;
             line-height: 40px;
         }
@@ -43,6 +44,8 @@
     grid-template-columns: repeat(2, 1fr);
     background-color: #151617;
     border-radius: 40px;
+    position: relative;
+    overflow: hidden;
 
     @media (max-width: 767px) {
         display: block;
@@ -88,10 +91,33 @@
         max-width: 180px;
         margin-top: 25px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1399px) {
             font-size: 12px;
             line-height: 18px;
             letter-spacing: 0.02em;
         }
+    }
+}
+
+.section-best .bg-animation{
+    position: absolute;
+    filter: blur(27px);
+    top: -500px;
+    left: 0;
+
+    transition-property: transform, top, left, right;
+    transition-duration: 3500ms;
+    transition-delay: 0;
+
+    &.left{
+        top: -400px;
+        left: -1100px;
+        transform: rotate(47deg);
+    }
+
+    &.bottom{
+        transform: rotate(107deg);
+        top: 20px;
+        left: -200px;
     }
 }

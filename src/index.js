@@ -16,6 +16,11 @@ import { HeaderMobilePopularList } from './js/HeaderMobilePopularList'
 import { HeaderMobileBlogList } from './js/HeaderMobileBlogList'
 import { HeaderMobileLanguage } from './js/HEaderMobileLanguage'
 import { HeaderMobileMenu } from './js/HeaderMobileMenu'
+import { FooterMobilePAges } from './js/FooterMobilePages'
+import { FooterMobileServices } from './js/FooterMobileServices'
+import { BestSectionAnimation } from './js/BestSectionAnimation'
+import { SectionRequestAnimation } from './js/SectionRequestAnimation'
+import { DropAuth } from './js/drop-auth'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -32,3 +37,8 @@ HeaderMobilePopularList()
 HeaderMobileBlogList()
 HeaderMobileLanguage()
 HeaderMobileMenu()
+FooterMobilePAges()
+FooterMobileServices()
+BestSectionAnimation()
+SectionRequestAnimation()
+DropAuth()
