@@ -585,14 +585,14 @@
         grid-template-columns: max(306px) max(194px);
         gap: 24px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 999px) {
             display: block;
         }
 
         &:not(:first-child){
             margin-top: 24px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 999px) {
                 margin-top: 16px;
             }
         }
@@ -624,7 +624,7 @@
     }
 
     &.table{
-        @media (max-width: 767px) {
+        @media (max-width: 999px) {
             grid-column-start: 2;
             grid-column-end: 3;
             text-align: left;

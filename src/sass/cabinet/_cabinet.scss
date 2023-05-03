@@ -14,7 +14,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
         grid-row-start: 5;
         grid-row-end: 6;
     }
@@ -24,7 +24,7 @@
         grid-row-end: 4;
         margin-top: 56px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1399px) {
             grid-row-start: 7;
             grid-row-end: 8;
         }
@@ -77,7 +77,7 @@
     grid-template-columns: max(416px) max(196px) repeat(2, 1fr);
     gap: 24px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -95,7 +95,7 @@
     transition-duration: 500ms;
     transition-delay: 0;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 6;
@@ -134,7 +134,7 @@
     padding: 35px 32px;
     height: 100%;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
         display: none;
     }
 }
@@ -148,7 +148,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 1;
@@ -172,7 +172,7 @@
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
         padding: 18px;
         height: 150px;
         flex-direction: column;
@@ -183,7 +183,7 @@
 }
 
 .cabinet--page-info-raiting .cabinet--page-text-big{
-    @media (max-width: 767px){
+    @media (max-width: 1399px){
         margin-left: auto;
     }
 }
@@ -217,7 +217,7 @@
         stroke: #FFFFFF;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 3;
@@ -235,7 +235,7 @@
     grid-column-start: 3;
     grid-column-end: 5;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 4;
@@ -504,6 +504,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     margin-top: 36px;
+
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     & button{
         width: 100%;
