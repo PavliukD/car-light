@@ -109,15 +109,29 @@
     transition-duration: 3500ms;
     transition-delay: 0;
 
+    @media (max-width: 767px) {
+        top: -300px;
+        left: -800px;
+    }
+
     &.left{
         top: -400px;
         left: -1100px;
         transform: rotate(47deg);
+
+        @media (max-width: 767px) {
+            left: -1400px;
+        }
     }
 
     &.bottom{
         transform: rotate(107deg);
         top: 20px;
         left: -200px;
+
+        @media (max-width: 767px) {
+            top: 500px;
+            left: -800px;
+        }
     }
 }

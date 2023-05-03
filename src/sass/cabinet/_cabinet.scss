@@ -171,6 +171,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 
     @media (max-width: 1399px) {
         padding: 18px;
@@ -563,4 +564,125 @@
     & span{
         color: #F1DD23;
     }
+}
+
+#anim-1{
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+        animation: gradient 16s linear 8s infinite;
+    
+        @keyframes gradient {
+            0% {
+                background-image: url('./images/anim-1/Property\ 1=Default.png');
+            }
+    
+            25% {
+                background-image: url('./images/anim-1/Property\ 1=Variant2.png');
+            }
+    
+            50% {
+                background-image: url('./images/anim-1/Property\ 1=Variant3.png');
+            }
+    
+            75% {
+                background-image: url('./images/anim-1/Property\ 1=Variant4.png');
+            }
+    
+            100% {
+                background-image: url('./images/anim-1/Property\ 1=Default.png');
+            }
+        }
+}
+
+#anim-2 {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation: gradient-two 16s linear 8s infinite;
+
+    @keyframes gradient-two {
+        0% {
+            background-image: url('./images/animation/an-1.png');
+        }
+
+        25% {
+            background-image: url('./images/animation/an-2.png');
+        }
+
+        50% {
+            background-image: url('./images/animation/an-3.png');
+        }
+
+        75% {
+            background-image: url('./images/animation/an-4.png');
+        }
+
+        100% {
+            background-image: url('./images/animation/an-1.png');
+        }
+    }
+}
+
+#anim-3{
+    position: relative;
+    
+    &>.background {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+
+        transition-property: opacity;
+        transition-duration: 500ms;
+        transition-delay: 0;
+
+        animation: gradient-3 16s linear 8s infinite;
+
+        @keyframes gradient-3 {
+            0% {
+                background-image: url('./images/anim-3/Property\ 1=1.png');
+            }
+
+            25% {
+                background-image: url('./images/anim-3/Property\ 1=2.png');
+            }
+
+            50% {
+                background-image: url('./images/anim-3/Property\ 1=3.png');
+            }
+
+            75% {
+                background-image: url('./images/anim-3/Property\ 1=4.png');
+            }
+
+            100% {
+                background-image: url('./images/anim-3/Property\ 1=1.png');
+            }
+        }
+    }
+}
+
+#anim-3:hover .background{
+    opacity: 1;
 }

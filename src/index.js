@@ -21,6 +21,7 @@ import { FooterMobileServices } from './js/FooterMobileServices'
 import { BestSectionAnimation } from './js/BestSectionAnimation'
 import { SectionRequestAnimation } from './js/SectionRequestAnimation'
 import { DropAuth } from './js/drop-auth'
+import { BgAnimationOne } from './js/BgAnim1'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -42,3 +43,5 @@ FooterMobileServices()
 BestSectionAnimation()
 SectionRequestAnimation()
 DropAuth()
+BgAnimationOne()
+
