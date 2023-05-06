@@ -22,6 +22,8 @@ import { BestSectionAnimation } from './js/BestSectionAnimation'
 import { SectionRequestAnimation } from './js/SectionRequestAnimation'
 import { DropAuth } from './js/drop-auth'
 import { BgAnimationOne } from './js/BgAnim1'
+import { MobileDropAuth } from './js/drop-auth'
+import { MobileDropCall } from './js/drop-call'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -34,7 +36,7 @@ GridSlider()
 CabinetBackdropCar()
 CabinetBackdropAuto()
 CabinetBackdropUser()
-HeaderMobilePopularList()
+// HeaderMobilePopularList()
 HeaderMobileBlogList()
 HeaderMobileLanguage()
 HeaderMobileMenu()
@@ -44,4 +46,6 @@ BestSectionAnimation()
 SectionRequestAnimation()
 DropAuth()
 BgAnimationOne()
+MobileDropAuth()
+MobileDropCall()
 

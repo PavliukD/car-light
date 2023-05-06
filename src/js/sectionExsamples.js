@@ -8,40 +8,47 @@ export function sectionExsamples() {
     const rightBtn = section.querySelector('.right')
     const list = section.querySelector('ul')
     const items = list.querySelectorAll('li')
+    const page = section.querySelector('.section--exsample-numbers-page')
+    console.dir(page)
+
     
-    let transform = 0
+    let transform = 1
 
     leftBtn.addEventListener('click', () => {
-        if (transform === 0) {
-            transform = 3
-            const transformation = transform * list.clientWidth
+        if (transform === 1) {
+            transform = 4
+            const transformation = (transform - 1) * list.clientWidth
             items.forEach(item => {
                 item.style.transform = `translateX(-${transformation}px)`
             })
+            page.innerText = transform
             return
         }
         transform = transform - 1
-        const transformation = transform * list.clientWidth
+        const transformation = (transform - 1) * list.clientWidth
             items.forEach(item => {
                 item.style.transform = `translateX(-${transformation}px)`
             })
+        page.innerText = transform
             return
     })
 
     rightBtn.addEventListener('click', () => {
-        if (transform === 3) {
-            transform = 0
-            const transformation = transform * list.clientWidth
+        if (transform === 4) {
+            transform = 1
+            const transformation = (transform - 1) * list.clientWidth
             items.forEach(item => {
                 item.style.transform = `translateX(-${transformation}px)`
             })
+            page.innerText = transform
             return
         }
         transform = transform + 1
-        const transformation = transform * list.clientWidth
+        const transformation = (transform - 1) * list.clientWidth
             items.forEach(item => {
                 item.style.transform = `translateX(-${transformation}px)`
             })
+        page.innerText = transform
             return
     })
 }

@@ -43,7 +43,8 @@
         display: flex;
         flex-wrap: nowrap;
         overflow: hidden;
-        max-width: 350px;
+        // max-width: 350px;
+        width: 100%;
         margin: auto;
         margin-top: 56px;
         gap: 0;
@@ -68,7 +69,7 @@
     @media (max-width: 767px) {
         display: flex;
         flex-shrink: 0;
-        width: 350px;
+        width: 100%;
         gap: 0;
         padding: 16px;
         flex-direction: column-reverse;

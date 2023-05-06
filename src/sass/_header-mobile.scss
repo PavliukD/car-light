@@ -70,6 +70,7 @@
     z-index: 2;
     opacity: 1;
     stroke: #0A0A0A;
+    border: none;
 
 
     & svg{
@@ -98,7 +99,7 @@
     font-size: 12px;
     line-height: 18px;
     color: #FFFFFF;
-    background-color: transparent;
+    background-color: transparent;z-index: 2;
 
     position: absolute;
     top: 0;
@@ -302,6 +303,7 @@
     width: 100%;
     height: fit-content;
     padding-top: 24px;
+    padding-bottom: 100px;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -325,6 +327,7 @@
 
     &.hidden{
         padding-top: 0;
+        padding-bottom: 0;
         height: 0;
         overflow: hidden;
     }

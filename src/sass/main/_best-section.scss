@@ -63,9 +63,12 @@
         z-index: 2;
 
         @media (max-width: 767px) {
+            grid-template-columns: repeat(2, 163px);
+            width: fit-content;
+            margin: auto;
             justify-items: center;
             margin-top: 56px;
-            gap: 24px;
+            gap: 24px 24px;
         }
     }
 }

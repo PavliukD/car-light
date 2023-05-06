@@ -13,6 +13,7 @@
         width: 100%;
         overflow: hidden;
         border-radius: 20px;
+        flex-shrink: 0;
 
         @media (max-width: 767px) {
             margin: auto;
@@ -25,6 +26,7 @@
         position: relative;
         width: 100%;
         height: auto;
+        flex-shrink: 0;
 
         transition-property: transform;
         transition-duration: 500ms;
@@ -157,6 +159,14 @@
 
         @media (max-width: 767px) {
             top: 45%;
+
+            &>.section--exsample-notification-text{
+                transform: translate(-30%, -100%);
+
+                &>.section--exsample-notification-arrow {
+                    left: 30%;
+                }
+            }
         }
     }
 
@@ -167,6 +177,14 @@
         @media (max-width: 767px) {
             left: 67%;
             top: 77%;
+
+            &>.section--exsample-notification-text {
+                transform: translate(-60%, -100%);
+        
+                &>.section--exsample-notification-arrow {
+                    left: 60%;
+                }
+            }
         }
     }
     &.three{
@@ -176,6 +194,15 @@
         @media (max-width: 767px) {
             left: 17%;
             top: 11%;
+
+            &>.section--exsample-notification-text {
+                transform: translate(-30%, 60%);
+        
+                &>.section--exsample-notification-arrow {
+                    left: 30%;
+                    top: -9%;
+                }
+            }
         }
     }
     &.four{
@@ -185,6 +212,14 @@
         @media (max-width: 767px) {
             left: 69%;
             top: 45%;
+
+            &>.section--exsample-notification-text {
+                transform: translate(-60%, -100%);
+        
+                &>.section--exsample-notification-arrow {
+                    left: 60%;
+                }
+            }
         }
     }
     &.five {
@@ -194,6 +229,14 @@
         @media (max-width: 767px) {
             left: 70%;
             top: 44%;
+
+            &>.section--exsample-notification-text {
+                transform: translate(-60%, -100%);
+        
+                &>.section--exsample-notification-arrow {
+                    left: 60%;
+                }
+            }
         }
     }
     &.six {
@@ -203,6 +246,14 @@
         @media (max-width: 767px) {
             left: 70%;
             top: 80%;
+
+            &>.section--exsample-notification-text {
+                transform: translate(-60%, -100%);
+        
+                &>.section--exsample-notification-arrow {
+                    left: 60%;
+                }
+            }
         }
     }
 }
