@@ -6,6 +6,10 @@
         display: block;
         max-width: 800px;
     }
+
+    @media (max-width: 767px) {
+        max-width: 450px;
+    }
 }
 
 .footer-mobile .header-mobile--menu-punkt{
