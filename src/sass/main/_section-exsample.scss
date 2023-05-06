@@ -24,7 +24,7 @@
     & li{
         position: relative;
         width: 100%;
-            height: auto;
+        height: auto;
 
         transition-property: transform;
         transition-duration: 500ms;
@@ -127,6 +127,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
     transition-property: border, background-color;
     transition-duration: 500ms;

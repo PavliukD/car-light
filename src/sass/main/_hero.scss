@@ -46,7 +46,7 @@
 
         @media (max-width: 767px) {
             
-            margin: auto;
+            // margin: auto;
             margin-top: 24px;
             
         }
@@ -84,7 +84,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 13px 30px;
+    padding: 12px 53px;
     border-radius: 10px;
 
     font-style: normal;
@@ -102,7 +102,7 @@
         height: 40px;
         font-size: 12px;
         line-height: 18px;
-
+        padding: 0;
     }
 }
 

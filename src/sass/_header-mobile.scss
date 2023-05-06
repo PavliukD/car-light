@@ -1,7 +1,8 @@
 .header-mobile{
     margin: auto;
     position: relative;
-    padding-top: 42px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     background: #0A0A0A;
     display: none;
 
@@ -68,11 +69,13 @@
     position: relative;
     z-index: 2;
     opacity: 1;
+    stroke: #0A0A0A;
+
 
     & svg{
         display: block;
-        width: 12px;
-        height: 12px;
+        width: 16px;
+        height: 16px;
     }
 
     &.hidden{

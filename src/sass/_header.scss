@@ -57,24 +57,6 @@ header .container{
     fill: #F1DD23;
 }
 
-.header--logo-2{
-    opacity: 0;
-}
-
-.header--logo-1,
-.header--logo-2{
-    transition-property: opacity;
-    transition-duration: 500ms;
-    transition-delay: 0;
-}
-
-.header--logo:hover .header--logo-1{
-    opacity: 0;
-}
-
-.header--logo:hover .header--logo-2{
-    opacity: 1;
-}
 
 .header--nav-list{
     display: flex;
@@ -170,8 +152,10 @@ header .container{
         background-color: #FFFFFF;
         padding: 32px;
         border-radius: 10px;
+        z-index: 99;
+        opacity: 1;
 
-        transition-property: height, padding;
+        transition-property: opacity;
         transition-duration: 500ms;
         transition-delay: 0;
 
@@ -179,6 +163,7 @@ header .container{
             height: 0;
             padding: 0;
             overflow: hidden;
+            opacity: 0;
         }
 
         & li{
@@ -337,7 +322,8 @@ header .container{
     width: 8px;
     height: 8px;
     margin-right: 4px;
-
+    display: block;
+    fill: #F1DD23;
 }
 
 .header--blog-list{
@@ -348,10 +334,13 @@ header .container{
     border-radius: 10px;
     display: block;
     height: 0px;
+    width: fit-content;
     overflow: hidden;
-    transition-property: height, padding;
+    opacity: 0;
+    transition-property: opacity;
     transition-duration: 500ms;
     transition-delay: 0;
+    z-index: 99;
     
 
     & li{
@@ -387,6 +376,7 @@ header .container{
     :focus .header--blog-list{
         padding: 32px;
         height: 194px;
+        opacity: 1;
     }
 }
 

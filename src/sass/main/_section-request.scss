@@ -4,6 +4,8 @@
 
     @media (max-width: 767px) {
         margin: auto;
+        margin-top: 170px;
+        margin-bottom: 136px;
     }
 }
 
@@ -100,6 +102,8 @@
     padding-top: 13px;
     padding-bottom: 13px;
     outline: none;
+    position: relative;
+    z-index: 2;
 
     font-style: normal;
     font-weight: 700;
@@ -161,6 +165,8 @@
     line-height: 18px;
     letter-spacing: 0.02em;
     color: #8A8A9C;
+    position: relative;
+    z-index: 2;
 
 
     & a{
@@ -184,6 +190,8 @@
     background-color: #F1DD23;
     border-radius: 10px;
     border: 1px solid #F1DD23;
+    position: relative;
+    z-index: 2;
 
     font-style: normal;
     font-weight: 700;
@@ -212,12 +220,13 @@
 
 .section-request--form .bg-animation{
     position: absolute;
+    z-index: 1;
 
     bottom: 200px;
     right: -500px;
 
     transition-property: right, bottom, transform;
-    transition-duration: 3500ms;
+    transition-duration: 7000ms;
     transition-delay: 0;
 
     &.left{

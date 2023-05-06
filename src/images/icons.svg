@@ -276,8 +276,6 @@
 <symbol id="phone" viewBox="0 0 32 32">
 <path
         fill="none"
-        stroke="#8a8a9c"
-        style="stroke: var(--color4, #8a8a9c)"
         stroke-linejoin="miter"
         stroke-linecap="round"
         stroke-miterlimit="4"
@@ -286,8 +284,6 @@
       />
 <path
         fill="none"
-        stroke="#8a8a9c"
-        style="stroke: var(--color4, #8a8a9c)"
         stroke-linejoin="miter"
         stroke-linecap="round"
         stroke-miterlimit="4"
@@ -296,8 +292,6 @@
       />
 <path
         fill="none"
-        stroke="#8a8a9c"
-        style="stroke: var(--color4, #8a8a9c)"
         stroke-linejoin="miter"
         stroke-linecap="round"
         stroke-miterlimit="4"

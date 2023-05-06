@@ -155,9 +155,15 @@
 .section-about-light--tag-list{
     display: flex;
     flex-shrink: 0;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     align-items: center;
+
+    &::-webkit-scrollbar {
+            display: none;
+        }
+
+    
 
     @media (max-width: 767px) {
         position: absolute;
@@ -171,11 +177,43 @@
         padding: 7px 8px;
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 5px;
+        transition-property: border, background-color;
+        transition-duration: 500ms;
+        transition-delay: 0;
+
+        
+
+        &.last{
+            border: none;
+            height: auto;
+            width: 32px;
+
+            @media (max-width: 767px) {
+                background-color: transparent;
+            }
+
+            &:hover{
+                border: none;
+                background-color: transparent;
+            }
+        }
+
+        &:hover{
+            border: 1px solid #FFFFFF;
+            background-color: #FFFFFF;
+            
+
+            & a{
+                color: #151617;
+            }
+        }
 
         @media (max-width: 767px) {
             background-color: #151617;
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 5px;
+            
+            
         }
         
 
@@ -183,13 +221,18 @@
             margin-right: 5px;
         }
 
-        & span{
+        & a{
             font-weight: 500;
             font-size: 12px;
             line-height: 18px;
             letter-spacing: 0.02em;
             color: #FFFFFF;
+            transition-property: color;
+            transition-duration: 500ms;
+            transition-delay: 0;
         }
+        
+
     }
 
     &::before{
@@ -201,7 +244,7 @@
         right: 0;
         top: 50%;
         transform: translateY(-50%);
-        background-image: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        background-image: linear-gradient(270deg, #151617 0%, rgba(21, 22, 23, 0) 100%);
 
         transition-property: background-image;
         transition-duration: 500ms;
@@ -216,7 +259,8 @@
 .section-about-light--list-item:hover .section-about-light--tag-list,
 .section-about-light--list-item:focus .section-about-light--tag-list{
     &::before{
-    background-image: linear-gradient(270deg, #212223 0%, rgba(0, 0, 0, 0) 100%);
+    // background-image: linear-gradient(270deg, #212223 0%, rgba(0, 0, 0, 0) 100%);
+        background-image: none;
 
     transition-property: background-image;
     transition-duration: 500ms;

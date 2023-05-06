@@ -220,9 +220,11 @@
     padding-top: 15px;
 
     & svg{
-        width: 3px;
-        height: 6px;
+        width: 6px;
+        height: 12px;
         margin-right: 7px;
+        display: block;
+        stroke: #8A8A9C;
     }
 
     & span{
@@ -307,6 +309,7 @@
 
         &.more{
             padding: 16px 24px;
+            width: 206px;
             & svg{
                 width: 20px;
                 height: 20px;

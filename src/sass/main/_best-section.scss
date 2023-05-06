@@ -12,6 +12,8 @@
         line-height: 56px;
         text-transform: uppercase;
         color: #F1DD23;
+        position: relative;
+        z-index: 2;
 
 
         @media (max-width: 1399px) {
@@ -31,6 +33,8 @@
     margin-top: 65px;
     width: 137px;
     display: flex;
+    position: relative;
+    z-index: 2;
 
     @media (max-width: 767px) {
         display: none;
@@ -55,6 +59,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px 00px;
+        position: relative;
+        z-index: 2;
 
         @media (max-width: 767px) {
             justify-items: center;
@@ -104,9 +110,10 @@
     filter: blur(27px);
     top: -500px;
     left: 0;
+    z-index: 1;
 
     transition-property: transform, top, left, right;
-    transition-duration: 3500ms;
+    transition-duration: 7000ms;
     transition-delay: 0;
 
     @media (max-width: 767px) {

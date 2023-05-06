@@ -21,5 +21,5 @@ export function BestSectionAnimation() {
             img.classList.add('none')
             return
         }
-    }, 3800)
+    }, 7100)
 }
