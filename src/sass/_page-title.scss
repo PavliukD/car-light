@@ -37,7 +37,7 @@
         &:not(:first-child){
             &::before{
                 content: '';
-                background-image: url('./images/_.png');
+                background-image: url('./images/right.png');
                 display: block;
                 width: 8px;
                 height: 8px;
