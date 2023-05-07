@@ -3,6 +3,10 @@
     margin-top: 55px;
     overflow: hidden;
 
+    @media (max-width: 767px) {
+        padding-left: 46px;
+    }
+
 
     & li{
         flex-shrink: 0;
@@ -10,7 +14,7 @@
             margin-right: 24px;
 
             @media (max-width: 767px) {
-                margin-right: 40px;
+                margin-right: 32px;
             }
         }
     }
@@ -48,4 +52,80 @@
     &.first{
         margin-top: 55px;
     }
+}
+
+.blog-page .section-about-light--list-item{
+    background-color: #0A0A0A;
+
+    &:not(:first-child){
+        @media (max-width: 767px) {
+            margin-top: 32px;
+        }
+    }
+}
+
+.blog-page .section-about-light--tag-list{
+    & li{
+        background-color: #151617;
+        cursor: pointer;
+
+        & span{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+        }
+
+        &.section-about-light--star-icon{
+            background-color: #F1DD23;
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    &::before{
+        background: linear-gradient(270deg, #0A0A0A 0%, rgba(0, 0, 0, 0) 100%);
+    }
+}
+
+.blog-page .footer--icon-cross{
+    position: static;
+    display: block;
+    fill: #F1DD23;
+    margin-right: 5px;
+}
+
+.blog-page--scroll-button{
+    @media (min-width: 768px) {
+        display: none;
+    }
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 4;
+
+    & svg{
+        display: block;
+        width: 20px;
+        height: 20px;
+        fill: transparent;
+        stroke: #FFFFFF;
+    }
+
+    &.left{
+        left: 0;
+    }
+
+    &.right{
+        right: 0;
+    }
+}
+
+.blog-page-cathegories-wrap{
+    position: relative;
 }

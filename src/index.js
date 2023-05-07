@@ -26,6 +26,7 @@ import { MobileDropAuth } from './js/drop-auth'
 import { MobileDropCall } from './js/drop-call'
 import { ServiceRecomendations } from './js/ServiceRecomendations'
 import { HorisontalScroll } from './js/HorisontalScroll'
+import { BlogCathegories } from './js/BlogCathegories'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -52,4 +53,5 @@ MobileDropAuth()
 MobileDropCall()
 ServiceRecomendations()
 HorisontalScroll()
+BlogCathegories()
 

@@ -49,6 +49,7 @@
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 20px;
         position: relative;
+        overflow: hidden;
 
         @media (max-width: 767px) {
             width: 100%;
@@ -98,7 +99,7 @@
     & ul{
         display: flex;
         flex-wrap: wrap;
-        gap: 6px 4px;
+        gap: 4px;
         align-items: center;
 
         @media (max-width: 767px) {
@@ -108,7 +109,7 @@
         & li{
             display: inline-block;
             width: fit-content;
-            height: fit-content;
+            height: 40px;
 
             &:not(:first-child){
                 margin-top: 0;
@@ -132,7 +133,9 @@
                 line-height: 24px;
                 letter-spacing: 0.04em;
                 color: #FFFFFF;
+                display: block;
                 width: fit-content;
+                height: 100%;
 
                 @media (max-width: 767px) {
                     font-weight: 500;
@@ -147,6 +150,7 @@
                 padding: 8px 16px;
                 background-color: #FFFFFF;
                 border-radius: 5px;
+                border: none;
                 display: flex;
                 align-items: center;
 
@@ -227,6 +231,7 @@
         & img{
             transform: scale(1.05);
         }
+
     }
 
     & img{
@@ -269,6 +274,14 @@
     }
 }
 
+#blog-article--comleted-works-cart:hover .blog-article--comleted-works--tag-link::after {
+    background-image: linear-gradient(270deg, #212223 0%, rgba(0, 0, 0, 0) 100%);
+
+    transition-property: background-image;
+    transition-duration: 500ms;
+    transition-delay: 0;
+}
+
 #blog-article--comleted-works-cart .section--services-more{
     margin-top: 24px;
 }
@@ -309,8 +322,8 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        background-image: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-    
+        background-image: linear-gradient(270deg, #0A0A0A 0%, rgba(0, 0, 0, 0) 100%);
+        
         transition-property: background-image;
         transition-duration: 500ms;
         transition-delay: 0;
@@ -320,9 +333,10 @@
 .blog-article--correct-item{
     display: grid;
     grid-template-columns: max(306px) max(856px);
-    justify-content: space-between;
+    // justify-content: space-between;
     overflow: hidden;
     border-top: 1px solid #FFFFFF;
+    gap: 9.5%;
 
     @media (max-width: 767px) {
         display: block;
@@ -344,7 +358,7 @@
     &.container{
         padding-top: 80px;
         padding-right: 0;
-        overflow: visible;
+        overflow: hidden;
     }
 }
 

@@ -186,6 +186,10 @@
 
 }
 
+.catalog-page--clear-filter:hover #catalog-page--clear-filter-text::after{
+    opacity: 1;
+}
+
 #catalog-page--clear-filter-text{
     font-style: normal;
     font-weight: 700;
@@ -204,6 +208,12 @@
         position: absolute;
         left: 0;
         bottom: -3px;
+
+        opacity: 0;
+
+        transition-property: opacity;
+        transition-duration: 500ms;
+        transition-delay: 0;
 
         @media (max-width: 767px) {
             display: none;
@@ -255,7 +265,7 @@
 
             &:hover{
                 background-color: #212223;
-                border: 2px solid rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.1);
             }
         }
 
@@ -275,8 +285,8 @@
                 max-width: 108px;
                 font-weight: 400;
                 letter-spacing: 0.02em;
-                align-self: flex-start;
-                margin-top: 14px;
+                align-self: center;
+                // margin-top: 14px;
             }
         }
 
@@ -287,6 +297,7 @@
             @media (max-width: 767px) {
                 max-width: 48px;
                 position: relative;
+                opacity: 0.5;
             }
 
             &.correct{
@@ -672,7 +683,7 @@
 }
 
 .catalog-page .sort-page--title{
-    pading-top: 80px;
+    padding-top: 80px;
 
     @media (max-width: 767px) {
         padding-top: 64px;
