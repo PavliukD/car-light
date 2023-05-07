@@ -159,7 +159,7 @@
         transform: translate(25%, 50%);
 
         @media (max-width: 767px) {
-            left: -15px;
+            left: -12px;
         }
 
     }
@@ -169,8 +169,12 @@
         transform: translate(-25%, 50%);
 
         @media (max-width: 767px) {
-            right: -15px;
+            right: -12px;
         }
+    }
+
+    & svg{
+        display: block;
     }
 
     
@@ -183,6 +187,7 @@
 .service--content{
     padding-top: 80px;
     padding-bottom: 80px;
+    overflow: hidden;
 }
 
 #service--content-advantages-list{
@@ -255,12 +260,23 @@
         }
 
         & img {
-                width: 100%;
-                height: auto;
-                margin: 0;
-                display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            display: block;
 
-            }
+        }
+    }
+
+    & h3 {
+        margin: 0;
+        
+        @media (max-width: 767px) {
+            max-width: 240px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
     
     
@@ -327,6 +343,14 @@
         letter-spacing: 0.05em;
         color: #FFFFFF;
 
+        transition-property: color;
+        transition-duration: 500ms;
+        transition-delay: 0;
+
+        &.active{
+            color: #F1DD23;
+        }
+
         @media (max-width: 767px) {
             font-size: 16px;
             line-height: 24px;
@@ -381,6 +405,8 @@
             transition-delay: 0;
         }
     }
+
+    
 }
 
 .service--recomendations-item-comlect{
@@ -496,8 +522,16 @@
 
     display: grid;
     grid-template-columns: max(440px) max(306px);
-    margin-top: 40px;
     justify-content: space-between;
+
+    height: 0;
+    overflow: hidden;
+    margin-top: 0;
+
+    &.active{
+        margin-top: 40px;
+        height: fit-content;
+    }
 
     @media (max-width: 1399px) {
         grid-template-columns: 100%;
@@ -528,4 +562,30 @@
             }
         }
     }
+
+    & li {
+        gap: 5px;
+    }
+}
+
+.service--content .contacts-page--form .section-request--legal {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #8A8A9C;
+}
+
+.service--content .contacts-page--form{
+    width: 100%;
+}
+
+.service--content .section-request--submit{
+    margin: auto;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 100%;
+    display: block;
 }

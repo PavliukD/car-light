@@ -192,7 +192,13 @@
 
 .blog-article--comleted-works{
     display: flex;
-    // overflow: hidden;
+    width: 111%;
+    overflow: scroll;
+    padding-right: 40px;
+
+    &::-webkit-scrollbar {
+        display: none;
+        }
 }
 
 #blog-article--comleted-works-cart{
@@ -337,6 +343,8 @@
 
     &.container{
         padding-top: 80px;
+        padding-right: 0;
+        overflow: visible;
     }
 }
 

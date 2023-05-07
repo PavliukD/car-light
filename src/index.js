@@ -24,6 +24,8 @@ import { DropAuth } from './js/drop-auth'
 import { BgAnimationOne } from './js/BgAnim1'
 import { MobileDropAuth } from './js/drop-auth'
 import { MobileDropCall } from './js/drop-call'
+import { ServiceRecomendations } from './js/ServiceRecomendations'
+import { HorisontalScroll } from './js/HorisontalScroll'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -48,4 +50,6 @@ DropAuth()
 BgAnimationOne()
 MobileDropAuth()
 MobileDropCall()
+ServiceRecomendations()
+HorisontalScroll()
 

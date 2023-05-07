@@ -175,6 +175,28 @@
     }
 }
 
+.section-questions--icon-wrap {
+    &.active{
+        background-color: transparent;
+        transform: rotate(90deg);
+        background-color: #FFFFFF;
+    
+        transition-property: transform, background-color;
+        transition-duration: 500ms;
+        transition-delay: 0;
+    
+        &>.section-questions--icon {
+            &>.section-questions--icon-plus {
+                stroke: transparent;
+            }
+    
+            &>.section-questions--icon-minus {
+                stroke: #212223;
+            }
+        }
+    }
+}
+
 .section-questions--ansver{
     display: none;
     height: 0px;
