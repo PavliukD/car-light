@@ -66,6 +66,8 @@
             width: auto;
             fill: none;
             stroke: #FFFFFF;
+            position: relative;
+            z-index: 2;
         }
 
         & span{
@@ -75,6 +77,8 @@
             line-height: 28px;
             letter-spacing: 0.03em;
             color: #FFFFFF;
+            position: relative;
+            z-index: 2;
 
             @media (max-width: 767px) {
                 font-size: 14px;
@@ -359,4 +363,15 @@
         max-width: 126px;
         margin-left: 0;
     }
+}
+
+.blog-article .section-request--submit{
+    margin-left: 0;
+}
+
+.blog-article .section-request--legal{
+    color: #8A8A9C;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
 }
