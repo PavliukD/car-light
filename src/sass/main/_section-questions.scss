@@ -195,6 +195,22 @@
             }
         }
     }
+
+    &.open{
+        background-color: transparent;
+        transform: rotate(45deg);
+        background-color: #FFFFFF;
+    
+        transition-property: transform, background-color;
+        transition-duration: 500ms;
+        transition-delay: 0;
+
+        &>.section-questions--icon {
+            &>.section-questions--icon-plus {
+                stroke: #0A0A0A;
+            }
+        }
+    }
 }
 
 .section-questions--ansver{

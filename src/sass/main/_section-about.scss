@@ -30,7 +30,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    
+    margin-top: 56px;
     width: fit-content;
 
     @media (max-width: 1399px) {

@@ -111,6 +111,15 @@
                 <use href="images/icons.svg#user"></use>
             </svg>
         </button>
+        <button class="header--user">
+            <svg class="header--user-car">
+                <use href="images/cars.svg#icon-Bmw"></use>
+            </svg>
+            <span>АБ</span>
+            <svg class="header--user-down ">
+                <use href="images/icons.svg#down"></use>
+            </svg>
+        </button>
         <button class="header--termine">
             Записатися
         </button>
@@ -141,6 +150,15 @@
                 </button>
                 <button class="header-mobile--button-enter hidden">
                     Вхід
+                </button>
+                <button class="header--user hidden">
+                    <svg class="header--user-car">
+                        <use href="images/cars.svg#icon-Bmw"></use>
+                    </svg>
+                    <span>АБ</span>
+                    <svg class="header--user-down ">
+                        <use href="images/icons.svg#down"></use>
+                    </svg>
                 </button>
             </div>
         </div>  
@@ -315,12 +333,21 @@
                     <use href="images/cars.svg#icon-Mercedes-Benz"></use>
                 </svg>
             </div>
-            <p class="job-page--hero-list-title">
-                <svg>
-                    <use href="images/icons.svg#information"></use>
-                </svg>
-                Вартість робіт та матеріалів:
-            </p>
+            <div class="job-page--hero-list-title-wrap">
+                <div class="job-page--hero-list-title-information">
+                    <svg>
+                        <use href="images/icons.svg#information"></use>
+                    </svg>
+                    <p>
+                        Вартість робіт у кожному випадку індивідуальна і залежить від стану автомобільної оптики, її проблем, курсу
+                        валюти при
+                        придбанні витратних матеріалів та елементів автомобільної оптики та автосвітла.
+                    </p>
+                </div>
+                <p class="job-page--hero-list-title">
+                    Вартість робіт та матеріалів:
+                </p>
+            </div>
             <div class="job-page--hero-list-wrap">
                 <ul class="job-page--hero-list">
                     <li>
@@ -395,7 +422,7 @@
             <p class="job--page-content-text">Майстри сервісу вирішили зробити вимірювання потужності світлового потоку за допомогою окремих приладів, а також зробити
             проекцію на екран полотно</p>
         </div>
-        <ul class="job--page-content-elements-grid">
+        <ul class="job--page-content-elements-grid margin-mob">
             <li>
                 <img src="images/diagnostic-1.png" alt="" class="small">
             </li>

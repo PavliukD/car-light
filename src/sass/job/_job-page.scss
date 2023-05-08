@@ -10,8 +10,14 @@
     
 
     &.container{
-        padding-right: 0;
         
+    }
+
+    & img{
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
     }
 }
 
@@ -70,6 +76,12 @@
     justify-content: space-between;
 }
 
+.job-page--hero-list-title-wrap{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
 .job-page--hero-list-title{
     font-style: normal;
     font-weight: 400;
@@ -77,29 +89,16 @@
     line-height: 24px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
+
 
     @media (max-width: 767px) {
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.04em;
-        margin-top: 36px;
+        // margin-top: 36px;
     }
 
-    & svg{
-        width: 24px;
-        height: 24px;
-        margin-right: 10px;
-        stroke: #FFFFFF;
-        display: block;
-        
-        @media (max-width: 767px) {
-            width: 20px;
-            height: 20px;
-        }
-    }
+    
 }
 .job-page--hero-list-wrap{
     display: block;
@@ -421,7 +420,15 @@
         margin-top: 96px;
     }
 
+    &.margin-mob{
+        @media (max-width: 767px) {
+            margin-top: 40px;
+        }
+    }
+
     &.slider{
+        grid-column-start: 1;
+        grid-column-end: 3;
         @media (max-width: 767px) {
             display: block;
         }
@@ -436,8 +443,10 @@
     border-radius: 20px;
     margin-top: 96px;
     margin-bottom: 96px;
-    width: 100%;
+    width: fit-content;
+    max-width: 100%;
     height: auto;
+    max-height: 600px;
 
     @media (max-width: 767px) {
         width: calc(100% + 16px);
@@ -476,6 +485,10 @@
     }
 }
 
+#grid-slider-control{
+    display: flex;
+}
+
 .job--page-content-slider{
     padding: 40px;
     background-color: #0A0A0A;
@@ -483,6 +496,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 416px;
+    max-height: 416px;
 
     @media (max-width: 767px) {
         width: calc(100% + 16px);
@@ -495,6 +510,8 @@
     display: flex;
     overflow: hidden;
     border-radius: 20px;
+    max-width: 416px;
+    max-height: 416px;
 
     @media (max-width: 767px) {
         width: calc(100% + 16px);
@@ -652,4 +669,42 @@
 
 .job--page .blog-article--correct-item{
     padding-bottom: 106px;
+}
+
+.job-page--hero-list-title-information{
+    position: relative;
+    
+    & p{
+        position: absolute;
+        padding: 30px;
+        display: none;
+        width: 352px;
+        background-color: #FFFFFF;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #0A0A0A;
+        border-radius: 10px;
+    }
+
+    & svg{
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        stroke: #FFFFFF;
+        display: block;
+        
+        @media (max-width: 767px) {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.job-page--hero-list-title-information:hover{
+    & p{
+        display: block;
+        z-index: 99;
+    }
 }

@@ -210,6 +210,10 @@ header .container{
     transition-duration: 500ms;
     transition-delay: 0;
 
+    &.hidden{
+        display: none;
+    }
+
     & svg{
         width: 24px;
         height: 24px;
@@ -385,4 +389,50 @@ header .container{
     align-items: center;
 }
 
+.header--user{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: transparent;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 10px;
+
+    @media (max-width: 1399px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 7px;
+        border: 1px solid #FFFFFF;
+    }
+
+    &.hidden{
+        display: none;
+    }
+
+    & span{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+}
+
+.header--user-car{
+    display: block;
+    width: 32px;
+    height: 32px;
+    fill: #FFFFFF;
+
+    @media (max-width: 1399px) {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.header--user-down{
+    display: block;
+    width: 16px;
+    height: 16px;
+}
 

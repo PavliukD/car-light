@@ -7,7 +7,7 @@
 
     &:hover,
     :focus {
-        background-color: #FFFFFF1A;
+        background-color: #212223;
     }
 
     &:nth-child(7n),
@@ -16,6 +16,14 @@
     }
 }
 
+.catalog-page .section-about-light--list-item:hover .section-about-light--tag-list{
+    & li{
+        background-color: #212223;
+    }
+}
+
+
+
 .catalog-page .section-about-light--list{
     margin-top: 24px;
 
@@ -23,6 +31,36 @@
         display: none;
     }
 }
+
+.catalog-page .section-about-light--tag-list{
+    
+    & li{
+        background-color: #151617;
+
+        & span{
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    &::before{
+        background-image: none;
+        background: linear-gradient(270deg, #0A0A0A 0%, rgba(0, 0, 0, 0) 100%);
+    }
+}
+
+.catalog-page .section-about-light--tag-list .section-about-light--star-icon{
+    background-color: #F1DD23;
+}
+
+.catalog-page .section-about-light--list-item:hover li {
+    &.section-about-light--star-icon{
+        background-color: #F1DD23;
+    }
+}
+
 
 .catalog-page .section-nore-jobs--list{
     display: none;
@@ -78,11 +116,11 @@
 
         &:hover,
         &:focus{
-            border: 2px solid #FFFFFF;
+            border: 1.5px solid #FFFFFF;
         }
 
         &.active{
-            border: 2px solid #FFFFFF;
+            border: 1.5px solid #FFFFFF;
             background-color: #FFFFFF;
             color: #0A0A0A;
         }
@@ -153,6 +191,12 @@
 .catalog-page--fiter-theme{
     grid-column-start: 1;
     grid-column-end: 3;
+    overflow: hidden;
+    
+    & div{
+        position: relative;
+        z-index: 9;
+    }
 
     @media (max-width: 767px) {
         grid-column-end: 2;
@@ -227,6 +271,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
+
+    &.hidden{
+        height: 0;
+        overflow: hidden;
+    }
 
     @media (max-width: 1399px) {
         grid-template-columns: repeat(2, 1fr);
@@ -334,6 +383,11 @@
 .catalog-page--marks-wrap{
     grid-column-start: 1;
     grid-column-end: 5;
+
+    &.hidden{
+        height: 0;
+        overflow: hidden;
+    }
 
     @media (max-width: 767px) {
         grid-column-end: 2;
@@ -671,6 +725,8 @@
 }
 
 .catalog-page--filter-car{
+    overflow: hidden;
+
     @media (max-width: 1399px) {
         grid-row-start: 3;
         grid-row-end: 4;

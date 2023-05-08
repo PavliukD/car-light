@@ -28,6 +28,7 @@ import { ServiceRecomendations } from './js/ServiceRecomendations'
 import { HorisontalScroll } from './js/HorisontalScroll'
 import { BlogCathegories } from './js/BlogCathegories'
 import { ScrollButton } from './js/ScrollButton'
+import { Filters } from './js/Filters'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -56,4 +57,5 @@ ServiceRecomendations()
 HorisontalScroll()
 BlogCathegories()
 ScrollButton()
+Filters()
 
