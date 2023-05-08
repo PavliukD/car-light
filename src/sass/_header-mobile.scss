@@ -131,7 +131,15 @@
     font-size: 14px;
     line-height: 22px;
     letter-spacing: 0.05em;
-    color: #FFFFFF;
+    color: #8A8A9C;
+
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-delay: 0;
+
+    &.active{
+        color: #FFFFFF;
+    }
 }
 
 .header-mobile--nav-list{
@@ -237,11 +245,24 @@
         width: 297px;
         padding-left: 20px;
         background-color: #151617;
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
 
         &:not(:first-child){
             margin-top: 0;
         }
 
+        &:nth-child(1){
+            background-image: url('./images/bg-lights-small/bg-light-03.png');
+        }
+        &:nth-child(2){
+            background-image: url('./images/bg-lights-small/bg-light-04.png');
+        }
+        &:nth-child(3){
+            background-image: url('./images/bg-lights-small/bg-light-05.png');
+        }
     }
 
     & h3{

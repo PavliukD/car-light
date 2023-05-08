@@ -27,6 +27,7 @@ import { MobileDropCall } from './js/drop-call'
 import { ServiceRecomendations } from './js/ServiceRecomendations'
 import { HorisontalScroll } from './js/HorisontalScroll'
 import { BlogCathegories } from './js/BlogCathegories'
+import { ScrollButton } from './js/ScrollButton'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -54,4 +55,5 @@ MobileDropCall()
 ServiceRecomendations()
 HorisontalScroll()
 BlogCathegories()
+ScrollButton()
 

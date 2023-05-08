@@ -33,12 +33,13 @@
 .bread-crumbs{
     display: flex;
     align-items: center;
-    overflow: scroll;
-    position: relative;
+    
     
 
     @media (max-width: 1399px) {
         max-width: 68%;
+        overflow: scroll;
+        position: relative;
     }
 
     &::-webkit-scrollbar{
@@ -59,7 +60,6 @@
     & li{
         display: flex;
         align-items: center;
-        overflow: scroll;
         flex-shrink: 0;
 
         &:not(:first-child){

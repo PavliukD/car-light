@@ -9,7 +9,6 @@ export function sectionExsamples() {
     const list = section.querySelector('ul')
     const items = list.querySelectorAll('li')
     const page = section.querySelector('.section--exsample-numbers-page')
-    console.dir(page)
 
     
     let transform = 1
