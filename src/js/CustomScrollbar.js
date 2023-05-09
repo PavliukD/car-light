@@ -8,12 +8,18 @@ export function CustomScrollbar() {
     wrap.forEach(item => {
         const thumb = item.querySelector('.custom-crollbar-thumb')
         const content = item.querySelector('[data-scroll-content]')
+        const scrollbar = item.querySelector('.custom-scrollbar')
+
+        if (item.clientHeight >= content.scrollHeight) {
+            scrollbar.style.display = 'none'
+            return
+        }
 
         const offset = item.clientHeight - (((content.scrollHeight / content.children.length) - (item.clientHeight / content.children.length))) * (content.children.length - 1)
-        const height = item.clientHeight - offset
 
         thumb.style.height = `${offset}px`
-        console.log(thumb.style)
+
+
 
         content.addEventListener('scroll', () => {
 
