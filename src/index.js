@@ -29,6 +29,7 @@ import { HorisontalScroll } from './js/HorisontalScroll'
 import { BlogCathegories } from './js/BlogCathegories'
 import { ScrollButton } from './js/ScrollButton'
 import { Filters } from './js/Filters'
+import { CustomScrollbar } from './js/CustomScrollbar'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -58,4 +59,5 @@ HorisontalScroll()
 BlogCathegories()
 ScrollButton()
 Filters()
+CustomScrollbar()
 
