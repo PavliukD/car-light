@@ -30,6 +30,9 @@ import { ScrollButton } from './js/ScrollButton'
 import { Filters } from './js/Filters'
 import { CustomScrollbar } from './js/CustomScrollbar'
 import { Grade } from './js/Grade'
+import { ChangeCar } from './js/cabinetBackdrop'
+import { ChangeUser } from './js/cabinetBackdrop'
+import { CabinetJobsList } from './js/cabinetJobsList'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -60,4 +63,7 @@ ScrollButton()
 Filters()
 CustomScrollbar()
 Grade()
+ChangeCar()
+ChangeUser()
+CabinetJobsList()
 

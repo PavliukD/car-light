@@ -16,19 +16,16 @@ export function CustomScrollbar() {
         }
 
         const offset = item.clientHeight - (((content.scrollHeight / content.children.length) - (item.clientHeight / content.children.length))) * (content.children.length - 1)
-
         thumb.style.height = `${offset}px`
 
 
 
         content.addEventListener('scroll', () => {
-
             let top = content.scrollTop - (((content.scrollHeight / content.children.length) - (item.clientHeight / content.children.length)))
 
             if (top <= 0) {
                 top = 0
             }
-
             thumb.style.top = `${top}px`
         })
     })

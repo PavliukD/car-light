@@ -381,7 +381,8 @@
     }
 }
 
-.cabinet--add-new-car{
+.cabinet--add-new-car,
+.cabinet--change-car{
     width: fit-content;
     height: fit-content;
     padding: 24px;
@@ -823,4 +824,10 @@
     z-index: 100;
 
     display: none;
+}
+
+.cabinet--page-change-user{
+    padding: 0;
+    border: none;
+    background-color: transparent;
 }

@@ -8,7 +8,33 @@
                 <p class="cabinet--add-new-car-mark">Марка авто</p>
                 <span class="cabinet--add-new-car-model">Серія</span>
             </div>
-            <button class="cabinet--add-new-car-remove-btn hidden">
+        </div>
+        <form action="" class="cabinet--add-new-car-form">
+            <div class="cabinet--add-new-car-input-wrap">
+                <input type="text" placeholder="Марка автомобіля">
+            </div>
+            <div class="cabinet--add-new-car-input-wrap">
+                <input type="text" placeholder="Модель авто">
+            </div>
+            <div class="cabinet--add-new-car-input-wrap">
+                <input type="text" placeholder="VIN номер">
+            </div>
+        </form>
+        <div class="cabinet--add-new-car-buttons-wrap">
+            <button class="add">Додати</button>
+            <button class="remove">Закрити</button>
+        </div>
+    </div>
+    <div class="cabinet--change-car hidden" id="change-car">
+        <div class="cabinet--add-new-car-model-wrap">
+            <svg class="cabinet--add-new-car-logo">
+                <use href="./images/cars.svg#icon-Bmw"></use>
+            </svg>
+            <div>
+                <p class="cabinet--add-new-car-mark">BMW</p>
+                <span class="cabinet--add-new-car-model">X5 e70</span>
+            </div>
+            <button class="cabinet--add-new-car-remove-btn">
                 <svg>
                     <use href="./images/icons.svg#trash"></use>
                 </svg>
@@ -16,19 +42,19 @@
         </div>
         <form action="" class="cabinet--add-new-car-form">
             <div class="cabinet--add-new-car-input-wrap">
-                <input type="text" placeholder="Марка автомобіля">
+                <input type="text" placeholder="Марка автомобіля" data-mark>
                 <svg>
                     <use href="./images/icons.svg#reduct"></use>
                 </svg>
             </div>
             <div class="cabinet--add-new-car-input-wrap">
-                <input type="text" placeholder="Модель авто">
+                <input type="text" placeholder="Модель авто" data-model>
                 <svg>
                     <use href="./images/icons.svg#reduct"></use>
                 </svg>
             </div>
             <div class="cabinet--add-new-car-input-wrap">
-                <input type="text" placeholder="VIN номер">
+                <input type="text" placeholder="VIN номер" data-vin>
                 <svg>
                     <use href="./images/icons.svg#reduct"></use>
                 </svg>
@@ -42,19 +68,19 @@
     <div class="cabinet--add-new-user hidden" id="user">
         <form action="" class="cabinet--add-new-car-form">
             <div class="cabinet--add-new-car-input-wrap">
-                <input type="text" placeholder="Імʼя">
+                <input type="text" placeholder="Імʼя" data-name>
             </div>
             <div class="cabinet--add-new-car-input-wrap">
-                <input type="text" placeholder="Прізвище">
+                <input type="text" placeholder="Прізвище" data-second-name>
             </div>
             <div class="cabinet--add-new-car-input-wrap">
-                <input type="text" placeholder="Місто паркування">
+                <input type="text" placeholder="Місто паркування" data-city>
             </div>
             <div class="cabinet--add-new-car-input-wrap">
-                <input type="text" placeholder="Номер телефону">
+                <input type="text" placeholder="Номер телефону" data-phone>
             </div>
             <div class="cabinet--add-new-car-input-wrap">
-                <input type="text" placeholder="Електронна адреса">
+                <input type="text" placeholder="Електронна адреса" data-mail>
             </div>
         </form>
         <p class="section-request--legal">
