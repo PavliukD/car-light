@@ -21,7 +21,6 @@ import { FooterMobileServices } from './js/FooterMobileServices'
 import { BestSectionAnimation } from './js/BestSectionAnimation'
 import { SectionRequestAnimation } from './js/SectionRequestAnimation'
 import { DropAuth } from './js/drop-auth'
-import { BgAnimationOne } from './js/BgAnim1'
 import { MobileDropAuth } from './js/drop-auth'
 import { MobileDropCall } from './js/drop-call'
 import { ServiceRecomendations } from './js/ServiceRecomendations'
@@ -30,6 +29,7 @@ import { BlogCathegories } from './js/BlogCathegories'
 import { ScrollButton } from './js/ScrollButton'
 import { Filters } from './js/Filters'
 import { CustomScrollbar } from './js/CustomScrollbar'
+import { Grade } from './js/Grade'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -51,7 +51,6 @@ FooterMobileServices()
 BestSectionAnimation()
 SectionRequestAnimation()
 DropAuth()
-BgAnimationOne()
 MobileDropAuth()
 MobileDropCall()
 ServiceRecomendations()
@@ -60,4 +59,5 @@ BlogCathegories()
 ScrollButton()
 Filters()
 CustomScrollbar()
+Grade()
 

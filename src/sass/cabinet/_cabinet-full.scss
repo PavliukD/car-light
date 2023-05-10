@@ -537,6 +537,10 @@
         height: 20px;
         stroke: #FFFFFF;
         fill: transparent;
+
+        transition-property: stroke, fill;
+        transition-duration: 500ms;
+        transition-delay: 0;
     }
 
     & button{
@@ -545,6 +549,25 @@
         background-color: transparent;
         display: flex;
         align-items: center;
+
+        &.active{
+            & svg{
+                fill: #FFFFFF;
+                stroke: #FFFFFF;
+            }
+        }
+
+        &:hover{
+            &.active{
+                & svg{
+                    stroke: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    & button:hover svg{
+        stroke: #8A8A9C;
     }
 
     & li{
@@ -579,7 +602,8 @@
     margin-top: 37px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: fit-content;
+    // justify-content: flex-start;
 
     @media (max-width: 1399px) {
         margin-top: 0;
@@ -589,6 +613,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        width: 100%;
         
     }
 
@@ -628,6 +653,7 @@
 
 .cabinet--page-jobs-list-desktop{
   display: block;
+  margin-top: 24px;
 
   @media (max-width: 1399px) {
     display: none;
@@ -652,4 +678,33 @@
     top: 24px;
     right: 24px;
 }
+
+.cabinet--page .section-about-light--tag-list{
+    & li{
+        background-color: #151617;
+        height: 32px;
+        display: flex;
+        align-items: center;
+
+        & span{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+        }
+
+        &.section-about-light--star-icon{
+            background-color: #F1DD23;
+            width: 32px;
+            height: 32px;
+
+            &.hidden{
+                display: none;
+            }
+        }
+    }
+
+}
+
 
