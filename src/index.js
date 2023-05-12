@@ -33,6 +33,7 @@ import { Grade } from './js/Grade'
 import { ChangeCar } from './js/cabinetBackdrop'
 import { ChangeUser } from './js/cabinetBackdrop'
 import { CabinetJobsList } from './js/cabinetJobsList'
+import { ThemesScroll } from './js/ThemesScroll'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -66,4 +67,5 @@ Grade()
 ChangeCar()
 ChangeUser()
 CabinetJobsList()
+ThemesScroll()
 

@@ -114,15 +114,22 @@
             &:not(:first-child){
                 margin-top: 0;
 
-                @media (max-width: 767px) {
-                    margin-top: 8px;
+                // @media (max-width: 767px) {
+                //     margin-top: 8px;
                     
+                // }
+            }
+
+            &:first-child{
+                @media (max-width: 767px) {
+                    margin: 0;
                 }
             }
 
             @media (max-width: 767px) {
                 margin-top: 8px;
                 height: 32px;
+                gap: 0;
             }
             
             & a{
@@ -368,6 +375,10 @@
         padding-top: 80px;
         padding-right: 0;
         overflow: hidden;
+    }
+
+    &.padding{
+        padding-bottom: 80px;
     }
 }
 

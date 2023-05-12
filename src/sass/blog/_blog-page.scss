@@ -10,6 +10,9 @@
 
     & li{
         flex-shrink: 0;
+        transition-property: transform;
+        transition-duration: 500ms;
+        transition-delay: 0;
         &:not(:last-child){
             margin-right: 24px;
 
@@ -30,6 +33,11 @@
         background-color: transparent;
         border: none;
         hyphens: none;
+        border-bottom: 2px solid transparent;
+
+        transition-property: color, border;
+        transition-duration: 500ms;
+        transition-delay: 0;
 
         &.active{
             color: #FFFFFF;

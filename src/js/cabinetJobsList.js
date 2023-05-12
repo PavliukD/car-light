@@ -1,6 +1,10 @@
 export function CabinetJobsList() {
     const list = document.querySelector('.cabinet--page-jobs-list-desktop')
 
+    if (!list) {
+        return
+    }
+
     const items = list.querySelectorAll('.cabinet--page-jobs-item')
 
     items.forEach(item => {

@@ -76,8 +76,6 @@
 </symbol>
 <symbol id="right" viewBox="0 0 32 32">
 <path
-        stroke="#fff"
-        style="stroke: var(--color1, #fff)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="4"
