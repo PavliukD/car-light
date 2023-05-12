@@ -135,6 +135,12 @@
         transition-property: transform;
         transition-duration: 500ms;
         transition-delay: 0;
+
+        @media (max-width: 767px) {
+            max-height: 240px;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     &:hover,

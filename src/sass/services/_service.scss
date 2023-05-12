@@ -115,6 +115,9 @@
     border-radius: 100%;
     background-color: transparent;
     background-color: #151617;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     transition-property: border-color;
     transition-duration: 500ms;

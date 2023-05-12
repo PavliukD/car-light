@@ -208,6 +208,10 @@
     &::-webkit-scrollbar {
         display: none;
         }
+
+    @media (max-width: 767px) {
+        overflow: hidden;
+    }
 }
 
 #blog-article--comleted-works-cart{
