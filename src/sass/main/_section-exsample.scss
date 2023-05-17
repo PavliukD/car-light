@@ -39,7 +39,7 @@
             width: 100%;
             object-fit: cover;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1399px) {
                 height: 528px;
             }
 
@@ -141,7 +141,7 @@
     transition-duration: 500ms;
     transition-delay: 0;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
         width: 40px;
         height: 40px;
     }
@@ -158,6 +158,7 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
+    cursor: pointer;
    
     &.first{
         top: 20%;
