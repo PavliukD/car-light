@@ -264,12 +264,14 @@
     }
 }
 
-.section--exsample-notification:hover .section--exsample-notification-point{
+.section--exsample-notification:hover .section--exsample-notification-point,
+.section--exsample-notification:active .section--exsample-notification-point{
         background-color: transparent;
         border: 2px solid #FFFFFF;
 }
 
-.section--exsample-notification:hover .section--exsample-notification-text{
+.section--exsample-notification:hover .section--exsample-notification-text,
+.section--exsample-notification:active .section--exsample-notification-text{
     opacity: 1;
     z-index: 99;
 }
