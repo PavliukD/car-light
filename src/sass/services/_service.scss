@@ -311,6 +311,13 @@
                 line-height: 24px;
                 letter-spacing: 0.05em;
                 color: #FFFFFF;
+
+                @media (max-width: 767px) {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.04em;
+                }
             }
 
             & span{
@@ -321,6 +328,13 @@
                 letter-spacing: 0.05em;
                 color: #FFFFFF;
                 display: block;
+
+                @media (max-width: 767px) {
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 22px;
+                    letter-spacing: 0.01em;
+                }
             }
 
             & svg{

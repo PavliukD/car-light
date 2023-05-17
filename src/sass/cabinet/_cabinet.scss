@@ -169,6 +169,7 @@
     width: 20px;
     height: 20px;
     stroke: #FFFFFF;
+    fill: transparent;
 }
 
 .cabinet--page-info-raiting{
@@ -399,6 +400,7 @@
     width: 46px;
     height: 46px;
     margin-right: 24px;
+    fill: #8A8A9C;
 }
 
 .cabinet--add-new-car-mark{
@@ -442,6 +444,7 @@
         display: block;
         width: 24px;
         height: 24px;
+        fill: transparent;
     }
 }
 
@@ -510,6 +513,7 @@
         width: 20px;
         height: 20px;
         stroke: #ACACAC;
+        fill: transparent;
     }
 }
 
@@ -802,8 +806,10 @@
     position: relative;
 }
 
-.cabinet--information-wrap:hover .cabinet--information{
+.cabinet--information-wrap:hover .cabinet--information,
+.cabinet--information-wrap:active .cabinet--information{
     display: block;
+    cursor: pointer;
 }
 
 .cabinet--information{
@@ -830,4 +836,8 @@
     padding: 0;
     border: none;
     background-color: transparent;
+
+    & svg{
+        fill: transparent;
+    }
 }

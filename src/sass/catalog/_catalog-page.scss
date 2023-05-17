@@ -5,6 +5,10 @@
     transition-duration: 500ms;
     transition-delay: 0;
 
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+
     &:hover,
     :focus {
         background-color: #212223;
@@ -69,10 +73,11 @@
         display: block;
         margin: auto;
         margin-top: 24px;
-        width: 350px;
+        width: 100%;
+        
 
         & li{
-            max-width: 350px;
+            max-width: 100%;
             background-color: #0A0A0A;
             border-radius: 15px;
 
@@ -373,6 +378,10 @@
             transition-duration: 500ms;
             transition-delay: 0;
 
+            @media (max-width: 767px) {
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
             &:hover{
                 background-color: transparent;
             }
@@ -510,6 +519,10 @@
             transition-property: background-color;
             transition-duration: 500ms;
             transition-delay: 0;
+
+            @media (max-width: 767px) {
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
 
             &:hover {
                 background-color: transparent;

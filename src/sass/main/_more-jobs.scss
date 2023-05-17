@@ -155,7 +155,8 @@
     }
 }
 
-.section-more-jobs--item .section--services-more{
+.section-more-jobs--item .section--services-more,
+.blog-page .section--services-more{
     @media (max-width: 767px) {
         width: 126px;
         margin-left: 0;
