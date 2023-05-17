@@ -9,9 +9,15 @@ export function HeaderMobileMenu() {
     const menuBtn = header.querySelector('.header-mobile--menu-button')
     const btnIcon1 = header.querySelector('.header-mobile--icon-menu')
     const btnIcon2 = header.querySelector('.header-mobile--icon-cross')
-    const menu = header.querySelector('.header-mobile--menu')
+    const menu = document.querySelector('.header-mobile--menu')
     const call = header.querySelector('.header-mobile--link-call')
     const enter = header.querySelector('.header-mobile--button-enter')
+
+    let scrollY = 0
+
+    window.addEventListener('scroll', () => {
+        scrollY = window.scrollY
+    })
 
     menuBtn.addEventListener('click', () => {
         menu.classList.toggle('hidden')
@@ -21,5 +27,6 @@ export function HeaderMobileMenu() {
         btnIcon2.classList.toggle('hidden')
         call.classList.toggle('hidden')
         enter.classList.toggle('hidden')
+        
     })
 }

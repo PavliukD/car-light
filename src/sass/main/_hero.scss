@@ -1,6 +1,10 @@
 .hero{
     position: relative;
 
+    @media (max-width: 1399px) {
+        margin-top: 96px;
+    }
+
     & h2{
         font-style: normal;
         font-weight: 900;
@@ -18,8 +22,8 @@
 
         @media (max-width:767px) {
             
-            margin: auto;
-            text-align: center;
+            // margin: auto;
+            text-align: left;
         }
 
         & span{

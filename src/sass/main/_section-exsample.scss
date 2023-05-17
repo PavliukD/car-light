@@ -18,7 +18,7 @@
         @media (max-width: 767px) {
             margin: auto;
                 border-radius: 15px;
-                max-width: 350px;
+                // max-width: 350px;
             }
     }
 
@@ -36,21 +36,27 @@
 
         & img{
             
+            width: 100%;
+            object-fit: cover;
+
+            @media (max-width: 767px) {
+                height: 528px;
+            }
 
             &.big{
                 display: block;
 
-                @media (max-width: 767px) {
-                    display: none;
-                }
+                // @media (max-width: 767px) {
+                //     display: none;
+                // }
             }
 
             &.small {
                 display: none;
 
-                @media (max-width: 767px) {
-                    display: block;
-                }
+            //     @media (max-width: 767px) {
+            //         display: block;
+            //     }
             }
         }
     }
@@ -260,7 +266,7 @@
 
 .section--exsample-notification:hover .section--exsample-notification-point{
         background-color: transparent;
-            border: 2px solid #FFFFFF;
+        border: 2px solid #FFFFFF;
 }
 
 .section--exsample-notification:hover .section--exsample-notification-text{

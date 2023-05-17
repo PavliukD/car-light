@@ -1,5 +1,9 @@
 .page-title{
 
+    @media (max-width: 1399px) {
+        margin-top: 96px;
+    }
+
     & h2{
         font-style: normal;
         font-weight: 700;
