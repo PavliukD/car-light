@@ -55,8 +55,10 @@
 
     &:hover,
     :focus {
-        border: 2px solid rgba(255, 255, 255, 0.1);
-        background-color: #151617;
+        @media (min-width: 768px) {
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            background-color: #151617;
+        }
     }
 
     @media (max-width: 767px) {
@@ -72,7 +74,9 @@
 
 .services-page--item:hover .services-page--bg-image,
 .services-page--item:focus .services-page--bg-image{
-    opacity: 1;
+    @media (min-width: 768px) {
+        opacity: 1;
+    }
 }
 
 .services-page--service-wrap{
@@ -120,6 +124,14 @@
         line-height: 28px;
         letter-spacing: 0.03em;
         color: #FFFFFF;
+
+        @media (max-width: 767px) {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+            max-width: 166px;
+        }
     }
 
     & p{
@@ -155,7 +167,7 @@
         width: auto;
         position: absolute;
         right: 0;
-        z-index: 22;
+        z-index: 1;
 
         @media (max-width: 767px) {
             height: 100%;

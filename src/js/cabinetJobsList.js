@@ -12,6 +12,7 @@ export function CabinetJobsList() {
 
         btn.addEventListener('click', () => {
             item.classList.toggle('hidden')
+            btn.classList.toggle('active')
         })
     })
 

@@ -387,6 +387,40 @@
 
 .cabinet--page-jobs-item .section-questions--icon-wrap{
     // margin-left: 37px;
+
+    &:hover,
+    &:focus{
+        cursor: pointer;
+        background-color: #fff;
+
+        &>.section-questions--icon{
+            &>.section-questions--icon-plus {
+                stroke: #212223;
+            }
+        &>.section-questions--icon-minus {
+            stroke: transparent;
+        }
+        }
+    }
+
+    &.active{
+        background-color: transparent;
+        transform: rotate(90deg);
+
+        transition-property: transform, background-color;
+        transition-duration: 500ms;
+        transition-delay: 0;
+
+        &>.section-questions--icon {
+            &>.section-questions--icon-plus {
+                stroke: transparent;
+            }
+
+            &>.section-questions--icon-minus {
+                stroke: #FFFFFF;
+            }
+        }
+    }
 }
 
 .cabinet--page-status{
@@ -763,6 +797,7 @@
     position: absolute;
     top: 24px;
     right: 24px;
+    
 }
 
 .cabinet--page .section-about-light--tag-list{
