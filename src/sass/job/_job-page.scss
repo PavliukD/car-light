@@ -392,7 +392,7 @@
     gap: 24px;
 
     @media (max-width: 767px) {
-        grid-template-columns: 100px 199px;
+        grid-template-columns: 1fr 2fr;
         gap: 32px;
     }
 
@@ -696,6 +696,7 @@
 
 .job-page--hero-list-title-information{
     position: relative;
+    cursor: pointer;
     
     & p{
         position: absolute;
@@ -726,7 +727,8 @@
     }
 }
 
-.job-page--hero-list-title-information:hover{
+.job-page--hero-list-title-information:hover,
+.job-page--hero-list-title-information:active{
     & p{
         display: block;
         z-index: 99;
