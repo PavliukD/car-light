@@ -1,6 +1,9 @@
 .footer-mobile{
     padding: 20px;
     display: none;
+    margin-bottom: 36px;
+    background-color: #0A0A0A;
+    border-radius: 15px;
 
     @media (max-width: 999px) {
         display: block;

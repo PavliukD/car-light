@@ -10,11 +10,11 @@ html {
 
 body {
     margin: 0;
-    background-color: #0A0A0A;
+    background-color: #151617;
     position: static;
 
-    &.drop-open{
-        position: fixed;
+    &.main{
+        background-color: #0A0A0A;
     }
 }
 
