@@ -1,6 +1,5 @@
 export function HorisontalScroll() {
     const items = document.querySelectorAll('.horizontal-scroller')
-    console.dir(typeof(window.innerWidth))
 
     if (!items) {
         return

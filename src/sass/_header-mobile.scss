@@ -12,10 +12,18 @@
     display: none;
     width: 100%;
 
+    transition-property: top;
+    transition-duration: 1000ms;
+    transition-delay: 0;
+
     @media (max-width: 1399px) {
         display: block;
     }
     
+
+    &.hidden{
+        top: -200px;
+    }
 }
 
 .header-mobile .header--logo{
