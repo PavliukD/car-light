@@ -72,7 +72,7 @@
     }
 }
 
-.blog-page .section-about-light--tag-list{
+.blog-page .section-avout-light--tags-wrap{
     & li{
         background-color: #151617;
         cursor: pointer;
@@ -83,6 +83,10 @@
             font-size: 12px;
             line-height: 18px;
             letter-spacing: 0.02em;
+            color: #FFFFFF;
+        }
+
+        & a{
             color: #FFFFFF;
         }
 

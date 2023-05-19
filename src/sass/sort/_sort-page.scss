@@ -19,6 +19,18 @@
 
 }
 
+.sort-page .section-avout-light--tags-wrap{
+    &::before {
+            background: linear-gradient(270deg, #0A0A0A 0%, rgba(0, 0, 0, 0) 100%);
+        }
+}
+
+.sort-page .section-about-light--list-item:hover .section-about-light--tag-list {
+    & li {
+        background-color: #212223;
+    }
+}
+
 
 .sort-page--title{
     font-style: normal;

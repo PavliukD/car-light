@@ -712,6 +712,7 @@
         display: flex;
         margin-bottom: 15px;
     }
+
     
 }
 
@@ -757,4 +758,8 @@
     @media (max-width: 767px) {
         padding-top: 64px;
     }
+}
+
+.catalog-page--hero-text .section-about-light--tag-list{
+    max-width: fit-content;
 }

@@ -34,6 +34,8 @@ import { ChangeCar } from './js/cabinetBackdrop'
 import { ChangeUser } from './js/cabinetBackdrop'
 import { CabinetJobsList } from './js/cabinetJobsList'
 import { ThemesScroll } from './js/ThemesScroll'
+import { NavButtons } from './js/NavButtons'
+import { BlogTags } from './js/BlogTags'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -68,4 +70,6 @@ ChangeCar()
 ChangeUser()
 CabinetJobsList()
 ThemesScroll()
+NavButtons()
+BlogTags()
 

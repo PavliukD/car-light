@@ -35,7 +35,10 @@
         }
 
         @media (max-width: 767px) {
-            grid-template-columns: 1fr;
+            // grid-template-columns: 1fr;
+            display: flex;
+            width: 100%;
+            gap: 0;
             margin: auto;
             margin-top: 56px;
             width: 100%;
@@ -55,14 +58,16 @@
     border: 2px solid transparent;
     border-end-end-radius: 20px;
     width: 100%;
+    
 
-    transition-property: background-color, border;
+    transition-property: background-color, border, transform;
     transition-duration: 500ms;
     transition-delay: 0;
 
     @media (max-width: 767px) {
         padding: 16px;
         width: 100%;
+        flex-shrink: 0;
     }
 
     & h3{
