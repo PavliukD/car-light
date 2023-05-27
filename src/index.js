@@ -37,6 +37,7 @@ import { ThemesScroll } from './js/ThemesScroll'
 import { NavButtons } from './js/NavButtons'
 import { BlogTags } from './js/BlogTags'
 import { HeaderScroll } from './js/HeaderScroll'
+import { CabinetJobsListMobile } from './js/cabinetJobsList'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -74,4 +75,5 @@ ThemesScroll()
 NavButtons()
 BlogTags()
 HeaderScroll()
+CabinetJobsListMobile()
 

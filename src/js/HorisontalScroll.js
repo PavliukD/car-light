@@ -6,9 +6,7 @@ export function HorisontalScroll() {
     }
 
     items.forEach(item => {
-        if (item.dataset.list && window.innerWidth < 768) {
-            return
-        }
+
         item.addEventListener('wheel', function(event) {
             if (event.deltaMode == event.DOM_DELTA_PIXEL) {
             var modifier = 1;

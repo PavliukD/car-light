@@ -13,41 +13,38 @@ export function NavButtons() {
         const rightBtn = btnSet.querySelector('.right')
         const items = list.children
 
-        let transform = 1
-        
-        leftBtn.addEventListener('click', () => {
-            if (transform === 1) {
-                transform = items.length
-                const transformation = (transform - 1) * list.clientWidth
+        let elements = []
 
-                for (let i = 1; i < items.length; i++){
-                    items[i].style.transform = `translateX(-${transformation}px)`
-                }
-                return
-            }
-            transform = transform - 1
-            const transformation = (transform - 1) * list.clientWidth
-                for (let i = 1; i < items.length; i++){
-                    items[i].style.transform = `translateX(-${transformation}px)`
-                }
-                return
+        for (let i = 0; i < items.length; i++){
+            elements.push(items[i].offsetLeft)
+        }
+
+        const corr = elements[0]
+
+        const elPositions = elements.map(el => {
+            return el - corr
         })
 
+        let pos = 0
+
+        list.addEventListener('scroll', () => {
+            pos = list.scrollLeft
+        })
+        
         rightBtn.addEventListener('click', () => {
-            if (transform === items.length) {
-                transform = 1
-                const transformation = (transform - 1) * list.clientWidth
-                for (let i = 1; i < items.length; i++){
-                    items[i].style.transform = `translateX(-${transformation}px)`
-                }
-                return
-            }
-            transform = transform + 1
-            const transformation = (transform - 1) * list.clientWidth
-            for (let i = 1; i < items.length; i++){
-                    items[i].style.transform = `translateX(-${transformation}px)`
-                }
-                return
+            const found = elPositions.find(el => el > pos)
+            list.scrollTo({
+                left: found,
+                behavior: "smooth"
+            })
+        })
+
+        leftBtn.addEventListener('click', () => {
+            const found = elPositions.find(el => el < pos)
+            list.scrollTo({
+                left: found,
+                behavior: "smooth"
+            })
         })
     })
 }

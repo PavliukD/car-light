@@ -193,9 +193,6 @@ export function ChangeUser() {
         return
     }
 
-    console.log('work')
-
-
     btn.addEventListener('click', () => {
         const backdrop = document.querySelector('.cabinet--drop')
 

@@ -235,8 +235,9 @@
         width: calc(100% - 12px);
         padding-left: 0;
         padding-right: 0;
-        overflow: hidden;
+        // overflow: hidden;
         flex-shrink: 0;
+        gap: 16px;
     }
 }
 
