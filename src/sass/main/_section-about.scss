@@ -163,10 +163,12 @@
 .section-about-light--tag-list{
     display: flex;
     flex-shrink: 0;
-    overflow: auto;
+    overflow: scroll;
     align-items: center;
     // width: 100%;
-    max-width: 100%;
+    // max-width: 80%;
+    border-radius: 5px;
+
 
     &::-webkit-scrollbar {
             display: none;
@@ -190,6 +192,7 @@
             border: none;
             height: auto;
             width: 64px;
+            background-color: transparent;
 
             @media (max-width: 767px) {
                 background-color: transparent;
@@ -243,6 +246,7 @@
 
 .section-about-light--list-item:hover .section-avout-light--tags-wrap,
 .section-about-light--list-item:focus .section-avout-light--tags-wrap{
+    
     &::before{
     background-image: linear-gradient(270deg, #212223 0%, rgba(0, 0, 0, 0) 100%);
         // background-image: none;
@@ -250,6 +254,7 @@
     transition-property: background-image;
     transition-duration: 500ms;
     transition-delay: 0;
+
     }
 }
 
@@ -305,6 +310,10 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+
+    @media (max-width: 767px) {
+        width: 90%;
+    }
 
     &::before {
         content: "";

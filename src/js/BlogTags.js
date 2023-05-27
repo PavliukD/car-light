@@ -7,11 +7,28 @@ export function BlogTags() {
 
     const list = wrap.querySelector('ul')
     const hiddenItms = list.querySelectorAll('.hidden')
-    const btn = list.querySelector('button')
+    const btnMore = list.querySelector('.more')
+    const btnLess = list.querySelector('.less')
 
-    btn.addEventListener('click', () => {
+    btnMore.addEventListener('click', () => {
+        if (!hiddenItms) {
+            return
+        }
         hiddenItms.forEach(item => {
             item.classList.remove('hidden')
         })
+        
+        btnLess.classList.remove('hidden')
+        btnMore.classList.add('hidden')
+    })
+    btnLess.addEventListener('click', () => {
+        if (!hiddenItms) {
+            return
+        }
+        hiddenItms.forEach(item => {
+            item.classList.add('hidden')
+        })
+        btnLess.classList.add('hidden')
+        btnMore.classList.remove('hidden')
     })
 }

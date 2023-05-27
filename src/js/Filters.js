@@ -38,22 +38,35 @@ export function Filters() {
     }
 
     carBtn.addEventListener('click', () => {
-        if (!themesList.classList.contains('hidden')) {
-            themesList.classList.add('hidden')
-            themeIcon.classList.remove('open')
-        }
+        // if (!themesList.classList.contains('hidden')) {
+        //     themesList.classList.add('hidden')
+        //     themeIcon.classList.remove('open')
+        // }
 
         carsList.classList.toggle('hidden')
+
+        const btnText = carBtn.querySelector('p').innerText
+        if (btnText !== carInit) {
+            return
+        }
+
+
         carIcon.classList.toggle('open')
     })
 
     themeBtn.addEventListener('click', () => {
-        if (!carsList.classList.contains('hidden')) {
-            carsList.classList.add('hidden')
-            carIcon.classList.remove('open')
-        }
+        // if (!carsList.classList.contains('hidden')) {
+        //     carsList.classList.add('hidden')
+        //     carIcon.classList.remove('open')
+        // }
 
         themesList.classList.toggle('hidden')
+
+        const btnText = themeBtn.querySelector('p').innerText
+        if (btnText !== themeInit) {
+            return
+        }
+
         themeIcon.classList.toggle('open')
     })
 
@@ -80,18 +93,22 @@ export function Filters() {
     })
 
     clearBtn.addEventListener('click', () => {
-        if (!carsList.classList.contains('hidden')) {
-            carsList.classList.add('hidden')
-            carIcon.classList.remove('open')
-        }
-        if (!themesList.classList.contains('hidden')) {
-            themesList.classList.add('hidden')
-            themeIcon.classList.remove('open')
-        }
+        // if (!carsList.classList.contains('hidden')) {
+        //     carsList.classList.add('hidden')
+        //     carIcon.classList.remove('open')
+        // }
+        // if (!themesList.classList.contains('hidden')) {
+        //     themesList.classList.add('hidden')
+        //     themeIcon.classList.remove('open')
+        // }
         const cars = carBtn.querySelector('p')
         const themes = themeBtn.querySelector('p')
 
         cars.innerText = carInit
-        themes.innerText =themeInit
+        themes.innerText = themeInit
+        carsList.classList.add('hidden')
+        carIcon.classList.remove('open')
+        themesList.classList.add('hidden')
+        themeIcon.classList.remove('open')
     })
 }

@@ -720,6 +720,7 @@
         opacity: 0;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
 
         transition-property: opacity;
         transition-duration: 500ms;
@@ -767,6 +768,9 @@
             height: 100%;
             z-index: 1;
             opacity: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
     
             transition-property: opacity;
             transition-duration: 500ms;
