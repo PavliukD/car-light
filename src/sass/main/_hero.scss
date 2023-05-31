@@ -1,7 +1,7 @@
 .hero{
     position: relative;
 
-    @media (max-width: 1399px) {
+    @media (max-width: 1099px) {
         margin-top: 96px;
     }
 
@@ -74,6 +74,10 @@
         padding-left: 60px;
         padding-top: 168px;
         padding-bottom: 168px;
+        
+        @media (max-width: 1299px) {
+            background-size: cover;
+        }
 
         @media (max-width: 767px) {
             padding: 0;
