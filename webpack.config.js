@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 
-let htmlPageNames = ['404', 'blog-article', 'blog', 'cabinet-full', 'cabinet', 'catalog', 'contacts', 'job', 'offer', 'security', 'service', 'services', 'sort'];
+let htmlPageNames = ['404', 'blog-article', 'blog', 'cabinet-full', 'cabinet', 'catalog', 'contacts', 'job', 'offer', 'security', 'service', 'services', 'sort', "blog-blocks"];
 let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/${name}.html`, // relative path to the HTML files
