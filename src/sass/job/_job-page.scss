@@ -610,6 +610,10 @@
     border-top: 2px solid #8A8A9C;
     border-bottom: 2px solid #8A8A9C;
 
+    &:not(:first-child){
+        border-bottom: none;
+    }
+
     @media (max-width: 767px) {
         grid-template-columns: max(100px) max(180px);
         justify-content: space-between;
