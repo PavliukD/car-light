@@ -7,9 +7,6 @@ export function ServiceRecomendations() {
 
     const items = list.querySelectorAll('.service--recomendations-item')
 
-    console.log(items)
-
-
     items.forEach(item => {
         const title = item.querySelector('h3')
         const wrap = item.querySelector('.service--recomendations-item-title')

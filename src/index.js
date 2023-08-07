@@ -38,6 +38,8 @@ import { NavButtons } from './js/NavButtons'
 import { BlogTags } from './js/BlogTags'
 import { HeaderScroll } from './js/HeaderScroll'
 import { CabinetJobsListMobile } from './js/cabinetJobsList'
+import { GridSliderNew } from './js/gridSliderNew'
+import BannerSlider from './js/bannerSlider'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -46,7 +48,7 @@ Cookies()
 Hero()
 SectionQuestions()
 sectionExsamples()
-GridSlider()
+// GridSlider()
 CabinetBackdropCar()
 CabinetBackdropAuto()
 CabinetBackdropUser()
@@ -76,4 +78,5 @@ NavButtons()
 BlogTags()
 HeaderScroll()
 CabinetJobsListMobile()
-
+GridSliderNew()
+BannerSlider()

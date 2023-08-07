@@ -68,3 +68,24 @@
     grid-template-rows: auto;
     gap: 100px 24px;
 }
+
+.block--banner-slider{
+    width: 100%;
+}
+
+.block--banner-list{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.block--banner-contols{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.block--banner-contols-button{
+    border: none;
+    background-color: transparent;
+}

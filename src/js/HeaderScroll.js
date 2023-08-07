@@ -1,6 +1,10 @@
 export function HeaderScroll() {
     const header = document.querySelector('.header-mobile')
 
+    if (!header) {
+        return
+    }
+
     let prew = 0
 
     window.addEventListener('scroll', () => {
