@@ -11,6 +11,11 @@ export function GridSlider() {
         return
     }
 
+    const pages = document.querySelector('.job--page-content-slider-pages')
+    const inner = pages.innerHTML
+
+    pages.innerHTML = `${inner}/${list.children.length}`
+
     const leftBtn = control.querySelector('.left')
     const rightBtn = control.querySelector('.right')
     const text = control.querySelector('.job--page-content-slider-pages-actual')
