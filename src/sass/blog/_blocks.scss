@@ -145,3 +145,20 @@
     object-fit: cover;
     border-radius: 20px;
 }
+
+.block--video{
+    width: 100%;
+    border-radius: 20px;
+    background-image: url('./images/video.png');
+    background-position: center;
+    background-size: cover;
+    margin-top: 100px;
+
+    &.margin{
+        margin-top: 40px;
+    }
+}
+
+.block--video-full{
+    width: 100%;
+}
