@@ -40,6 +40,7 @@ import { HeaderScroll } from './js/HeaderScroll'
 import { CabinetJobsListMobile } from './js/cabinetJobsList'
 import { GridSliderNew } from './js/gridSliderNew'
 import BannerSlider from './js/bannerSlider'
+import ChangeHeight from './js/changeHeight'
 
 CloseNotificaton()
 ChaneLanguage()
@@ -80,3 +81,4 @@ HeaderScroll()
 CabinetJobsListMobile()
 GridSliderNew()
 BannerSlider()
+ChangeHeight()

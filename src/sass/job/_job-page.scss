@@ -408,6 +408,11 @@
                 grid-column-end: 3;
             }
         }
+
+        &.full-line-desctop{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
     }
 
     & img{
@@ -416,8 +421,13 @@
         display: block;
         width: 100%;
 
+        &.full-line-image{
+            max-height: 416px;
+            object-fit: cover;
+        }
+
         &.small{
-           width: 50%;
+           width: 70%;
 
            @media (max-width: 767px) {
                 width: 100%;

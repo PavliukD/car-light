@@ -71,6 +71,7 @@
 
 .block--banner-slider{
     width: 100%;
+    overflow: hidden;
 }
 
 .block--banner-list{
@@ -88,4 +89,59 @@
 .block--banner-contols-button{
     border: none;
     background-color: transparent;
+}
+
+.block--banner-list-item{
+    border-radius: 20px;
+    overflow: hidden;   
+    width: 100%;
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-delay: 0;
+    flex-shrink: 0;
+
+    & img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.blocks--banner-image{
+    width: 100%;
+
+    & img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.block--two-columns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.block--two-columns_column{
+
+}
+
+.block--two-columns_image{
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 40px;
+
+    &:nth-child(n+3){
+        margin-top: 100px;
+    }
+}
+
+.block--two-columns_image-norm{
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
 }
