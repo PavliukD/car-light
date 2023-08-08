@@ -293,6 +293,10 @@
         letter-spacing: 0.04em;
     }
 
+    @media (max-width: 1399px) {
+        max-width: 100%;
+    }
+
     &.total{
         font-weight: 700;
     }
@@ -331,6 +335,10 @@
     width: 100%;
     max-width: 928px;
     overflow: scroll;
+
+    @media (max-width: 1399px) {
+        max-width: 93%;
+    }
 
     &.first{
         margin-top: 40px;
@@ -395,6 +403,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    justify-content: center;
+
+    @media (min-width: 768px) and (max-width: 1399px) {
+        padding-right: 72px;
+    }
+    
 
     @media (max-width: 767px) {
         grid-template-columns: 1fr 2fr;
@@ -446,7 +460,7 @@
     }
 
     &.margin-mob{
-        @media (max-width: 767px) {
+        @media (max-width: 1399px) {
             margin-top: 40px;
         }
     }
@@ -527,6 +541,7 @@
     justify-content: space-between;
     max-width: 416px;
     max-height: 416px;
+    
 
     @media (max-width: 767px) {
         width: 375px;
