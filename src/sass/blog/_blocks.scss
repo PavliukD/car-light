@@ -386,6 +386,16 @@ blockquote{
     }
 }
 
+.block-with-gallery{
+    @extend .container;
+    @extend .content--wrap;
+    padding-right: 0;
+
+    & p{
+        @extend .content--text;
+    }
+}
+
 // .block--banner-slider{
 //     width: 100%;
 //     overflow: hidden;
