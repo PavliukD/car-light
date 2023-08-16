@@ -1,40 +1,43 @@
 export function GridSliderNew() {
-    const sliders = document.querySelectorAll('[data-name="grid-slider-new"]')
+    const sliders = document.querySelectorAll('.grid-slider')
 
     sliders.forEach(slider => {
-        // const control = slider.querySelector('#grid-slider-control')
 
-        const list = slider.querySelector('#grid-slider-list')
+        const list = slider.querySelector('.grid-slider-list')
 
         if (!list) {
             return
         }
 
-        const pages = slider.querySelector('.job--page-content-slider-pages')
-        const inner = pages.innerHTML
+        const pages = slider.querySelector('.grid-slider-pointer-total')
 
-        pages.innerHTML = `${inner}/${list.children.length}`
+        pages.innerText = `${list.children.length}`
 
         const leftBtn = slider.querySelector('.left')
         const rightBtn = slider.querySelector('.right')
-        const text = slider.querySelector('.job--page-content-slider-pages-actual')
+        const text = slider.querySelector('.grid-slider-pointer-current')
         
         const items = list.querySelectorAll('li')
 
         let transform = 0
 
         leftBtn.addEventListener('click', () => {
-            if (transform === 1) {
+            if (transform === list.children.length - 1) {
                 return
             }
-            transform = 1
-            const transformation = list.clientWidth
+            transform++
+            const transformation = list.clientWidth * transform
             items.forEach(item => {
                 item.style.transform = `translateX(-${transformation}px)`
             })
-            leftBtn.classList.remove('active')
+            text.innerText = `${transform + 1}`
+
             rightBtn.classList.add('active')
-            text.innerText = "2"
+
+            if (transform === list.children.length - 1) {
+                leftBtn.classList.remove('active')
+                
+            }
             return
         })
 
@@ -42,14 +45,19 @@ export function GridSliderNew() {
             if (transform === 0) {
                 return
             }
-            transform = 0
-            const transformation = 0
+            transform--
+            const transformation = list.clientWidth * transform
             items.forEach(item => {
                 item.style.transform = `translateX(-${transformation}px)`
             })
+            text.innerText = `${transform + 1}`
+
             leftBtn.classList.add('active')
-            rightBtn.classList.remove('active')
-            text.innerText = "1"
+
+            if (transform === 0) {
+                leftBtn.classList.add('active')
+                rightBtn.classList.remove('active')
+            }
             return
         })
     })
