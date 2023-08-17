@@ -34,6 +34,8 @@
     gap: 24px;
     margin-top: 80px;
 
+    
+
     @media (max-width: 767px) {
         display: block;
     }
@@ -92,6 +94,29 @@
                 font-size: 14px;
                 line-height: 22px;
                 letter-spacing: 0.01em;
+            }
+        }
+
+        & #anim-1,
+        & #anim-2 {
+            opacity: 0;
+        }
+    }
+}
+
+.blog-article--buttons-wrap{
+    & > button:hover{
+        & #anim-1,
+        & #anim-2 {
+            opacity: 1;
+        }
+    }
+
+    & > button{
+        &.active{
+            & #anim-1,
+            & #anim-2 {
+                opacity: 1;
             }
         }
     }

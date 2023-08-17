@@ -21,6 +21,7 @@ export default function Like() {
                     txt.classList.toggle('hidden')
                 })
                 icon.classList.toggle('on')
+                button.classList.toggle('active')
             })
         })
     })
