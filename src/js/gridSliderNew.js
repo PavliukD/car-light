@@ -21,7 +21,7 @@ export function GridSliderNew() {
 
         let transform = 0
 
-        leftBtn.addEventListener('click', () => {
+        rightBtn.addEventListener('click', () => {
             if (transform === list.children.length - 1) {
                 return
             }
@@ -32,16 +32,16 @@ export function GridSliderNew() {
             })
             text.innerText = `${transform + 1}`
 
-            rightBtn.classList.add('active')
+            leftBtn.classList.add('active')
 
             if (transform === list.children.length - 1) {
-                leftBtn.classList.remove('active')
-                
+                rightBtn.classList.remove('active')
+                leftBtn.classList.add('active')                
             }
             return
         })
 
-        rightBtn.addEventListener('click', () => {
+        leftBtn.addEventListener('click', () => {
             if (transform === 0) {
                 return
             }
@@ -52,11 +52,11 @@ export function GridSliderNew() {
             })
             text.innerText = `${transform + 1}`
 
-            leftBtn.classList.add('active')
+            rightBtn.classList.add('active')
 
             if (transform === 0) {
-                leftBtn.classList.add('active')
-                rightBtn.classList.remove('active')
+                rightBtn.classList.add('active')
+                leftBtn.classList.remove('active')
             }
             return
         })

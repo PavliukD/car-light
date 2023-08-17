@@ -64,10 +64,14 @@
         & svg{
             height: 40px;
             width: 40px;
-            fill: none;
+            fill: transparent;
             stroke: #FFFFFF;
             position: relative;
             z-index: 2;
+
+            &.on{
+                fill: #FFFFFF;
+            }
         }
 
         & span{
@@ -79,6 +83,10 @@
             color: #FFFFFF;
             position: relative;
             z-index: 2;
+
+            &.hidden{
+                display: none;
+            }
 
             @media (max-width: 767px) {
                 font-size: 14px;
@@ -95,6 +103,7 @@
     border-top: 1px solid #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
     list-style: none;
+    margin-top: 80px;
 
     & ul{
         display: flex;
@@ -406,6 +415,8 @@
     // overflow: hidden;
     border-top: 1px solid #FFFFFF;
     gap: 9.5%;
+    margin-top: 80px;
+    margin-bottom: 80px;
 
     @media (max-width: 767px) {
         display: block;
@@ -430,6 +441,8 @@
         padding-top: 80px;
         padding-right: 0;
         overflow: hidden;
+        margin-top: 80px;
+            margin-bottom: 80px;
     }
 
     &.padding{
