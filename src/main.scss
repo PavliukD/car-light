@@ -12,6 +12,7 @@ body {
     margin: 0;
     background-color: #151617;
     position: static;
+    counter-reset: number;
 
     &.main{
         background-color: #0A0A0A;

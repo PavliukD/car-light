@@ -170,10 +170,16 @@
     z-index: 2;
 
 
-    & a{
-        color: #F1DD23;
-        text-decoration: underline;
-    }
+    & >span{
+        font-size: 12px;
+            line-height: 18px;
+        & > a {
+            color: #F1DD23;
+            text-decoration: underline;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    } 
 }
 
 .section-request--legal #text-star{
