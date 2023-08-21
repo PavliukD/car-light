@@ -20,11 +20,11 @@ export function ThemesScroll() {
     const items = list.querySelectorAll('li')
 
     items.forEach(item => {
-        const btn = item.querySelector('button')
+        const btn = item.querySelector('a')
 
         btn.addEventListener('click', () => {
             items.forEach(itm => {
-                const b = itm.querySelector('button')
+                const b = itm.querySelector('a')
                 b.classList.remove('active')
                 if (window.innerWidth > 768) {
                     return
@@ -47,7 +47,7 @@ export function ThemesScroll() {
         }
 
         items.forEach(item => {
-            const b = item.querySelector('button')
+            const b = item.querySelector('a')
             b.classList.remove('active')
             const trans = items[i].offsetLeft - items[0].offsetLeft
             if (window.innerWidth > 768) {
@@ -57,7 +57,7 @@ export function ThemesScroll() {
             items[i].classList.add('active')
         })
 
-        const btn = items[i].querySelector('button')
+        const btn = items[i].querySelector('a')
         btn.classList.add('active')
     })
 
@@ -69,7 +69,7 @@ export function ThemesScroll() {
         }
 
         items.forEach(item => {
-            const b = item.querySelector('button')
+            const b = item.querySelector('a')
             b.classList.remove('active')
             if (window.innerWidth > 768) {
                     return
@@ -78,7 +78,7 @@ export function ThemesScroll() {
             item.style.transform = `translateX(-${trans}px)`
         })
         
-        const btn = items[i].querySelector('button')
+        const btn = items[i].querySelector('a')
         btn.classList.add('active')
     })
 }
